@@ -4,359 +4,342 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Frituur De Oostpoort | Frituur aan de Wandelweg in Kortrijk</title>
-<meta name="description" content="Frituur De Oostpoort, Wandelweg 2 in Kortrijk. Verse frietjes, snacks, burgers en verse schotels. 4,5 op Google uit 249 reviews.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Frituur De Oostpoort, Wandelweg 2 in Kortrijk. Friet, snacks, stoofvleessaus en kipsaté. 4,5 op Google uit 249 reviews. Bel 0477 46 10 06.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#16110c;
-  --ink-2:#221a13;
-  --cream:#f6f0e6;
-  --cream-2:#ece3d4;
-  --text:#2a221b;
-  --muted:#65594c;
-  --accent:#e2a24b;
-  --accent-dark:#a96c1c;
-  --line:rgba(22,17,12,.12);
-  --r:6px;
-  --serif:'Cormorant Garamond',Georgia,serif;
-  --sans:'Jost',system-ui,-apple-system,sans-serif;
+  --ink:#15100c;
+  --ink-2:#1f1812;
+  --ink-3:#2a2119;
+  --cream:#f6efe4;
+  --cream-2:#ece2d2;
+  --text:#2a211a;
+  --muted:#6d6054;
+  --accent:#e3a63b;
+  --accent-dark:#9a6812;
+  --radius:6px;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --pad:64px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--text);background:var(--cream);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+html{background:var(--cream);scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--cream);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit}
-.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 22px}
-.eyebrow{font-family:var(--sans);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-dark);font-weight:600;margin-bottom:14px;display:block}
-.on-dark .eyebrow{color:var(--accent)}
-h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;letter-spacing:.01em}
-h2{font-size:clamp(2.2rem,5vw,3.4rem);color:var(--ink);text-transform:uppercase}
-.lead{color:var(--muted);max-width:500px;margin-top:16px}
-section{padding:64px 0}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:var(--pad) 0;scroll-margin-top:120px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-dark);margin-bottom:14px;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(32px,5vw,50px);margin-bottom:16px}
+.lead{color:var(--muted);max-width:520px;font-size:17px}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--sans);font-weight:500;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 26px;border-radius:var(--r);transition:background .2s,color .2s,border-color .2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:var(--radius);font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s}
 .btn svg{width:18px;height:18px;flex:none}
 .btn-accent{background:var(--accent);color:var(--ink)}
-.btn-accent:hover{background:#f0b766}
-.btn-ghost{border:1px solid rgba(246,240,230,.6);color:var(--cream);background:rgba(22,17,12,.25)}
-.btn-ghost:hover{background:rgba(246,240,230,.12);border-color:var(--cream)}
+.btn-accent:hover{background:#f0b955}
+.btn-ghost{border-color:rgba(246,239,228,.55);color:var(--cream)}
+.btn-ghost:hover{background:rgba(246,239,228,.1);border-color:var(--cream)}
 
 /* header */
-.site-header{position:sticky;top:0;z-index:50;background:rgba(22,17,12,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(246,240,230,.08)}
-.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:var(--cream);text-decoration:none;letter-spacing:.06em;text-transform:uppercase}
-.logo span{color:var(--accent)}
-.nav{display:none;gap:30px}
-.nav a{color:rgba(246,240,230,.78);text-decoration:none;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase}
-.nav a:hover{color:var(--accent)}
-.head-call{color:var(--cream);text-decoration:none;font-size:.9rem;letter-spacing:.05em;display:none;align-items:center;gap:8px;border:1px solid rgba(246,240,230,.3);padding:9px 16px;border-radius:var(--r)}
-.head-call:hover{border-color:var(--accent);color:var(--accent)}
-.head-call svg{width:16px;height:16px}
+header{position:sticky;top:0;z-index:50;background:rgba(21,16,12,.98);color:var(--cream);border-bottom:1px solid rgba(246,239,228,.08)}
+.head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;column-gap:24px}
+.logo{order:1;text-decoration:none;display:flex;flex-direction:column;line-height:1;padding:14px 0}
+.logo small{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:5px}
+.logo span{font-family:var(--serif);font-size:22px;font-weight:500}
+.head-call{order:2;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;text-decoration:none;color:var(--accent);white-space:nowrap}
+.head-call svg{width:17px;height:17px}
+nav.main{order:3;width:calc(100% + 40px);margin:0 -20px;border-top:1px solid rgba(246,239,228,.08)}
+nav.main ul{list-style:none;display:flex;justify-content:space-between;gap:14px;overflow-x:auto;padding:11px 20px;scrollbar-width:none}
+nav.main ul::-webkit-scrollbar{display:none}
+nav.main a{text-decoration:none;font-size:14px;font-weight:500;color:rgba(246,239,228,.85);white-space:nowrap}
+nav.main a:hover{color:var(--accent)}
 
 /* hero */
-.hero{position:relative;min-height:70vh;display:flex;align-items:flex-end;color:var(--cream);overflow:hidden;background:var(--ink);padding:0}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 60%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,17,12,.25) 0%,rgba(22,17,12,.45) 35%,rgba(22,17,12,.92) 100%)}
-.hero-inner{position:relative;z-index:2;padding-top:120px;padding-bottom:48px}
-.hero h1{font-size:clamp(2.8rem,10vw,6.2rem);text-transform:uppercase;font-weight:500;max-width:860px;letter-spacing:.015em;text-shadow:0 2px 24px rgba(0,0,0,.35)}
-.hero h1 em{font-style:italic;color:var(--accent);text-transform:none}
-.hero p.sub{font-size:1.1rem;color:rgba(246,240,230,.92);max-width:440px;margin:18px 0 28px}
-.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
-.trust{margin-top:26px;display:inline-flex;align-items:center;gap:12px;font-size:.92rem;color:rgba(246,240,230,.9);flex-wrap:wrap;background:rgba(22,17,12,.55);border:1px solid rgba(246,240,230,.12);padding:9px 16px;border-radius:40px}
-.stars{display:inline-flex;gap:3px;color:var(--accent)}
-.stars svg{width:16px;height:16px}
+.hero{position:relative;min-height:72vh;display:flex;align-items:flex-end;color:var(--cream);padding:0;overflow:hidden;background:var(--ink)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,10,7,.98) 0%,rgba(14,10,7,.95) 42%,rgba(14,10,7,.72) 68%,rgba(14,10,7,.42) 100%)}
+.hero-in{position:relative;z-index:2;padding:150px 20px 44px;max-width:1200px;margin:0 auto;width:100%}
+.hero h1{font-size:clamp(38px,10vw,84px);max-width:760px;margin-bottom:18px;text-shadow:0 2px 24px rgba(0,0,0,.4)}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p.sub{font-size:17px;max-width:500px;color:rgba(246,239,228,.92);margin-bottom:26px}
+.hero-btns{display:none;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.trust{display:inline-flex;align-items:center;gap:12px;font-size:14px;color:rgba(246,239,228,.9);flex-wrap:wrap;padding:9px 16px;border:1px solid rgba(246,239,228,.18);border-radius:999px;background:rgba(14,10,7,.5)}
+.stars{display:inline-flex;gap:2px;color:var(--accent)}
+.stars svg{width:15px;height:15px}
 .trust strong{color:var(--cream);font-weight:600}
 
 /* reviews */
-.reviews{background:var(--ink);color:var(--cream)}
-.reviews h2{color:var(--cream)}
-.rev-head{display:flex;flex-direction:column;gap:24px;margin-bottom:40px}
-.score{display:flex;align-items:center;gap:18px;padding:18px 22px;border:1px solid rgba(246,240,230,.12);border-radius:var(--r);align-self:flex-start}
-.score-num{font-family:var(--serif);font-size:3.8rem;line-height:1;color:var(--accent);font-weight:600}
-.score small{display:block;color:rgba(246,240,230,.7);font-size:.88rem;margin-top:4px}
-.rev-grid{display:grid;gap:16px}
-.quote{background:var(--ink-2);border:1px solid rgba(246,240,230,.08);border-radius:var(--r);padding:28px 26px;display:flex;flex-direction:column}
-.quote .mark{font-family:var(--serif);font-size:3.6rem;line-height:.6;color:var(--accent);height:26px}
-.quote blockquote{font-family:var(--serif);font-size:1.3rem;line-height:1.4;font-weight:500;color:var(--cream);margin:10px 0 20px;flex:1}
-.quote.featured{background:linear-gradient(160deg,#2c2118,#1d1610);border-color:rgba(226,162,75,.25)}
-.quote.featured blockquote{font-size:1.5rem}
-.quote footer{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,240,230,.72);border-top:1px solid rgba(246,240,230,.1);padding-top:14px}
-.quote footer .stars svg{width:13px;height:13px}
+.reviews{background:var(--cream)}
+.rev-head{display:grid;gap:24px;margin-bottom:40px;align-items:end}
+.score{display:flex;align-items:center;gap:18px}
+.score b{font-family:var(--serif);font-size:72px;font-weight:500;line-height:1;color:var(--ink)}
+.score .stars svg{width:20px;height:20px}
+.score small{display:block;color:var(--muted);font-size:14px;margin-top:6px}
+.rev-grid{display:grid;gap:18px;align-items:start}
+.quote{background:#fff;border:1px solid var(--cream-2);border-radius:var(--radius);padding:30px 26px 24px;display:flex;flex-direction:column}
+.quote::before{content:"\201C";font-family:var(--serif);font-size:76px;line-height:.6;color:var(--accent);display:block;height:30px}
+.quote p{font-family:var(--serif);font-size:19px;line-height:1.45;color:var(--ink);margin:10px 0 22px}
+.quote footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--cream-2);padding-top:16px;font-size:14px;font-weight:600}
+.quote footer .stars svg{width:14px;height:14px}
+.quote.big{background:var(--ink);border-color:var(--ink);color:var(--cream)}
+.quote.big p{color:var(--cream)}
+.quote.big footer{border-color:rgba(246,239,228,.15)}
 
 /* aanbod */
-.menu-grid{display:grid;gap:28px;margin-top:40px}
-.menu-photo{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3}
-.menu-photo img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
-.cards{display:grid;grid-template-columns:1fr;gap:12px}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;gap:16px;align-items:center;box-shadow:0 1px 0 rgba(22,17,12,.04);transition:border-color .2s,transform .2s}
-.card:hover{border-color:rgba(169,108,28,.45);transform:translateY(-2px)}
-.icon{flex:none;width:54px;height:54px;border-radius:50%;background:rgba(226,162,75,.18);display:flex;align-items:center;justify-content:center;color:var(--accent-dark)}
-.icon svg{width:28px;height:28px}
-.card h3{font-size:1.5rem;color:var(--ink);margin-bottom:2px}
-.card p{font-size:.95rem;color:var(--muted);line-height:1.45}
+.aanbod{background:var(--ink);color:var(--cream)}
+.aanbod .eyebrow{color:var(--accent)}
+.aanbod .lead{color:rgba(246,239,228,.75)}
+.aanbod-top{display:grid;gap:32px;align-items:center}
+.aanbod-photo{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:var(--ink-2)}
+.aanbod-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.cards{display:grid;gap:14px;margin-top:40px}
+.card{background:var(--ink-2);border:1px solid rgba(246,239,228,.09);border-top:2px solid var(--accent);border-radius:var(--radius);padding:24px 22px;display:flex;gap:18px;align-items:flex-start}
+.icon{flex:none;width:64px;height:64px;border-radius:50%;background:rgba(227,166,59,.12);display:grid;place-items:center;color:var(--accent)}
+.icon svg{width:36px;height:36px}
+.card h3{font-size:24px;margin-bottom:6px}
+.card p{color:rgba(246,239,228,.76);font-size:15px}
 
-/* sfeer */
-.sfeer{background:var(--cream-2)}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px}
-.gallery figure{border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:1/1;background:var(--ink)}
-.gallery figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.gallery figure:hover img{transform:scale(1.04)}
-.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;background:linear-gradient(transparent,rgba(22,17,12,.82));color:var(--cream);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}
-.g-big{grid-column:span 2;aspect-ratio:4/3 !important}
+/* foto's */
+.fotos{background:var(--cream)}
+.foto-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.foto-grid figure{border-radius:var(--radius);overflow:hidden;background:var(--cream-2);aspect-ratio:1/1}
+.foto-grid figure:first-child{grid-column:1/-1;aspect-ratio:4/3}
+.foto-grid img{width:100%;height:100%;object-fit:cover}
 
 /* contact */
-.contact{background:var(--ink);color:var(--cream)}
-.contact h2{color:var(--cream)}
-.contact-grid{display:grid;gap:40px;margin-top:40px}
-.c-list{list-style:none;display:grid;gap:22px}
-.c-list li{display:flex;gap:16px;align-items:center}
-.c-list .icon{background:rgba(226,162,75,.14);color:var(--accent);width:46px;height:46px}
-.c-list .icon svg{width:22px;height:22px}
-.c-list small{display:block;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,240,230,.6);margin-bottom:2px}
-.c-list a{text-decoration:none;font-size:1.1rem;word-break:break-word}
-.c-list a.big{font-family:var(--serif);font-size:1.9rem;font-weight:600;line-height:1.1;color:var(--cream)}
-.c-list a:hover{color:var(--accent)}
-.c-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.hours{background:var(--ink-2);border:1px solid rgba(246,240,230,.08);border-radius:var(--r);padding:30px 26px}
-.hours h3{font-size:1.8rem;margin-bottom:14px;text-transform:uppercase;color:var(--cream)}
-.hours table{width:100%;border-collapse:collapse;font-size:.97rem}
-.hours td{padding:11px 0;border-bottom:1px solid rgba(246,240,230,.08);vertical-align:top}
-.hours tr:last-child td{border-bottom:0}
-.hours td:first-child{text-transform:capitalize;color:rgba(246,240,230,.78);padding-right:12px}
-.hours td:last-child{text-align:right}
-.hours td span{display:inline-block}
-.closed{color:rgba(246,240,230,.5)}
+.contact{background:var(--ink-2);color:var(--cream)}
+.contact .eyebrow{color:var(--accent)}
+.contact-grid{display:grid;gap:56px}
+#contact{scroll-margin-top:120px}
+.hours{list-style:none;border-top:1px solid rgba(246,239,228,.12)}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid rgba(246,239,228,.12);font-size:15px}
+.hours li span:first-child{text-transform:capitalize;font-weight:500}
+.hours li span:last-child{text-align:right;color:rgba(246,239,228,.85)}
+.hours li.closed span:last-child{color:rgba(246,239,228,.5)}
+.c-list{list-style:none;margin:26px 0 30px;display:grid;gap:18px}
+.c-list li{display:flex;gap:14px;align-items:flex-start}
+.c-list svg{width:22px;height:22px;color:var(--accent);flex:none;margin-top:2px}
+.c-list a{text-decoration:none;border-bottom:1px solid rgba(246,239,228,.25);word-break:break-word}
+.c-list a:hover{border-color:var(--accent);color:var(--accent)}
+.c-list small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,239,228,.58);margin-bottom:2px}
+.c-btns{display:flex;gap:12px;flex-wrap:wrap}
 
-.site-footer{background:#0f0b08;color:rgba(246,240,230,.6);font-size:.85rem;padding:28px 0}
-.site-footer .wrap{display:flex;flex-direction:column;gap:6px}
+/* footer */
+.site-foot{background:var(--ink);color:rgba(246,239,228,.62);font-size:13px;padding:28px 0 calc(96px + env(safe-area-inset-bottom))}
+.site-foot .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 
 /* mobile bar */
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px;background:rgba(22,17,12,.97);border-top:1px solid rgba(246,240,230,.1)}
-.mbar .btn{padding:13px 10px;font-size:.85rem}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(21,16,12,.98);border-top:1px solid rgba(246,239,228,.1)}
+.mbar .btn{padding:13px 10px}
 
-@media (min-width:640px){
+@media (min-width:600px){
   .cards{grid-template-columns:1fr 1fr}
-  .card{flex-direction:column;align-items:flex-start;gap:14px;padding:24px 22px}
-  .rev-grid{grid-template-columns:1fr 1fr}
-  .quote.featured{grid-column:span 2}
-  .gallery{grid-template-columns:1.5fr 1fr;grid-template-rows:240px 240px}
-  .gallery figure{aspect-ratio:auto}
-  .g-big{grid-column:auto;grid-row:span 2;aspect-ratio:auto !important}
+  .card{flex-direction:column}
 }
-@media (min-width:900px){
-  body{padding-bottom:0}
+@media (min-width:720px){
+  :root{--pad:96px}
+  .wrap{padding:0 32px}
+  nav.main{width:calc(100% + 64px);margin:0 -32px}
+  nav.main ul{padding:11px 32px;justify-content:flex-start;gap:30px}
+  .hero{min-height:85vh}
+  .hero img{object-position:50% 40%}
+  .hero::after{background:linear-gradient(90deg,rgba(14,10,7,.95) 0%,rgba(14,10,7,.82) 42%,rgba(14,10,7,.35) 100%),linear-gradient(to top,rgba(14,10,7,.75) 0%,rgba(14,10,7,0) 45%)}
+  .hero-in{padding:120px 32px 80px}
+  .hero p.sub{font-size:19px}
+  .hero-btns{display:flex}
   .mbar{display:none}
-  .nav{display:flex}
-  .head-call{display:inline-flex}
-  section{padding:96px 0}
-  .hero{min-height:85vh;align-items:center}
-  .hero::after{background:linear-gradient(90deg,rgba(22,17,12,.92) 0%,rgba(22,17,12,.7) 42%,rgba(22,17,12,.15) 80%),linear-gradient(180deg,transparent 60%,rgba(22,17,12,.6) 100%)}
-  .hero img{object-position:center 60%}
-  .hero-inner{padding-top:90px;padding-bottom:90px}
-  .rev-head{flex-direction:row;justify-content:space-between;align-items:flex-end}
-  .score{align-self:auto}
-  .rev-grid{grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto}
-  .quote.featured{grid-column:auto;grid-row:span 2;padding:40px 38px}
-  .quote.featured blockquote{font-size:1.85rem}
-  .menu-grid{grid-template-columns:5fr 7fr;align-items:stretch}
-  .menu-photo{aspect-ratio:auto;height:100%;min-height:440px}
-  .gallery{grid-template-rows:280px 280px}
-  .contact-grid{grid-template-columns:1fr 1fr;align-items:start;gap:56px}
-  .site-footer .wrap{flex-direction:row;justify-content:space-between}
+  .site-foot{padding-bottom:28px}
+  .rev-head{grid-template-columns:1.4fr 1fr}
+  .score{justify-content:flex-end}
+  .rev-grid{grid-template-columns:1fr 1.25fr 1fr;align-items:stretch}
+  .quote p{flex:1}
+  .foto-grid{grid-template-columns:1.4fr 1fr 1fr;grid-auto-rows:340px}
+  .foto-grid figure,.foto-grid figure:first-child{grid-column:auto;aspect-ratio:auto}
+  .contact-grid{grid-template-columns:1fr 1fr;gap:72px}
+}
+@media (min-width:1024px){
+  .head{flex-wrap:nowrap;height:76px}
+  .logo{padding:0}
+  nav.main{order:2;width:auto;margin:0 auto 0 0;padding-left:40px;border:0}
+  nav.main ul{padding:0;gap:32px}
+  .head-call{order:3;background:var(--accent);color:var(--ink);padding:11px 20px;border-radius:var(--radius)}
+  .head-call:hover{background:#f0b955}
+  .aanbod-top{grid-template-columns:1fr 1.1fr;gap:64px}
+  .aanbod-photo{aspect-ratio:16/10}
+  .cards{grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+  .card{padding:28px 24px}
 }
 </style>
 </head>
 <body><div style="background:#fffbe6;color:#5c4400;font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:7px 12px;border-bottom:1px solid #f0e2a0;position:relative;z-index:9999">Voorbeeld van een nieuwe website voor Frituur De Oostpoort, gemaakt door Victor De Ruyver. Dit is nog niet hun officiële website.</div>
 
-<header class="site-header">
-  <div class="wrap">
-    <a href="#top" class="logo">De <span>Oostpoort</span></a>
-    <nav class="nav" aria-label="Hoofdmenu">
-      <a href="#reviews">Reviews</a>
-      <a href="#aanbod">Aanbod</a>
-      <a href="#sfeer">Bij ons</a>
-      <a href="#contact">Uren &amp; ligging</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+</svg>
+
+<header>
+  <div class="wrap head">
+    <a class="logo" href="#top" aria-label="Frituur De Oostpoort, naar boven"><small>Frituur</small><span>De Oostpoort</span></a>
+    <nav class="main" aria-label="Hoofdmenu">
+      <ul>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#aanbod">Aanbod</a></li>
+        <li><a href="#fotos">Foto's</a></li>
+        <li><a href="#openingsuren">Uren</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <a class="head-call" href="tel:+32477461006">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-      0477 46 10 06
-    </a>
+    <a class="head-call" href="tel:+32477461006"><svg aria-hidden="true"><use href="#phone"/></svg>0477 46 10 06</a>
   </div>
 </header>
 
 <main id="top">
 
-  <section class="hero on-dark">
-    <img src="img/5.jpg" alt="De toonbank van Frituur De Oostpoort met de naam in grote letters">
-    <div class="wrap hero-inner">
-      <span class="eyebrow">Frituur in Kortrijk</span>
-      <h1>Frietjes zoals ze <em>horen</em> te zijn</h1>
-      <p class="sub">Krokante friet, royale porties en vriendelijke mensen achter de toog.</p>
+  <section class="hero" aria-label="Welkom">
+    <img src="img/5.jpg" alt="De toog en de vitrine binnen bij Frituur De Oostpoort" width="1421" height="1066">
+    <div class="hero-in">
+      <h1>Frietjes waar <em>Kortrijk</em> voor terugkomt</h1>
+      <p class="sub">Friet, snacks, stoofvleessaus en kipsaté aan de Wandelweg 2 in Kortrijk.</p>
       <div class="hero-btns">
-        <a class="btn btn-accent" href="tel:+32477461006">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-          Bel ons
-        </a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Frituur%20De%20Oostpoort&query_place_id=ChIJt13Ixx47w0cRFSkzHBlKhW0" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-          Kom langs
-        </a>
+        <a class="btn btn-accent" href="tel:+32477461006"><svg aria-hidden="true"><use href="#phone"/></svg>Bel 0477 46 10 06</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Frituur%20De%20Oostpoort&amp;query_place_id=ChIJt13Ixx47w0cRFSkzHBlKhW0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Route plannen</a>
       </div>
       <div class="trust">
-        <span class="stars" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor" opacity=".5"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-        </span>
+        <span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg opacity=".45"><use href="#star"/></svg></span>
         <span><strong>4,5 op Google</strong> &middot; 249 reviews</span>
       </div>
     </div>
   </section>
 
-  <section class="reviews on-dark" id="reviews">
+  <section class="reviews" id="reviews">
     <div class="wrap">
       <div class="rev-head">
         <div>
           <span class="eyebrow">Wat klanten zeggen</span>
-          <h2>Kortrijk eet<br>hier graag</h2>
+          <h2>Daar komen ze voor terug</h2>
         </div>
         <div class="score">
-          <div class="score-num">4,5</div>
+          <b>4,5</b>
           <div>
-            <span class="stars" aria-label="4,5 op 5 sterren">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" opacity=".5"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z"/></svg>
-            </span>
-            <small>Gemiddeld uit 249 Google-reviews</small>
+            <span class="stars" role="img" aria-label="4,5 op 5 sterren"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg opacity=".45"><use href="#star"/></svg></span>
+            <small>op basis van 249 Google-reviews</small>
           </div>
         </div>
       </div>
       <div class="rev-grid">
-        <article class="quote featured">
-          <div class="mark" aria-hidden="true">&ldquo;</div>
-          <blockquote>Tot nu toe nog steeds de beste frituur van Kortrijk en omstreken. Belangrijkste zijn de frietjes, en die zijn hier simpelweg te beste. Nooit gierig op hun porties, heel vriendelijke bediening, goede prijzen, en voldoende keuze. Niks op te zeggen!</blockquote>
-          <footer><span>Lucas</span><span>5/5</span></footer>
-        </article>
-        <article class="quote">
-          <div class="mark" aria-hidden="true">&ldquo;</div>
-          <blockquote>Wat mij betreft de beste frietjes van Kortrijk! Uitgebaat door zeer vriendelijke mensen, bevlogen in hun vak.</blockquote>
-          <footer><span>Charlotte</span><span>5/5</span></footer>
-        </article>
-        <article class="quote">
-          <div class="mark" aria-hidden="true">&ldquo;</div>
-          <blockquote>Vriendelijke mensen. Heerlijk gegeten. Stoofvleessaus en kipsaté top!</blockquote>
-          <footer><span>Evi</span><span>5/5</span></footer>
-        </article>
+        <blockquote class="quote">
+          <p>Wat mij betreft de beste frietjes van Kortrijk! Uitgebaat door zeer vriendelijke mensen, bevlogen in hun vak.</p>
+          <footer><span>Charlotte</span><span class="stars" role="img" aria-label="5 sterren"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></footer>
+        </blockquote>
+        <blockquote class="quote big">
+          <p>Tot nu toe nog steeds de beste frituur van Kortrijk en omstreken. Belangrijkste zijn de frietjes, en die zijn hier simpelweg te beste. Nooit gierig op hun porties, heel vriendelijke bediening, goede prijzen, en voldoende keuze. Niks op te zeggen!</p>
+          <footer><span>Lucas</span><span class="stars" role="img" aria-label="5 sterren"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Vriendelijke mensen. Heerlijk gegeten. Stoofvleessaus en kipsaté top!</p>
+          <footer><span>Evi</span><span class="stars" role="img" aria-label="5 sterren"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></footer>
+        </blockquote>
       </div>
     </div>
   </section>
 
-  <section id="aanbod">
+  <section class="aanbod" id="aanbod">
     <div class="wrap">
-      <span class="eyebrow">Aan de toog</span>
-      <h2>Wat u bij ons haalt</h2>
-      <p class="lead">Van een pakje friet tot een warme schotel. Eet hier of neem het mee naar huis.</p>
-      <div class="menu-grid">
-        <div class="menu-photo">
-          <img src="img/4.jpg" alt="Frietjes en snacks op een dienblad aan het raam" loading="lazy">
-        </div>
-        <div class="cards">
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13h16l-2.5 15h-11z"/><path d="M11 13l-1-9M14 13V3M18 13l1-9M21 13l2-7"/><path d="M10 18c2 1.5 4 1.5 6 0s4-1.5 6 0"/></svg></div>
-            <div><h3>Verse frietjes</h3><p>Goudgeel en krokant, met een royale portie.</p></div>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 27L27 5"/><rect x="9" y="14" width="6" height="6" rx="2" transform="rotate(-45 12 17)"/><rect x="15" y="8" width="6" height="6" rx="2" transform="rotate(-45 18 11)"/></svg></div>
-            <div><h3>Snacks en brochettes</h3><p>Een volle toonbank, van kipsaté tot kaaskroket.</p></div>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14a11 8 0 0 1 22 0z"/><path d="M4 18h24"/><path d="M5 22h22a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3"/></svg></div>
-            <div><h3>Burgers in alle soorten</h3><p>Ook vegi, en kip- of beefburger halal.</p></div>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14h20v8a5 5 0 0 1-5 5H11a5 5 0 0 1-5-5z"/><path d="M3 14h26"/><path d="M12 9c0-2 2-2 2-4M18 9c0-2 2-2 2-4"/></svg></div>
-            <div><h3>Verse schotels</h3><p>Stoofvlees, vol-au-vent of balletjes in tomatensaus.</p></div>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4c4 6 8 10 8 15a8 8 0 0 1-16 0c0-5 4-9 8-15z"/><path d="M12 20a4 4 0 0 0 4 4"/></svg></div>
-            <div><h3>Warme en koude sauzen</h3><p>Stoofvleessaus, verse tartaarsaus en meer.</p></div>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12C6 6 26 6 29 12z"/><path d="M16 12v16"/><path d="M7 22h18M9 22l-2 6M23 22l2 6"/></svg></div>
-            <div><h3>Ter plaatse eten</h3><p>Binnen aan het raam of buiten op het terras.</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sfeer" id="sfeer">
-    <div class="wrap">
-      <span class="eyebrow">Bij ons</span>
-      <h2>Binnen en buiten</h2>
-      <p class="lead">Een heldere zaak met een volle toonbank, en een terras onder de parasols.</p>
-      <div class="gallery">
-        <figure class="g-big">
-          <img src="img/1.jpg" alt="Gevel van Frituur De Oostpoort aan de Wandelweg" loading="lazy">
-          <figcaption>Wandelweg 2</figcaption>
-        </figure>
-        <figure>
-          <img src="img/2.jpg" alt="Toonbank vol snacks en brochettes" loading="lazy">
-          <figcaption>De toonbank</figcaption>
-        </figure>
-        <figure>
-          <img src="img/7.jpg" alt="Terras met picknicktafels en parasols" loading="lazy">
-          <figcaption>Het terras</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact on-dark" id="contact">
-    <div class="wrap">
-      <span class="eyebrow">Uren &amp; ligging</span>
-      <h2>Tot straks aan<br>de Wandelweg</h2>
-      <div class="contact-grid">
+      <div class="aanbod-top">
         <div>
-          <ul class="c-list">
-            <li>
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
-              <div><small>Bestellen of vragen</small><a class="big" href="tel:+32477461006">0477 46 10 06</a></div>
-            </li>
-            <li>
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
-              <div><small>Adres</small><a href="https://www.google.com/maps/search/?api=1&query=Frituur%20De%20Oostpoort&query_place_id=ChIJt13Ixx47w0cRFSkzHBlKhW0" target="_blank" rel="noopener">Wandelweg 2, 8500 Kortrijk</a></div>
-            </li>
-            <li>
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
-              <div><small>E-mail</small><a href="mailto:cabylieven56@gmail.com">cabylieven56@gmail.com</a></div>
-            </li>
-          </ul>
-          <div class="c-btns">
-            <a class="btn btn-accent" href="tel:+32477461006">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-              Bel nu
-            </a>
-            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Frituur%20De%20Oostpoort&query_place_id=ChIJt13Ixx47w0cRFSkzHBlKhW0" target="_blank" rel="noopener">Plan uw route</a>
-          </div>
+          <span class="eyebrow">Ons aanbod</span>
+          <h2>Wat u bij ons haalt</h2>
+          <p class="lead">Goeie friet, een volle vitrine en de sauzen waar klanten speciaal voor langskomen.</p>
         </div>
-        <div class="hours">
-          <h3>Openingsuren</h3>
-          <table>
-            <tr><td>maandag</td><td class="closed">Gesloten</td></tr>
-            <tr><td>dinsdag</td><td>18:00 – 22:00</td></tr>
-            <tr><td>woensdag</td><td><span>11:30 – 13:30</span> · <span>17:00 – 22:00</span></td></tr>
-            <tr><td>donderdag</td><td><span>11:30 – 13:30</span> · <span>17:00 – 22:00</span></td></tr>
-            <tr><td>vrijdag</td><td><span>11:30 – 13:30</span> · <span>17:00 – 23:00</span></td></tr>
-            <tr><td>zaterdag</td><td class="closed">Gesloten</td></tr>
-            <tr><td>zondag</td><td><span>11:30 – 13:30</span> · <span>18:00 – 22:00</span></td></tr>
-          </table>
+        <div class="aanbod-photo">
+          <img src="img/2.jpg" alt="Volle vitrine met snacks en brochettes bij Frituur De Oostpoort" loading="lazy" width="800" height="1066">
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14h16l-2.5 14h-11z"/><path d="M11 14V5M14 14V3M17 14V4M20 14V6M23 14V8M9 14V8"/></svg></div>
+          <div>
+            <h3>Friet</h3>
+            <p>Waar het om draait. Volgens klanten de beste van Kortrijk, en nooit gierig geschept.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="12" width="24" height="8" rx="4"/><path d="M9 12v8M14 12v8M19 12v8M24 12v8"/></svg></div>
+          <div>
+            <h3>Snacks</h3>
+            <p>Een volle vitrine, dus keuze genoeg voor iedereen aan tafel.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16h22a11 11 0 0 1-22 0z"/><path d="M12 5c-1.5 2 1.5 3 0 6M16 4c-1.5 2 1.5 3 0 6M20 5c-1.5 2 1.5 3 0 6"/></svg></div>
+          <div>
+            <h3>Stoofvleessaus</h3>
+            <p>Warm over uw frietjes. Klanten noemen ze kortweg top.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 28L28 4"/><rect x="9" y="15" width="7" height="7" rx="2" transform="rotate(-45 12.5 18.5)"/><rect x="15" y="9" width="7" height="7" rx="2" transform="rotate(-45 18.5 12.5)"/></svg></div>
+          <div>
+            <h3>Kipsaté</h3>
+            <p>Op het stokje, naast een pak friet. Ook die krijgt een dikke duim.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="fotos" id="fotos">
+    <div class="wrap">
+      <span class="eyebrow">Aan de Wandelweg</span>
+      <h2>Een kijkje bij ons</h2>
+      <p class="lead">De zaak aan de Wandelweg 2, en wat er op uw plateau belandt.</p>
+      <div class="foto-grid">
+        <figure><img src="img/1.jpg" alt="De gevel van Frituur De Oostpoort aan de Wandelweg in Kortrijk" loading="lazy" width="1421" height="1066"></figure>
+        <figure><img src="img/3.jpg" alt="Een pak friet met saus op een plateau" loading="lazy" width="1421" height="1066"></figure>
+        <figure><img src="img/4.jpg" alt="Friet en snacks aan tafel bij het raam" loading="lazy" width="800" height="1066"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="openingsuren">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Openingsuren</span>
+        <h2>Wanneer we bakken</h2>
+        <ul class="hours">
+          <li class="closed"><span>maandag</span><span>gesloten</span></li>
+          <li><span>dinsdag</span><span>18.00 – 22.00</span></li>
+          <li><span>woensdag</span><span>11.30 – 13.30 &middot; 17.00 – 22.00</span></li>
+          <li><span>donderdag</span><span>11.30 – 13.30 &middot; 17.00 – 22.00</span></li>
+          <li><span>vrijdag</span><span>11.30 – 13.30 &middot; 17.00 – 23.00</span></li>
+          <li class="closed"><span>zaterdag</span><span>gesloten</span></li>
+          <li><span>zondag</span><span>11.30 – 13.30 &middot; 18.00 – 22.00</span></li>
+        </ul>
+      </div>
+      <div id="contact">
+        <span class="eyebrow">Contact</span>
+        <h2>Bestellen of langskomen</h2>
+        <ul class="c-list">
+          <li>
+            <svg aria-hidden="true"><use href="#pin"/></svg>
+            <div><small>Adres</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Frituur%20De%20Oostpoort&amp;query_place_id=ChIJt13Ixx47w0cRFSkzHBlKhW0" target="_blank" rel="noopener">Wandelweg 2, 8500 Kortrijk</a></div>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#phone"/></svg>
+            <div><small>Telefoon</small><a href="tel:+32477461006">0477 46 10 06</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <div><small>E-mail</small><a href="mailto:cabylieven56@gmail.com">cabylieven56@gmail.com</a></div>
+          </li>
+        </ul>
+        <div class="c-btns">
+          <a class="btn btn-accent" href="tel:+32477461006"><svg aria-hidden="true"><use href="#phone"/></svg>Bel nu</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Frituur%20De%20Oostpoort&amp;query_place_id=ChIJt13Ixx47w0cRFSkzHBlKhW0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Route plannen</a>
         </div>
       </div>
     </div>
@@ -364,23 +347,17 @@ section{padding:64px 0}
 
 </main>
 
-<footer class="site-footer">
+<footer class="site-foot">
   <div class="wrap">
     <span>© 2026 Frituur De Oostpoort</span>
     <span>Voorbeeldwebsite door Victor De Ruyver</span>
   </div>
 </footer>
 
-<div class="mbar">
-  <a class="btn btn-accent" href="tel:+32477461006">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-    Bel nu
-  </a>
-  <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Frituur%20De%20Oostpoort&query_place_id=ChIJt13Ixx47w0cRFSkzHBlKhW0" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-    Route
-  </a>
-</div>
+<nav class="mbar" aria-label="Snel contact">
+  <a class="btn btn-accent" href="tel:+32477461006"><svg aria-hidden="true"><use href="#phone"/></svg>Bel nu</a>
+  <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Frituur%20De%20Oostpoort&amp;query_place_id=ChIJt13Ixx47w0cRFSkzHBlKhW0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Route</a>
+</nav>
 
 <div style="font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:8px 12px 90px;color:#888;background:transparent">Sfeerfoto's: <a href="https://pixabay.com" style="color:inherit">Pixabay</a></div></body>
 </html>
