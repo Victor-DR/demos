@@ -3,414 +3,349 @@
 <head><meta name="robots" content="noindex,nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Van Duysen en zoon | Gevelwerken in Dendermonde</title>
-<meta name="description" content="Van Duysen en zoon, aannemer in Dendermonde: crepi, spuitkurk, arduinen plinten en zinken regenpijpen. 4,5 op Google uit 22 reviews.">
+<title>Van Duysen en zoon | Crepi en spuitkurk in Dendermonde</title>
+<meta name="description" content="Van Duysen en zoon uit Dendermonde: gevels in crepi en spuitkurk, arduin plinten en zinken regenpijpen. 4,5 op Google uit 22 reviews.">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --cream:#F3EEE4;
-  --paper:#FBF8F2;
-  --ink:#1C1A17;
-  --ink-2:#4A453E;
-  --line:#D9D1C3;
-  --accent:#C4533A;
-  --accent-dark:#A9432D;
-  --cut:14px;
-  --pad:64px;
+  --cream:#f3eee4;
+  --paper:#faf7f1;
+  --ink:#1c1b19;
+  --ink-2:#4a4741;
+  --line:#d9d2c4;
+  --accent:#b5472a;
+  --accent-dark:#963820;
+  --accent-soft:#f0a382;
+  --cut:12px;
+  --display:'Big Shoulders Display',Impact,'Arial Narrow',sans-serif;
+  --body:'Space Grotesk',system-ui,-apple-system,Segoe UI,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Space Grotesk",system-ui,sans-serif;color:var(--ink);background:var(--cream);font-size:17px;line-height:1.6;padding-bottom:74px}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit}
-.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
-.cut{clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut))}
-h1,h2,h3{font-family:"Big Shoulders Display",sans-serif;font-weight:800;line-height:.95;letter-spacing:.005em}
-h2{font-size:clamp(2.5rem,7vw,4.4rem);text-transform:uppercase}
-h3{font-size:1.6rem;font-weight:600;text-transform:uppercase;line-height:1.05}
-.label{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
-.label::before{content:"";width:22px;height:2px;background:currentColor}
-section{padding:var(--pad) 0;scroll-margin-top:64px}
-.lead{color:var(--ink-2);max-width:34rem;margin-top:18px}
-
-/* stars */
-.stars{display:inline-flex;gap:3px}
-.stars svg{width:17px;height:17px}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 22px}
+.chamfer{clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut))}
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.95;letter-spacing:.005em}
+h2{font-size:clamp(40px,7vw,64px);text-transform:uppercase}
+.lead{color:var(--ink-2);max-width:520px;margin-top:16px}
+section{padding:64px 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;font-weight:700;font-size:1rem;text-decoration:none;transition:background .2s,color .2s}
-.btn svg{width:20px;height:20px;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--body);font-weight:700;font-size:16px;text-decoration:none;padding:16px 24px;min-height:54px;transition:background .2s,color .2s}
+.btn svg{width:18px;height:18px;flex:none}
 .btn-accent{background:var(--accent);color:#fff}
 .btn-accent:hover{background:var(--accent-dark)}
 .btn-light{background:var(--paper);color:var(--ink)}
 .btn-light:hover{background:#fff}
-.btn-glass{background:rgba(251,248,242,.16);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
-.btn-glass:hover{background:rgba(251,248,242,.26)}
-.btn-dark{background:var(--ink);color:#fff}
+.btn-dark{background:var(--ink);color:var(--paper)}
 .btn-dark:hover{background:#000}
 
 /* header */
-header{position:sticky;top:0;z-index:50;background:var(--ink);color:var(--paper);border-bottom:1px solid #34302a}
-.head{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo-mark{width:38px;height:38px;background:var(--accent);display:grid;place-items:center;font-family:"Big Shoulders Display";font-weight:800;font-size:1.25rem;color:#fff;--cut:9px}
-.logo-name{font-family:"Big Shoulders Display";font-weight:800;font-size:1.3rem;text-transform:uppercase;line-height:1}
-nav{display:none;gap:32px}
-nav a{text-decoration:none;font-size:.85rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
-nav a:hover{opacity:1;color:#F0B9A9}
-.head-call{min-height:40px;padding:0 16px;font-size:.9rem;--cut:9px}
+.top{position:sticky;top:0;z-index:50;background:rgba(243,238,228,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark{--cut:8px;width:40px;height:40px;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:20px}
+.brand b{font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase;line-height:1}
+.nav{display:none;gap:30px;align-items:center}
+.nav a{text-decoration:none;font-size:15px;font-weight:500}
+.nav a:not(.btn):hover{color:var(--accent)}
+.top .btn{--cut:8px;padding:10px 16px;min-height:42px;font-size:15px}
+.top .call-mob{display:inline-flex}
 
 /* hero */
-.hero{position:relative;min-height:70vh;display:flex;align-items:flex-end;color:var(--paper);padding:0;overflow:hidden;background:var(--ink)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 45%;filter:contrast(1.06) saturate(.95)}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,26,23,.15) 0%,rgba(28,26,23,.35) 35%,rgba(28,26,23,.9) 100%),linear-gradient(90deg,rgba(28,26,23,.55),rgba(28,26,23,0) 75%)}
-.hero-in{position:relative;z-index:2;padding:72px 20px 40px;width:100%;max-width:1200px;margin:0 auto}
-.trust{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;background:rgba(28,26,23,.55);font-size:.9rem;color:#EDE6D8;margin-bottom:22px;--cut:8px}
-.trust .stars{color:#F2A285}
-.trust .stars svg{width:15px;height:15px}
+.hero{position:relative;min-height:72vh;min-height:72svh;display:flex;align-items:flex-end;background:var(--ink);color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,.1) 0%,rgba(20,18,16,.5) 40%,rgba(20,18,16,.94) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:120px;padding-bottom:48px}
+.hero h1{font-size:clamp(54px,13vw,116px);text-transform:uppercase;max-width:11ch;color:#fbf6ec}
+.hero h1 em{font-style:normal;color:var(--accent-soft)}
+.hero p.sub{font-size:18px;max-width:420px;margin-top:20px;color:rgba(255,255,255,.9)}
+.hero .ctas{display:grid;gap:12px;margin-top:28px}
+.trust{display:flex;align-items:center;flex-wrap:wrap;gap:10px 12px;margin-top:24px;font-size:15px;color:rgba(255,255,255,.9)}
+.stars{display:inline-flex;gap:2px;color:var(--accent-soft)}
+.stars svg{width:16px;height:16px}
 .trust strong{color:#fff}
-.hero h1{font-size:clamp(2.9rem,12vw,7.6rem);text-transform:uppercase;color:#F7EFDF;max-width:11ch}
-.hero h1 em{font-style:normal;color:#F0A68F}
-.hero-sub{font-size:1.05rem;max-width:30rem;margin:18px 0 26px;color:#EDE6D8}
-.hero-btns{display:grid;gap:10px}
 
 /* reviews */
-.reviews{background:var(--paper)}
-.rev-top{display:grid;gap:28px;margin-bottom:40px}
-.score{display:flex;align-items:center;gap:20px}
-.score-num{font-family:"Big Shoulders Display";font-weight:800;font-size:5.5rem;line-height:.8;color:var(--accent)}
-.score-txt{font-size:.95rem;color:var(--ink-2)}
-.score-txt .stars{color:var(--accent);margin-bottom:6px}
-.score-txt a{font-weight:700;color:var(--ink)}
-.rev-grid{display:grid;gap:18px}
-.quote{background:var(--cream);padding:34px 28px 26px;display:flex;flex-direction:column;position:relative}
-.quote::before{content:"";position:absolute;top:0;left:var(--cut);right:0;height:3px;background:var(--accent)}
-.quote svg.q{width:34px;height:34px;color:var(--accent);margin-bottom:16px}
-.quote p{font-size:1.04rem;flex:1}
-.quote footer{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-weight:700}
-.quote footer small{font-weight:500;font-size:.8rem;color:#857C6E;letter-spacing:.06em}
+.reviews{background:var(--paper);border-bottom:1px solid var(--line)}
+.rev-head{display:grid;gap:20px;margin-bottom:32px}
+.score{display:flex;align-items:center;gap:16px}
+.score .num{font-family:var(--display);font-weight:800;font-size:72px;line-height:.8;color:var(--accent)}
+.score small{display:block;font-size:14px;color:var(--ink-2);margin-top:4px}
+.rev-grid{display:grid;gap:16px}
+.rev-side{display:grid;gap:16px}
+.quote{background:var(--cream);padding:26px 24px;display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--accent)}
+.quote blockquote{font-size:16px;line-height:1.55}
+.quote blockquote::before{content:"\201C";display:block;font-family:var(--display);font-size:52px;line-height:.6;color:var(--accent);margin-bottom:6px}
+.quote figcaption{margin-top:auto;display:flex;align-items:center;justify-content:space-between;font-size:14px;font-weight:700}
+.quote .stars{color:var(--accent)}
+.quote .stars svg{width:14px;height:14px}
+.quote.big{background:var(--ink);color:var(--paper);border-top-color:var(--accent-soft)}
+.quote.big blockquote{font-size:19px}
+.quote.big blockquote::before{color:var(--accent-soft)}
+.quote.big .stars{color:var(--accent-soft)}
 
 /* services */
-.svc-grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
-.svc{background:var(--cream);padding:30px 26px;transition:background .2s}
-.svc:hover{background:var(--paper)}
-.svc .ico{width:64px;height:64px;background:var(--ink);display:grid;place-items:center;margin-bottom:22px;--cut:12px}
-.svc .ico svg{width:34px;height:34px;color:#F0A68F}
-.svc p{color:var(--ink-2);margin-top:8px;font-size:.98rem}
-.svc-num{float:right;font-size:.8rem;letter-spacing:.14em;color:#9C9385;font-weight:500}
+.svc-grid{display:grid;gap:16px;margin-top:40px}
+.svc{--cut:10px;background:var(--paper);padding:28px 24px;display:flex;flex-direction:column;gap:12px;border-bottom:3px solid var(--accent)}
+.svc .ico{--cut:8px;width:60px;height:60px;background:var(--ink);color:var(--accent-soft);display:grid;place-items:center;margin-bottom:6px}
+.svc .ico svg{width:32px;height:32px}
+.svc h3{font-size:30px;text-transform:uppercase}
+.svc p{color:var(--ink-2);font-size:16px}
 
 /* work */
 .work{background:var(--ink);color:var(--paper)}
-.work .lead{color:#C9C1B3}
-.work-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:10px;margin-top:40px}
-.work figure{position:relative;overflow:hidden;background:#2a2622;--cut:12px}
-.work figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.work figure:hover img{transform:scale(1.03)}
-.work figure.wide{grid-column:span 2;grid-row:span 2}
-.work figure.last{grid-column:span 2}
-.work figcaption{position:absolute;left:0;bottom:0;background:var(--paper);color:var(--ink);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 18px 8px 12px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 100%,0 100%);max-width:92%}
+.work .eyebrow{color:var(--accent-soft)}
+.work .lead{color:rgba(250,247,241,.78)}
+.gal{display:grid;gap:16px;margin-top:40px}
+.gal figure{position:relative;overflow:hidden;aspect-ratio:4/3;background:#2a2825}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.03)}
+.gal figcaption{position:absolute;left:0;bottom:0;background:var(--paper);color:var(--ink);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:10px 22px 10px 14px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 100%,0 100%)}
 
-/* process */
-.steps{display:grid;gap:28px;margin-top:44px}
-.step{border-top:2px solid var(--ink);padding-top:22px}
-.step-n{font-family:"Big Shoulders Display";font-weight:800;font-size:3rem;line-height:1;color:var(--accent);margin-bottom:10px}
-.step p{color:var(--ink-2);margin-top:8px}
+/* approach */
+.steps{display:grid;gap:0;margin-top:40px;border-top:2px solid var(--ink)}
+.step{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:24px 0;border-bottom:1px solid var(--line)}
+.step .n{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;color:var(--accent)}
+.step h3{font-size:28px;text-transform:uppercase;margin-bottom:6px}
+.step p{color:var(--ink-2);font-size:16px}
 
 /* contact */
 .contact{background:var(--accent);color:#fff}
-.contact .label{color:#FBE2D8}
-.contact-grid{display:grid;gap:40px}
+.contact .eyebrow{color:#fff}
 .contact h2{color:#fff}
-.contact .lead{color:#FDEDE6}
-.c-btns{display:grid;gap:10px;margin-top:28px}
-.c-list{list-style:none;background:var(--ink);color:var(--paper);padding:10px 28px}
-.c-list li{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid #3a352f}
-.c-list li:last-child{border-bottom:0}
-.c-list svg{width:24px;height:24px;flex:none;color:#F0A68F;margin-top:2px}
-.c-list small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#A79F92}
-.c-list a{text-decoration:none;font-weight:700;font-size:1.08rem;word-break:break-word}
-.c-list a:hover{color:#F0A68F}
+.c-grid{display:grid;gap:36px}
+.c-list{list-style:none;display:grid;gap:1px;background:rgba(255,255,255,.28)}
+.c-list li{background:var(--accent)}
+.c-list a{display:flex;align-items:center;gap:16px;padding:20px 6px;text-decoration:none;font-size:18px;font-weight:500;word-break:break-word}
+.c-list a:hover{background:var(--accent-dark)}
+.c-list svg{width:24px;height:24px;flex:none}
+.c-list span small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;font-weight:500}
+.contact .lead{color:rgba(255,255,255,.92)}
+.contact .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 
 /* footer */
-.site-foot{background:var(--ink);color:#A79F92;font-size:.88rem;padding:26px 0}
-.site-foot .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.foot{background:var(--ink);color:rgba(250,247,241,.72);font-size:14px;padding:28px 0 108px}
+.foot .wrap{display:flex;flex-direction:column;gap:6px}
 
 /* mobile bar */
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px;background:var(--ink);border-top:1px solid #3a352f}
-.mbar .btn{min-height:50px;padding:0 12px;--cut:10px}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;background:var(--ink);padding:10px;gap:10px;box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+.mbar .btn{--cut:8px;min-height:50px;padding:12px}
 
 @media (min-width:560px){
-  .hero-btns,.c-btns{display:flex;flex-wrap:wrap;gap:12px}
+  .hero .ctas{display:flex;flex-wrap:wrap}
 }
-@media (min-width:700px){
-  .rev-grid{grid-template-columns:repeat(3,1fr)}
+@media (min-width:720px){
+  .wrap{padding:0 40px}
   .svc-grid{grid-template-columns:repeat(2,1fr)}
-  .work-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:220px;gap:14px}
-  .work figure.last{grid-column:auto}
-  .steps{grid-template-columns:repeat(3,1fr);gap:32px}
+  .gal{grid-template-columns:1fr 1fr;gap:20px}
+  .steps{grid-template-columns:repeat(3,1fr);gap:32px;border-top:0}
+  .step{grid-template-columns:1fr;gap:10px;border-top:2px solid var(--ink);border-bottom:0;padding-top:24px}
+  .rev-grid{grid-template-columns:1.25fr 1fr}
 }
 @media (min-width:1000px){
-  :root{--pad:96px}
-  body{padding-bottom:0}
-  .wrap{padding:0 40px}
-  .head{height:76px}
-  nav{display:flex}
-  .mbar{display:none}
+  section{padding:96px 0}
+  .reviews{padding:80px 0}
+  .nav{display:flex}
+  .top .call-mob{display:none}
   .hero{min-height:85vh}
-  .hero-in{padding:120px 40px 72px;display:grid;grid-template-columns:1.45fr 1fr;gap:56px;align-items:end}
-  .hero-sub{margin-top:0;font-size:1.12rem}
-  .rev-top{grid-template-columns:1.3fr 1fr;align-items:end}
-  .score{justify-content:flex-end}
-  .svc-grid{grid-template-columns:repeat(3,1fr)}
-  .svc{padding:38px 34px}
-  .work-grid{grid-auto-rows:250px;gap:16px}
-  .contact-grid{grid-template-columns:1.2fr 1fr;align-items:center;gap:72px}
+  .hero::after{background:linear-gradient(90deg,rgba(20,18,16,.9) 0%,rgba(20,18,16,.62) 42%,rgba(20,18,16,.08) 100%),linear-gradient(0deg,rgba(20,18,16,.55),transparent 35%)}
+  .hero img{object-position:center 40%}
+  .hero .wrap{padding-bottom:96px}
+  .rev-head{grid-template-columns:1fr auto;align-items:end}
+  .quote.big{padding:36px 34px}
+  .quote.big blockquote{font-size:21px}
+  .svc-grid{grid-template-columns:repeat(4,1fr)}
+  .c-grid{grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+  .mbar{display:none}
+  .foot{padding:28px 0}
+  .foot .wrap{flex-direction:row;justify-content:space-between}
 }
 </style>
 </head>
 <body><div style="background:#fffbe6;color:#5c4400;font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:7px 12px;border-bottom:1px solid #f0e2a0;position:relative;z-index:9999">Voorbeeld van een nieuwe website voor Van Duysen en zoon, gemaakt door Victor De Ruyver. Dit is nog niet hun officiële website.</div>
 
-<header>
-  <div class="wrap head">
-    <a class="logo" href="#top" aria-label="Van Duysen en zoon, naar boven">
-      <span class="logo-mark cut">VD</span>
-      <span class="logo-name">Van Duysen<br>en zoon</span>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Van Duysen en zoon, naar boven">
+      <span class="mark chamfer">VD</span>
+      <b>Van Duysen<br>en zoon</b>
     </a>
-    <nav aria-label="Hoofdmenu">
+    <nav class="nav" aria-label="Hoofdmenu">
       <a href="#reviews">Reviews</a>
       <a href="#diensten">Diensten</a>
       <a href="#werk">Ons werk</a>
       <a href="#contact">Contact</a>
+      <a class="btn btn-accent chamfer" href="tel:+32477292417"><svg aria-hidden="true"><use href="#phone"/></svg>0477 29 24 17</a>
     </nav>
-    <a class="btn btn-accent head-call cut" href="tel:+32477292417">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-      Bellen
-    </a>
+    <a class="btn btn-accent chamfer call-mob" href="tel:+32477292417">Bel ons</a>
   </div>
 </header>
 
 <main id="top">
   <section class="hero" aria-label="Introductie">
-    <img src="img/s5.jpg" alt="Moderne woning met strak afgewerkte witte gevels">
-    <div class="hero-in">
-      <div>
-        <div class="trust cut">
-          <span class="stars" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><defs><clipPath id="halfA"><rect width="12" height="24"/></clipPath></defs><path opacity=".3" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/><path clip-path="none" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-          </span>
-          <span><strong>4,5 op Google</strong> &middot; 22 reviews</span>
-        </div>
-        <h1>Gevels afgewerkt <em>tot in het detail</em></h1>
+    <img src="img/6.jpg" alt="Woning met witte gevel in crepi bij avondlicht">
+    <div class="wrap">
+      <h1>Gevels in <em>crepi</em> en spuitkurk</h1>
+      <p class="sub">Uit Dendermonde. Eerlijk advies vooraf en duidelijke afspraken.</p>
+      <div class="ctas">
+        <a class="btn btn-accent chamfer" href="tel:+32477292417"><svg aria-hidden="true"><use href="#phone"/></svg>Bel 0477 29 24 17</a>
+        <a class="btn btn-light chamfer" href="mailto:info@vanduysenenzoon.be?subject=Offerteaanvraag%20gevel">Vraag een offerte</a>
       </div>
-      <div>
-        <p class="hero-sub">Crepi, spuitkurk, arduinen plinten en zinkwerk vanuit Dendermonde. Rony denkt mee tot de oplevering.</p>
-        <div class="hero-btns">
-          <a class="btn btn-accent cut" href="tel:+32477292417">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-            0477 29 24 17
-          </a>
-          <a class="btn btn-glass cut" href="#contact">Offerte aanvragen</a>
-        </div>
+      <div class="trust">
+        <span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg style="opacity:.45"><use href="#star"/></svg></span>
+        <span><strong>4,5 op Google</strong> &middot; 22 reviews</span>
       </div>
     </div>
   </section>
 
-  <section class="reviews" id="reviews">
+  <section class="reviews" id="reviews" aria-labelledby="rev-title">
     <div class="wrap">
-      <div class="rev-top">
+      <div class="rev-head">
         <div>
-          <span class="label">Wat klanten zeggen</span>
-          <h2>Een stielman,<br>zeggen ze</h2>
+          <p class="eyebrow">Reviews</p>
+          <h2 id="rev-title">Klanten aan het woord</h2>
         </div>
         <div class="score">
-          <span class="score-num">4,5</span>
-          <div class="score-txt">
-            <div class="stars" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><defs><clipPath id="halfB"><rect width="12" height="24"/></clipPath></defs><path opacity=".3" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/><path clip-path="none" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
-            </div><br>
-            Gemiddelde uit 22 reviews<br>
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Duysen%20en%20zoon&amp;query_place_id=ChIJnd9s0q2Ww0cR826EQysjuzM" target="_blank" rel="noopener">Bekijk op Google</a>
-          </div>
+          <span class="num">4,5</span>
+          <span><strong>van 5 op Google</strong><small>op basis van 22 reviews</small></span>
         </div>
       </div>
       <div class="rev-grid">
-        <blockquote class="quote cut">
-          <svg class="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 18v-5c0-4 2-6.5 6-7.5M14 18v-5c0-4 2-6.5 6-7.5M4 13h5v5H4zM14 13h5v5h-5z"/></svg>
-          <p>Rony is een stielman van de zuiverste soort ! Secuur, eerlijk in zijn communicatie en denkt mee voor oplossingen voor problemen die plots opduiken ( wat je wel vaker hebt bij oudere huizen ). …</p>
-          <footer><span>Geertrui</span><small>Google review</small></footer>
-        </blockquote>
-        <blockquote class="quote cut">
-          <svg class="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 18v-5c0-4 2-6.5 6-7.5M14 18v-5c0-4 2-6.5 6-7.5M4 13h5v5H4zM14 13h5v5h-5z"/></svg>
-          <p>Rony is een zeer vriendelijke, correcte vakman. Mooi resultaat voor een eerlijke prijs. Altijd open en vlotte communicatie. Top advies gekregen bij het begin van ons project. Zeker en vast een aanrader, niet twijfelen.</p>
-          <footer><span>Jonas</span><small>Google review</small></footer>
-        </blockquote>
-        <blockquote class="quote cut">
-          <svg class="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 18v-5c0-4 2-6.5 6-7.5M14 18v-5c0-4 2-6.5 6-7.5M4 13h5v5H4zM14 13h5v5h-5z"/></svg>
-          <p>Erg tevreden. Alles verliep volgens afspraak, werkt netjes en vlot. Heel blij met het eindresultaat</p>
-          <footer><span>Riet</span><small>Google review</small></footer>
-        </blockquote>
+        <figure class="quote big chamfer">
+          <blockquote>Wij zijn enorm tevreden over de werken die uitgevoerd zijn in spuitkurk aan onze gevel. Vanaf het eerste contact tot de oplevering verliep alles professioneel en correct. Een echte stielman die zijn vak door en door kent en met oog voor detail werkt. De gevel ziet er prachtig uit en het resultaat overtreft onze verwachtingen.</blockquote>
+          <figcaption><span>Mia</span><span class="stars" role="img" aria-label="5 sterren"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+        </figure>
+        <div class="rev-side">
+          <figure class="quote chamfer">
+            <blockquote>Rony is een zeer vriendelijke, correcte vakman. Mooi resultaat voor een eerlijke prijs. Altijd open en vlotte communicatie. Top advies gekregen bij het begin van ons project. Zeker en vast een aanrader, niet twijfelen.</blockquote>
+            <figcaption><span>Jonas</span><span class="stars" role="img" aria-label="5 sterren"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+          </figure>
+          <figure class="quote chamfer">
+            <blockquote>Erg tevreden. Alles verliep volgens afspraak, werkt netjes en vlot. Heel blij met het eindresultaat</blockquote>
+            <figcaption><span>Riet</span><span class="stars" role="img" aria-label="5 sterren"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="diensten">
+  <section id="diensten" aria-labelledby="svc-title">
     <div class="wrap">
-      <span class="label">Wat we doen</span>
-      <h2>Alles voor<br>uw gevel</h2>
-      <p class="lead">Van de afwerking tot de plint en de regenpijp: één aanspreekpunt voor uw hele gevel.</p>
+      <p class="eyebrow">Diensten</p>
+      <h2 id="svc-title">Wat wij doen</h2>
+      <p class="lead">De buitenkant van uw woning, van de gevel tot de details die het geheel afmaken.</p>
       <div class="svc-grid">
-        <article class="svc">
-          <span class="svc-num">01</span>
-          <div class="ico cut"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12z"/><path d="M3 13h18M3 17h18M8 9h8"/></svg></div>
-          <h3>Crepi op de gevel</h3>
-          <p>Een egale gevel, netjes aangesloten op ramen en plint.</p>
+        <article class="svc chamfer">
+          <span class="ico chamfer"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20 L19 6 L26 13 L12 27 Z"/><path d="M12 27 L5 27 L5 20"/><path d="M22.5 9.5 L27 5"/></svg></span>
+          <h3>Crepi op gevels</h3>
+          <p>Een strakke, egale gevel in crepi, netjes tot in de hoeken.</p>
         </article>
-        <article class="svc">
-          <span class="svc-num">02</span>
-          <div class="ico cut"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h9v5H4z"/><path d="M13 8.5h3M8 11v3M6 14h4v7H6z"/><path d="M18 6.5v.01M20 8.5v.01M18.5 10.5v.01M21 5v.01M21 11v.01"/></svg></div>
+        <article class="svc chamfer">
+          <span class="ico chamfer"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="12" width="12" height="16" rx="1"/><path d="M8 12 V8 h6 v4"/><path d="M14 8 h4"/><path d="M22 6 h1 M25 9 h1 M22 12 h1 M27 13 h1 M24 16 h1"/></svg></span>
           <h3>Spuitkurk</h3>
-          <p>Een gelijkmatige, warme structuur over de hele gevel.</p>
+          <p>Een gelijkmatige afwerking die uw gevel een nieuwe uitstraling geeft.</p>
         </article>
-        <article class="svc">
-          <span class="svc-num">03</span>
-          <div class="ico cut"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v12M19 3v12"/><path d="M2 15h20v5H2z"/><path d="M9 15v5M15 15v5"/></svg></div>
-          <h3>Arduinen plinten</h3>
-          <p>Een stevige, strak afgelijnde voet onder uw muur.</p>
+        <article class="svc chamfer">
+          <span class="ico chamfer"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6 V20"/><path d="M28 6 V20"/><rect x="4" y="20" width="24" height="7"/><path d="M12 20 V27 M20 20 V27"/></svg></span>
+          <h3>Arduin plinten</h3>
+          <p>Plinten in arduin onderaan de gevel, mooi aansluitend op de afwerking.</p>
         </article>
-        <article class="svc">
-          <span class="svc-num">04</span>
-          <div class="ico cut"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v3H3z"/><path d="M15 7v11a2 2 0 0 0 2 2h3"/><path d="M18 7v10"/><path d="M8 11c0 1.5-1.5 2.5-1.5 4a1.5 1.5 0 0 0 3 0c0-1.5-1.5-2.5-1.5-4z"/></svg></div>
+        <article class="svc chamfer">
+          <span class="ico chamfer"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6 H22 V10 H4"/><path d="M16 10 V24 a3 3 0 0 0 3 3 H26"/><path d="M20 10 V22 a1 1 0 0 0 1 1 H26"/><path d="M14 14 H22 M14 19 H22"/></svg></span>
           <h3>Zinken regenpijpen</h3>
-          <p>Vernieuwd in zink, voor een verzorgd geheel.</p>
-        </article>
-        <article class="svc">
-          <span class="svc-num">05</span>
-          <div class="ico cut"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V10l9-7 9 7v11z"/><path d="M14.5 13.5l-5 5M9.5 13.5l5 5"/></svg></div>
-          <h3>Oudere woningen</h3>
-          <p>Wat onverwacht opduikt, lossen we samen met u op.</p>
-        </article>
-        <article class="svc">
-          <span class="svc-num">06</span>
-          <div class="ico cut"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
-          <h3>Advies bij de start</h3>
-          <p>Eerlijk advies, nog voor er een spaan bovenkomt.</p>
+          <p>Regenpijpen vernieuwen in zink, voor een mooiere afwerking van uw gevel.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="work" id="werk">
+  <section class="work" id="werk" aria-labelledby="work-title">
     <div class="wrap">
-      <span class="label">Ons werk</span>
-      <h2>Gevels in Dendermonde<br>en daarbuiten</h2>
-      <p class="lead">Afgewerkte gevels en werven in uitvoering.</p>
-      <div class="work-grid">
-        <figure class="wide cut">
-          <img src="img/6.jpg" alt="Witte gevel van een woning, volledig afgewerkt" loading="lazy">
-          <figcaption>Witte gevel, afgewerkt</figcaption>
+      <p class="eyebrow">Ons werk</p>
+      <h2 id="work-title">Afgewerkte gevels</h2>
+      <p class="lead">Een greep uit onze eigen realisaties.</p>
+      <div class="gal">
+        <figure class="chamfer">
+          <img src="img/1.jpg" alt="Lichtgrijze gevel met strakke afwerking rond het raam" loading="lazy">
+          <figcaption>Lichtgrijze gevel</figcaption>
         </figure>
-        <figure class="cut">
-          <img src="img/2.jpg" alt="Platen op de gevel van een bijgebouw tijdens de werken" loading="lazy">
-          <figcaption>In uitvoering</figcaption>
-        </figure>
-        <figure class="cut">
-          <img src="img/3.jpg" alt="Gevel met onderlaag, ramen afgeplakt tijdens de werken" loading="lazy">
-          <figcaption>Onderlaag</figcaption>
-        </figure>
-        <figure class="cut">
-          <img src="img/1.jpg" alt="Afgewerkte gevel in lichtgrijze crepi met plint" loading="lazy">
-          <figcaption>Crepi met plint</figcaption>
-        </figure>
-        <figure class="cut">
-          <img src="img/4.jpg" alt="Tweekleurige gevel in grijstinten met plint" loading="lazy">
-          <figcaption>Tweekleurig</figcaption>
-        </figure>
-        <figure class="cut last">
-          <img src="img/8.jpg" alt="Lange lichtgrijze gevelmuur langs een terras" loading="lazy">
-          <figcaption>Lichtgrijze gevelmuur</figcaption>
+        <figure class="chamfer">
+          <img src="img/8.jpg" alt="Lange grijze muur, egaal afgewerkt" loading="lazy">
+          <figcaption>Egaal afgewerkte muur</figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <section id="werkwijze">
+  <section id="aanpak" aria-labelledby="how-title">
     <div class="wrap">
-      <span class="label">Zo werken we</span>
-      <h2>Van eerste contact<br>tot oplevering</h2>
+      <p class="eyebrow">Aanpak</p>
+      <h2 id="how-title">Zo werken wij</h2>
       <div class="steps">
         <div class="step">
-          <div class="step-n">01</div>
-          <h3>We komen kijken</h3>
-          <p>Rony bekijkt uw gevel ter plaatse en zegt eerlijk wat hij zou doen.</p>
+          <span class="n">01</span>
+          <div><h3>Advies bij de start</h3><p>Voor de werken beginnen, bespreken we samen wat uw gevel nodig heeft.</p></div>
         </div>
         <div class="step">
-          <div class="step-n">02</div>
-          <h3>Duidelijke afspraken</h3>
-          <p>U weet vooraf wat er gebeurt en wanneer.</p>
+          <span class="n">02</span>
+          <div><h3>Duidelijke afspraken</h3><p>Open communicatie en afspraken die we nakomen, van eerste contact tot oplevering.</p></div>
         </div>
         <div class="step">
-          <div class="step-n">03</div>
-          <h3>Netjes opgeleverd</h3>
-          <p>Met oog voor elk detail, tot het laatste stuk plint.</p>
+          <span class="n">03</span>
+          <div><h3>Netjes en vlot</h3><p>We werken netjes en met oog voor detail, tot het eindresultaat klopt.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="wrap contact-grid">
+  <section class="contact" id="contact" aria-labelledby="c-title">
+    <div class="wrap c-grid">
       <div>
-        <span class="label">Contact</span>
-        <h2>Toe aan een<br>nieuwe gevel?</h2>
-        <p class="lead">Bel Rony of stuur een mail met een foto van uw gevel.</p>
-        <div class="c-btns">
-          <a class="btn btn-light cut" href="tel:+32477292417">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-            Bel 0477 29 24 17
-          </a>
-          <a class="btn btn-dark cut" href="mailto:info@vanduysenenzoon.be?subject=Offerteaanvraag%20gevel">Offerte per mail</a>
+        <p class="eyebrow">Contact</p>
+        <h2 id="c-title">Uw gevel aanpakken?</h2>
+        <p class="lead">Bel of mail ons met uw vraag. We bespreken graag wat er mogelijk is.</p>
+        <div class="ctas">
+          <a class="btn btn-dark chamfer" href="tel:+32477292417"><svg aria-hidden="true"><use href="#phone"/></svg>Bel 0477 29 24 17</a>
+          <a class="btn btn-light chamfer" href="mailto:info@vanduysenenzoon.be?subject=Offerteaanvraag%20gevel">Vraag een offerte</a>
         </div>
       </div>
-      <ul class="c-list cut">
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-          <div><small>Telefoon</small><a href="tel:+32477292417">+32 477 29 24 17</a></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg>
-          <div><small>E-mail</small><a href="mailto:info@vanduysenenzoon.be">info@vanduysenenzoon.be</a></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          <div><small>Adres</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Duysen%20en%20zoon&amp;query_place_id=ChIJnd9s0q2Ww0cR826EQysjuzM" target="_blank" rel="noopener">Brugstraat 12<br>9200 Dendermonde</a></div>
-        </li>
+      <ul class="c-list">
+        <li><a href="tel:+32477292417">
+          <svg aria-hidden="true"><use href="#phone"/></svg>
+          <span><small>Telefoon</small>0477 29 24 17</span></a></li>
+        <li><a href="mailto:info@vanduysenenzoon.be">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="M2 6l10 7 10-7"/></svg>
+          <span><small>E-mail</small>info@vanduysenenzoon.be</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Duysen%20en%20zoon&amp;query_place_id=ChIJnd9s0q2Ww0cR826EQysjuzM" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span><small>Adres</small>Brugstraat 12, 9200 Dendermonde</span></a></li>
       </ul>
     </div>
   </section>
 </main>
 
-<footer class="site-foot">
+<footer class="foot">
   <div class="wrap">
-    <span>© 2026 Van Duysen en zoon</span>
+    <span>&copy; 2026 Van Duysen en zoon</span>
     <span>Voorbeeldwebsite door Victor De Ruyver</span>
   </div>
 </footer>
 
-<div class="mbar" aria-label="Snel contact">
-  <a class="btn btn-accent cut" href="tel:+32477292417">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-    Bel nu
-  </a>
-  <a class="btn btn-light cut" href="mailto:info@vanduysenenzoon.be?subject=Offerteaanvraag%20gevel">Offerte</a>
-</div>
+<nav class="mbar" aria-label="Snel contact">
+  <a class="btn btn-accent chamfer" href="tel:+32477292417">Bel nu</a>
+  <a class="btn btn-light chamfer" href="mailto:info@vanduysenenzoon.be?subject=Offerteaanvraag%20gevel">Offerte vragen</a>
+</nav>
 
 <div style="font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:8px 12px 90px;color:#888;background:transparent">Sfeerfoto's: <a href="https://pixabay.com" style="color:inherit">Pixabay</a></div></body>
 </html>
