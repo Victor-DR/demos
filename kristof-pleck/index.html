@@ -4,215 +4,201 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kristof Pleck | Tuinaanleg, zwemvijvers en opritten in Oost-Vlaanderen</title>
-<meta name="description" content="Kristof Pleck uit Geraardsbergen: aanleg van tuinen, zwemvijvers, opritten, terrassen en grasvelden, grondwerken, renovatie en tuinonderhoud in Oost-Vlaanderen. Gratis prijsbestek.">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap" rel="stylesheet">
+<meta name="description" content="Tuinaanleg Kristof Pleck uit Geraardsbergen: tuinen, zwemvijvers, opritten, terrassen, grasvelden, grondwerken en tuinonderhoud in heel Oost-Vlaanderen. Gratis en vrijblijvend prijsbestek.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --green:#16261d;
-  --green-2:#22382b;
-  --moss:#5b7a52;
-  --accent:#d39a3a;
-  --cream:#f6f3ec;
-  --sand:#ece6d8;
-  --ink:#1b211d;
-  --muted:#58615a;
-  --line:#ddd6c6;
-  --r:18px;
-  --r-sm:12px;
+  --ink:#121614;--ink-2:#1b211e;--text:#2a302c;--muted:#5b645e;
+  --bg:#f5f2ec;--card:#fff;--line:#e4ded3;
+  --accent:#d4a03c;--accent-dark:#9c711f;
+  --radius:14px;
+  --head:'Plus Jakarta Sans',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px;padding-bottom:96px}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;padding-bottom:calc(80px + env(safe-area-inset-bottom))}
 img{display:block;max-width:100%}
 a{color:inherit}
-.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--moss)}
-.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent)}
-h1,h2,h3{line-height:1.12;letter-spacing:-.02em}
-h2{font-size:clamp(1.85rem,4.4vw,2.8rem);font-weight:800;margin:14px 0}
-h1 em,h2 em{font-family:"Fraunces",serif;font-style:italic;font-weight:500;letter-spacing:-.01em}
-.lead{color:var(--muted);font-size:1.05rem;max-width:520px}
-section{padding:64px 0}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);color:var(--ink);line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800}
+h3{font-size:1.1rem;font-weight:700}
+.eyebrow{display:inline-block;font-family:var(--head);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-dark);margin-bottom:14px}
+.lead{color:var(--muted);font-size:1.05rem;max-width:520px;margin-top:14px}
+section{padding:64px 0;scroll-margin-top:68px}
+.sec-head{margin-bottom:36px}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;text-decoration:none;padding:15px 24px;border-radius:999px;transition:transform .2s,background .2s;white-space:nowrap}
-.btn svg{width:18px;height:18px;flex:none}
-.btn-accent{background:var(--accent);color:#1d1406;box-shadow:0 10px 26px -12px rgba(211,154,58,.8)}
-.btn-accent:hover{background:#e0a94a;transform:translateY(-2px)}
-.btn-light{background:#fff;color:var(--green)}
-.btn-light:hover{transform:translateY(-2px)}
-.btn-ghost{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;font-size:1rem;text-decoration:none;padding:14px 24px;border-radius:10px;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s;min-height:52px}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-accent{background:var(--accent);color:var(--ink)}
+.btn-accent:hover{background:#e3b254}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
 
 /* Header */
-header{position:sticky;top:0;z-index:50;background:rgba(22,38,29,.97);border-bottom:1px solid rgba(255,255,255,.08)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.brand-mark{width:40px;height:40px;border-radius:12px;background:var(--accent);display:grid;place-items:center;flex:none}
-.brand-mark svg{width:24px;height:24px}
-.brand b{display:block;font-size:1.05rem;font-weight:800;line-height:1.1}
-.brand small{display:block;font-size:.72rem;color:rgba(255,255,255,.65);letter-spacing:.06em}
-.menu{display:none;gap:30px;list-style:none}
-.menu a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.95rem;font-weight:500}
-.menu a:hover{color:#fff}
-.nav-cta{display:none}
-.nav .btn{padding:11px 20px;font-size:.92rem}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-family:var(--head);font-weight:800;font-size:1.12rem}
+.logo-mark{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center}
+.logo-mark svg{width:20px;height:20px}
+.logo small{display:block;font-weight:500;font-size:.72rem;color:rgba(255,255,255,.62);letter-spacing:.06em;text-transform:uppercase}
+.nav-links{display:none;gap:30px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.95rem;font-weight:500}
+.nav-links a:hover{color:#fff}
+.nav-call{display:none}
 
 /* Hero */
-.hero{position:relative;min-height:70vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;padding:0;background:var(--green)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 100%;transform:scale(1.16);transform-origin:50% 100%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(12,22,16,.85) 0%,rgba(12,22,16,.55) 42%,rgba(12,22,16,0) 72%)}
-.hero-inner{position:relative;z-index:2;padding-top:140px;padding-bottom:40px}
-.hero .eyebrow{color:#f0dcae}
-.hero h1{font-size:clamp(2.15rem,8.6vw,4.4rem);font-weight:800;max-width:720px;margin-top:14px;text-shadow:0 2px 20px rgba(0,0,0,.3)}
-.hero h1 em{color:#f3c97c}
-.hero .sub{font-size:clamp(1.02rem,2.2vw,1.18rem);max-width:500px;margin:16px 0 26px;color:rgba(255,255,255,.94);text-shadow:0 1px 10px rgba(0,0,0,.3)}
-.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
-.hero-btns .call{display:none}
-.trust{display:inline-flex;align-items:center;gap:12px;margin-top:24px;padding:9px 16px 9px 12px;border-radius:999px;background:rgba(12,22,16,.45);border:1px solid rgba(255,255,255,.22);font-size:.92rem}
-.stars{display:inline-flex;gap:2px;color:#f3c044}
-.stars svg{width:16px;height:16px}
+.hero{position:relative;min-height:70vh;display:flex;align-items:flex-end;padding:0;background:var(--ink);overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% center}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,15,13,.25) 0%,rgba(12,15,13,.7) 45%,rgba(12,15,13,.96) 100%)}
+.hero-inner{position:relative;z-index:2;padding-top:72px;padding-bottom:52px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--ink);border:1px solid rgba(255,255,255,.16);color:#fff;font-size:.82rem;font-weight:600;padding:8px 14px;border-radius:999px;margin-bottom:22px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--accent);display:block}
+.hero h1{color:#fff;font-size:clamp(2.3rem,7vw,4.3rem);font-weight:800;max-width:720px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .sub{color:rgba(255,255,255,.88);font-size:1.08rem;max-width:500px;margin-top:18px}
+.hero-btns{display:flex;flex-direction:column;gap:12px;margin-top:30px}
+.trust{display:flex;align-items:center;flex-wrap:wrap;gap:10px 12px;margin-top:26px;color:rgba(255,255,255,.88);font-size:.95rem}
+.stars{display:flex;gap:2px}
+.stars svg{width:17px;height:17px}
 
-/* Strip */
-.strip{background:var(--green);color:#fff}
-.strip-grid{display:grid;grid-template-columns:1fr}
-.strip-item{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1)}
-.strip-item:last-child{border-bottom:0}
-.strip-item svg{width:26px;height:26px;color:var(--accent);flex:none}
-.strip-item b{display:block;font-size:.98rem;line-height:1.3}
-.strip-item span{font-size:.86rem;color:rgba(255,255,255,.7)}
-
-/* Reviews */
-.proof{padding:56px 0 0}
-.proof-card{display:grid;grid-template-columns:1fr;border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(22,38,29,.45)}
-.score{background:var(--green);color:#fff;padding:30px 28px;display:flex;flex-direction:column;gap:14px}
-.score .big{font-size:3.6rem;font-weight:800;line-height:1;letter-spacing:-.04em}
-.score .big small{font-size:1.2rem;color:rgba(255,255,255,.55);font-weight:600}
-.score .stars svg{width:20px;height:20px}
-.score p{color:rgba(255,255,255,.75);font-size:.94rem}
-.score a{color:#f3c97c;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
-.score a:hover{text-decoration:underline}
-.quote{padding:30px 28px;display:flex;flex-direction:column;justify-content:center;gap:22px}
-.quote .eyebrow{margin-bottom:-6px}
-.quote blockquote{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(1.5rem,3.8vw,2.3rem);line-height:1.25;color:var(--green)}
-.who{display:flex;align-items:center;gap:14px}
-.avatar{width:44px;height:44px;border-radius:50%;background:var(--moss);color:#fff;display:grid;place-items:center;font-weight:800}
-.who b{display:block;line-height:1.2}
-.who span span{font-size:.85rem;color:var(--muted)}
+/* Proof band */
+.proof{padding:0;background:var(--ink)}
+.proof-box{background:#fff;border-radius:var(--radius);display:grid;grid-template-columns:1fr;overflow:hidden;border:1px solid var(--line);transform:translateY(0)}
+.proof-wrap{padding-top:28px;padding-bottom:0;background:linear-gradient(var(--ink) 50%,var(--bg) 50%)}
+.proof-score{background:var(--accent);padding:26px 28px;display:flex;align-items:center;gap:18px}
+.score{font-family:var(--head);font-size:3.2rem;font-weight:800;line-height:1;color:var(--ink)}
+.proof-score p{color:var(--ink);font-size:.92rem;line-height:1.45}
+.proof-score .stars svg{width:15px;height:15px}
+.proof-quote{padding:26px 28px;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.proof-quote blockquote{font-family:var(--head);font-size:clamp(1.25rem,3vw,1.6rem);font-weight:700;color:var(--ink);line-height:1.3}
+.proof-quote figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;color:var(--muted);font-size:.92rem}
+.proof-quote figcaption strong{color:var(--ink);font-family:var(--head)}
+.proof-quote a{color:var(--accent-dark);font-weight:600;text-decoration:none;font-family:var(--head)}
+.proof-quote a:hover{text-decoration:underline}
 
 /* Services */
-.head{display:flex;flex-direction:column;gap:6px;margin-bottom:36px}
-.cards{display:grid;grid-template-columns:1fr;gap:14px}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;gap:18px;align-items:flex-start;transition:transform .25s,box-shadow .25s}
-.card:hover{transform:translateY(-4px);box-shadow:0 22px 40px -26px rgba(22,38,29,.4)}
-.icon{width:58px;height:58px;border-radius:16px;background:var(--green);color:#f3c97c;display:grid;place-items:center;flex:none}
-.icon svg{width:30px;height:30px}
-.card h3{font-size:1.14rem;font-weight:700;margin-bottom:4px}
-.card p{color:var(--muted);font-size:.96rem;line-height:1.5}
+.grid-services{display:grid;grid-template-columns:1fr;gap:16px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;gap:18px;align-items:flex-start;transition:transform .2s,box-shadow .2s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(18,22,20,.08)}
+.icon{width:54px;height:54px;border-radius:12px;background:var(--ink);display:grid;place-items:center;flex:none}
+.icon svg{width:30px;height:30px;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.svc p{color:var(--muted);margin-top:4px;font-size:.96rem}
 
-/* Werkwijze */
-.how{background:var(--sand)}
-.how-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
-.sign img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 40%;border-radius:var(--r);box-shadow:0 30px 60px -32px rgba(22,38,29,.55)}
-.steps{list-style:none;margin-top:26px;display:grid;gap:12px}
-.steps li{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);padding:16px 18px}
-.steps .n{flex:none;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#1d1406;font-weight:800;display:grid;place-items:center}
-.steps b{display:block;font-size:1.02rem}
-.steps span{color:var(--muted);font-size:.94rem}
+/* Approach */
+#werkwijze{background:#ebe6dc}
+.approach-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+.approach-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:var(--ink)}
+.approach-img img{width:100%;height:100%;object-fit:cover}
+.steps{list-style:none;margin-top:28px;display:grid;gap:12px}
+.steps li{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+.num{flex:none;width:38px;height:38px;border-radius:10px;background:var(--accent);color:var(--ink);font-family:var(--head);font-weight:800;display:grid;place-items:center}
+.steps p{color:var(--muted);font-size:.95rem;margin-top:2px}
 
-/* Levering */
-.band{border-radius:24px;background:#fff;border:1px solid var(--line);padding:32px 24px;display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
-.band p{color:var(--muted);max-width:440px;margin-bottom:22px}
-.mats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.mat{background:var(--cream);border:1px solid var(--line);border-radius:var(--r-sm);padding:18px 10px;text-align:center}
-.mat svg{width:46px;height:46px;margin:0 auto 10px;color:var(--moss)}
-.mat b{font-size:.92rem}
+/* Delivery */
+.delivery{background:var(--ink);color:#fff}
+.delivery h2,.delivery h3{color:#fff}
+.delivery .lead{color:rgba(255,255,255,.75)}
+.delivery .eyebrow{color:var(--accent)}
+.del-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+.del-list{display:grid;gap:14px}
+.del{background:var(--ink-2);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);overflow:hidden;display:grid;grid-template-columns:110px 1fr;align-items:stretch}
+.swatch{min-height:96px}
+.sw-bark{background:
+  repeating-linear-gradient(28deg,transparent 0 9px,rgba(0,0,0,.28) 9px 11px),
+  repeating-linear-gradient(-52deg,transparent 0 13px,rgba(255,220,170,.12) 13px 15px),
+  linear-gradient(135deg,#7a4a2a,#5a3420 55%,#8a5631)}
+.sw-grint{background:
+  radial-gradient(circle at 20% 30%,#d9d4c8 0 7px,transparent 8px),
+  radial-gradient(circle at 60% 20%,#a9a397 0 6px,transparent 7px),
+  radial-gradient(circle at 80% 60%,#cfc8b9 0 8px,transparent 9px),
+  radial-gradient(circle at 35% 75%,#8f897e 0 7px,transparent 8px),
+  radial-gradient(circle at 70% 90%,#e3ddd0 0 5px,transparent 6px),
+  radial-gradient(circle at 10% 85%,#bdb6a8 0 6px,transparent 7px);
+  background-color:#6f6a61;background-size:56px 56px}
+.sw-guis{background:
+  radial-gradient(circle,rgba(255,255,255,.35) 1px,transparent 1.5px),
+  radial-gradient(circle,rgba(0,0,0,.25) 1px,transparent 1.5px),
+  linear-gradient(160deg,#b5b0a6,#8f8a80);
+  background-size:7px 7px,11px 11px,100% 100%;background-position:0 0,3px 4px,0 0}
+.del-text{padding:20px 22px;display:flex;flex-direction:column;justify-content:center}
+.del p{color:rgba(255,255,255,.68);font-size:.95rem;margin-top:2px}
+.del-cta{margin-top:28px}
 
-/* Contact */
-.contact{background:var(--green);color:#fff}
+/* Contact + footer */
+.contact{background:var(--ink-2);color:#fff;padding-bottom:0}
 .contact h2{color:#fff}
-.contact .lead{color:rgba(255,255,255,.75);margin-bottom:28px}
-.contact .eyebrow{color:#a9c39f}
-.c-grid{display:grid;grid-template-columns:1fr;gap:32px}
-.c-list{display:grid;gap:12px}
-.c-item{display:flex;gap:16px;align-items:center;padding:16px 18px;border-radius:var(--r-sm);background:var(--green-2);border:1px solid rgba(255,255,255,.08);text-decoration:none;transition:border-color .2s}
-a.c-item:hover{border-color:var(--accent)}
-.c-item svg{width:22px;height:22px;color:var(--accent);flex:none}
-.c-item small{display:block;font-size:.76rem;color:rgba(255,255,255,.6);letter-spacing:.06em;text-transform:uppercase}
-.c-item b{font-size:1.02rem;word-break:break-word}
-.offer{background:var(--cream);color:var(--ink);border-radius:var(--r);padding:30px 24px;align-self:start}
-.offer h3{font-size:1.45rem;font-weight:800;margin-bottom:10px}
-.offer p{color:var(--muted);margin-bottom:22px}
-.offer .btns{display:flex;flex-direction:column;gap:12px}
-.btn-dark{background:var(--green);color:#fff}
-.btn-dark:hover{background:var(--green-2);transform:translateY(-2px)}
-.btn-out{border:1.5px solid var(--green);color:var(--green)}
-.btn-out:hover{background:var(--sand)}
+.contact .eyebrow{color:var(--accent)}
+.contact .lead{color:rgba(255,255,255,.75)}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:34px;padding-bottom:64px}
+.contact-actions{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.contact-list{list-style:none;display:grid;gap:12px}
+.contact-list a,.contact-list div{display:flex;gap:14px;align-items:center;text-decoration:none;padding:16px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);color:#fff;transition:border-color .2s}
+.contact-list a:hover{border-color:var(--accent)}
+.contact-list .icon{width:44px;height:44px;background:rgba(212,160,60,.14)}
+.contact-list .icon svg{width:22px;height:22px}
+.contact-list small{display:block;color:rgba(255,255,255,.6);font-size:.8rem}
+.contact-list strong{font-family:var(--head);font-weight:700;font-size:1.02rem;word-break:break-word}
+footer{border-top:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.6);padding:24px 0;font-size:.9rem;background:var(--ink-2)}
+.foot{display:flex;flex-direction:column;gap:6px}
 
-footer{background:#0f1a14;color:rgba(255,255,255,.62);font-size:.88rem;padding:26px 0}
-footer .wrap{display:flex;flex-direction:column;gap:6px}
+/* Mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);border-top:1px solid rgba(255,255,255,.12);padding:12px 12px calc(12px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:10px;box-shadow:0 -10px 28px rgba(0,0,0,.35)}
+.mbar .btn{padding:12px 10px;font-size:.95rem;min-height:48px}
 
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1.4fr;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(15,26,20,.97);border-top:1px solid rgba(255,255,255,.1)}
-.mbar .btn{padding:13px 10px;font-size:.95rem}
-
-@media (min-width:700px){
-  .wrap{padding:0 32px}
-  .strip-grid{grid-template-columns:repeat(3,1fr)}
-  .strip-item{border-bottom:0;border-right:1px solid rgba(255,255,255,.1);padding:24px 24px 24px 0}
-  .strip-item+.strip-item{padding-left:24px}
-  .strip-item:last-child{border-right:0}
-  .proof-card{grid-template-columns:300px 1fr}
-  .score{padding:40px 36px;justify-content:center}
-  .quote{padding:40px 44px}
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .card{flex-direction:column}
-  .offer .btns{flex-direction:row;flex-wrap:wrap}
-  .band{padding:44px}
+@media (min-width:640px){
+  .hero-btns{flex-direction:row}
+  .grid-services{grid-template-columns:1fr 1fr}
+  .svc{flex-direction:column}
+  .contact-actions{flex-direction:row}
+  .proof-box{grid-template-columns:auto 1fr}
+  .proof-score{flex-direction:column;align-items:flex-start;justify-content:center;gap:10px;padding:30px 34px}
+  .proof-quote{padding:30px 34px}
 }
-@media (min-width:1000px){
-  body{padding-bottom:0}
-  section{padding:96px 0}
-  .proof{padding:72px 0 0}
-  .mbar{display:none}
-  .menu{display:flex}
-  .nav-cta{display:inline-flex}
+@media (min-width:900px){
+  section{padding:96px 0;scroll-margin-top:76px}
+  .wrap{padding:0 32px}
   .nav{height:76px}
+  .nav-links{display:flex}
+  .nav-call{display:inline-flex;padding:11px 18px;min-height:44px;font-size:.95rem}
   .hero{min-height:85vh;align-items:center}
-  .hero img{object-position:center 100%;transform:scale(1.14)}
-  .hero::after{background:
-    linear-gradient(95deg,rgba(12,22,16,.66) 0%,rgba(12,22,16,.38) 38%,rgba(12,22,16,0) 62%),
-    linear-gradient(to top,rgba(12,22,16,.35) 0%,rgba(12,22,16,0) 35%)}
-  .hero-inner{padding-top:72px;padding-bottom:72px}
-  .hero-btns .call{display:inline-flex}
-  .head{flex-direction:row;justify-content:space-between;align-items:flex-end}
-  .cards{grid-template-columns:repeat(3,1fr);gap:20px}
-  .card{padding:30px 28px}
-  .how-grid{grid-template-columns:1fr 1fr;gap:72px}
-  .band{grid-template-columns:1fr 1fr;gap:56px;padding:56px}
-  .c-grid{grid-template-columns:1.1fr 1fr;gap:56px}
-  .offer{padding:40px 36px}
-  footer .wrap{flex-direction:row;justify-content:space-between}
+  .hero::after{background:linear-gradient(90deg,rgba(12,15,13,.95) 0%,rgba(12,15,13,.82) 40%,rgba(12,15,13,.3) 75%,rgba(12,15,13,.12) 100%)}
+  .hero-img{object-position:center}
+  .hero-inner{padding-top:96px;padding-bottom:120px}
+  .proof{padding:0}
+  .proof-wrap{padding-top:0;background:linear-gradient(var(--ink) 50%,var(--bg) 50%)}
+  .proof-box{transform:translateY(0)}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:48px}
+  .sec-head .lead{margin-top:0;max-width:400px}
+  .grid-services{grid-template-columns:repeat(3,1fr);gap:20px}
+  .svc{padding:30px}
+  .approach-grid{grid-template-columns:1fr 1fr;gap:64px}
+  .del-grid{grid-template-columns:1fr 1.1fr;gap:64px}
+  .contact-grid{grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;padding-bottom:96px}
+  .foot{flex-direction:row;justify-content:space-between}
+  .mbar{display:none}
+  body{padding-bottom:0}
 }
 </style>
 </head>
 <body><div style="background:#fffbe6;color:#5c4400;font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:7px 12px;border-bottom:1px solid #f0e2a0;position:relative;z-index:9999">Voorbeeld van een nieuwe website voor Kristof Pleck, gemaakt door Victor De Ruyver. Dit is nog niet hun officiële website.</div>
 
-<header>
+<header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Kristof Pleck, naar boven">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#16261d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-8"/><path d="M12 14c-4 0-6-2.5-6-6a6 6 0 0 1 12 0c0 3.5-2 6-6 6z"/><path d="M5 22h14"/></svg>
-      </span>
-      <span><b>Kristof Pleck</b><small>TUINAANLEG · GERAARDSBERGEN</small></span>
+    <a class="logo" href="#top" aria-label="Kristof Pleck, naar boven">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#121614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11"/><path d="M12 11c-4 0-6-3-6-6 3 0 6 2 6 6z"/><path d="M12 13c0-4 3-7 7-7 0 4-3 7-7 7z"/></svg></span>
+      <span>Kristof Pleck<small>Tuinaanleg</small></span>
     </a>
-    <nav aria-label="Hoofdmenu">
-      <ul class="menu">
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#diensten">Diensten</a></li>
-        <li><a href="#werkwijze">Werkwijze</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <a class="btn btn-accent nav-cta" href="tel:+32477610418">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    <ul class="nav-links">
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#werkwijze">Werkwijze</a></li>
+      <li><a href="#levering">Levering</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-accent nav-call" href="tel:+32477610418">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
       0477 61 04 18
     </a>
   </div>
@@ -221,204 +207,180 @@ footer .wrap{display:flex;flex-direction:column;gap:6px}
 <main id="top">
 
 <section class="hero" aria-label="Introductie">
-  <img src="img/1.jpg" alt="Woning met voortuin, gazon, tegelpad en grindstrook" fetchpriority="high">
+  <img class="hero-img" src="img/s3.jpg" alt="" width="1280" height="720">
   <div class="wrap hero-inner">
-    <span class="eyebrow">Tuinaanleg in Oost-Vlaanderen</span>
-    <h1>Uw tuin, oprit of <em>zwemvijver</em> op maat</h1>
-    <p class="sub">Van grasveld tot terras, aangelegd vanuit Geraardsbergen. Het prijsbestek is gratis en vrijblijvend.</p>
+    <span class="tag"><i></i>Tuinaanleg in heel Oost-Vlaanderen</span>
+    <h1>Tuinen, opritten en <em>zwemvijvers</em> op maat</h1>
+    <p class="sub">Kristof Pleck uit Geraardsbergen legt uw tuin aan en houdt hem bij. Het prijsbestek is gratis en vrijblijvend.</p>
     <div class="hero-btns">
-      <a class="btn btn-accent call" href="tel:+32477610418">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <a class="btn btn-accent" href="tel:+32477610418">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
         Bel 0477 61 04 18
       </a>
-      <a class="btn btn-light" href="#contact">Gratis prijsbestek aanvragen</a>
+      <a class="btn btn-ghost" href="mailto:kristof.pleck@telenet.be?subject=Aanvraag%20gratis%20prijsbestek">Gratis prijsbestek</a>
     </div>
     <div class="trust">
       <span class="stars" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" opacity=".45"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
+        <svg viewBox="0 0 24 24" fill="#d4a03c"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="#d4a03c"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="#d4a03c"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="#d4a03c"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="rgba(255,255,255,.3)"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
       </span>
-      <span><b>4,3</b> op Google · 4 reviews</span>
+      <span><strong>4,3</strong> op Google · 4 reviews</span>
     </div>
   </div>
 </section>
 
-<div class="strip">
-  <div class="wrap strip-grid">
-    <div class="strip-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-      <div><b>Heel Oost-Vlaanderen</b><span>Vanuit Geraardsbergen</span></div>
-    </div>
-    <div class="strip-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13l2 2 4-4"/></svg>
-      <div><b>Gratis prijsbestek</b><span>Vrijblijvend</span></div>
-    </div>
-    <div class="strip-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-      <div><b>Elke dag bereikbaar</b><span>Maandag tot zondag</span></div>
-    </div>
-  </div>
-</div>
-
-<section class="proof" id="reviews" aria-label="Reviews">
-  <div class="wrap">
-    <div class="proof-card">
-      <div class="score">
-        <div class="big">4,3<small> / 5</small></div>
-        <span class="stars" role="img" aria-label="4,3 op 5 sterren">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" opacity=".4"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
-        </span>
-        <p>Gemiddelde van 4 reviews op Google.</p>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Kristof%20Pleck&amp;query_place_id=ChIJ_6WVV4iow0cR7v6wR9sPWGM" target="_blank" rel="noopener">Alle reviews op Google
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+<section class="proof" aria-label="Google-reviews">
+  <div class="proof-wrap">
+    <div class="wrap">
+      <div class="proof-box">
+        <div class="proof-score">
+          <div class="score">4,3</div>
+          <span class="stars" aria-label="4,3 op 5 sterren">
+            <svg viewBox="0 0 24 24" fill="#121614"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#121614"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#121614"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#121614"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+            <svg viewBox="0 0 24 24" fill="rgba(18,22,20,.3)"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.1 5.5 22l1.7-7.4-5.7-5 7.5-.7z"/></svg>
+          </span>
+          <p>Gemiddelde uit<br>4 Google-reviews</p>
+        </div>
+        <figure class="proof-quote">
+          <blockquote>"Zeer vriendelijk &amp; professioneel, nogmaals bedankt!"</blockquote>
+          <figcaption>
+            <span><strong>Guus</strong> · 5 sterren op Google</span>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Kristof%20Pleck&amp;query_place_id=ChIJ_6WVV4iow0cR7v6wR9sPWGM" target="_blank" rel="noopener">Alle reviews lezen &rarr;</a>
+          </figcaption>
+        </figure>
       </div>
-      <figure class="quote">
-        <span class="eyebrow">Wat klanten zeggen</span>
-        <blockquote>“Zeer vriendelijk &amp; professioneel, nogmaals bedankt!”</blockquote>
-        <figcaption class="who">
-          <span class="avatar" aria-hidden="true">G</span>
-          <span><b>Guus</b><span>Review op Google</span></span>
-        </figcaption>
-      </figure>
     </div>
   </div>
 </section>
 
 <section id="diensten">
   <div class="wrap">
-    <div class="head">
+    <div class="sec-head">
       <div>
         <span class="eyebrow">Diensten</span>
-        <h2>Alles voor uw <em>tuin</em>, op één adres</h2>
+        <h2>Aanleg en onderhoud,<br>bij één adres</h2>
       </div>
-      <p class="lead">Kies één onderdeel of laat de volledige aanleg doen.</p>
+      <p class="lead">Kristof doet de aanleg en houdt uw tuin nadien bij. U hebt één vast aanspreekpunt.</p>
     </div>
-    <div class="cards">
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 28V16"/><path d="M16 16c-5 0-8-3-8-8 5 0 8 3 8 8z"/><path d="M16 20c4 0 7-2.5 7-7-4 0-7 2.5-7 7z"/><path d="M5 28h22"/></svg></div>
-        <div><h3>Volledige tuinaanleg</h3><p>Een nieuwe tuin, van ontwerp tot laatste plant.</p></div>
+    <div class="grid-services">
+      <article class="svc">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M16 29V15"/><path d="M16 15c-6 0-9-4-9-9 5 0 9 3 9 9z"/><path d="M16 19c0-6 4-10 10-10 0 6-4 10-10 10z"/><path d="M8 29h16"/></svg></div>
+        <div><h3>Tuinaanleg</h3><p>Een nieuwe tuin of uw bestaande tuin grondig vernieuwd.</p></div>
       </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15c2.2 0 2.2 1.6 4.3 1.6S9.5 15 11.7 15s2.2 1.6 4.3 1.6 2.2-1.6 4.3-1.6 2.2 1.6 4.4 1.6S26.8 15 29 15"/><path d="M3 21c2.2 0 2.2 1.6 4.3 1.6S9.5 21 11.7 21s2.2 1.6 4.3 1.6 2.2-1.6 4.3-1.6 2.2 1.6 4.4 1.6S26.8 21 29 21"/><path d="M9 10c1-2 2.5-3 4-3"/><path d="M19 7c2 0 3.5 1 4.5 3"/></svg></div>
-        <div><h3>Zwemvijvers</h3><p>Aanleg van een zwemvijver in uw tuin.</p></div>
+      <article class="svc">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M3 12c3 0 3-2 6.5-2S13 12 16 12s3-2 6.5-2S26 12 29 12"/><path d="M3 18c3 0 3-2 6.5-2S13 18 16 18s3-2 6.5-2S26 18 29 18"/><path d="M3 24c3 0 3-2 6.5-2S13 24 16 24s3-2 6.5-2S26 24 29 24"/></svg></div>
+        <div><h3>Zwemvijvers</h3><p>Natuurlijk zwemwater, als deel van uw tuin.</p></div>
       </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4L4 28"/><path d="M22 4l6 24"/><path d="M16 6v3"/><path d="M16 13v4"/><path d="M16 21v5"/></svg></div>
-        <div><h3>Opritten</h3><p>Een nieuwe oprit, aangelegd tot aan uw voordeur.</p></div>
+      <article class="svc">
+        <div class="icon"><svg viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="2"/><path d="M4 12h24M4 20h24M12 4v8M20 12v8M12 20v8"/></svg></div>
+        <div><h3>Opritten en terrassen</h3><p>Aanleg van uw oprit en terras, op een goede ondergrond.</p></div>
       </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="11" height="11" rx="1.5"/><rect x="17" y="4" width="11" height="11" rx="1.5"/><rect x="4" y="17" width="11" height="11" rx="1.5"/><rect x="17" y="17" width="11" height="11" rx="1.5"/></svg></div>
-        <div><h3>Terrassen</h3><p>Een terras om buiten te zitten en te eten.</p></div>
+      <article class="svc">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M3 27h26"/><path d="M6 27c0-5 1-9 3-12"/><path d="M11 27c0-6-1-11-3-15"/><path d="M15 27c0-7 1-13 4-17"/><path d="M20 27c0-5-1-9-3-12"/><path d="M24 27c0-5 1-10 4-13"/></svg></div>
+        <div><h3>Grasvelden</h3><p>Aanleg van uw gazon, met jaarlijks onderhoud als u dat wenst.</p></div>
       </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 26h26"/><path d="M6 26c0-4 1-7 2-9"/><path d="M10 26c0-5-1-9-2-12"/><path d="M14 26c0-4 1-8 3-11"/><path d="M19 26c0-5 0-8-2-12"/><path d="M23 26c0-4 1-7 3-9"/></svg></div>
-        <div><h3>Grasvelden en onderhoud</h3><p>Nieuw gazon aanleggen en uw tuin onderhouden.</p></div>
+      <article class="svc">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M6 4v14"/><path d="M3 18h6l-1 9H4z"/><path d="M14 27l4-9h10l-4 9z"/><path d="M16 14h8"/></svg></div>
+        <div><h3>Algemene grondwerken</h3><p>Uitgraven en nivelleren, de basis voor de rest.</p></div>
       </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4v13"/><path d="M15 17h10l-1.5 8a2 2 0 0 1-2 1.7h-3a2 2 0 0 1-2-1.7z"/><path d="M3 28h26"/><path d="M4 28c1.5-4 4-6 7-6"/></svg></div>
-        <div><h3>Grondwerken en renovatie</h3><p>Uw terrein voorbereiden of een bestaande tuin vernieuwen.</p></div>
+      <article class="svc">
+        <div class="icon"><svg viewBox="0 0 32 32"><circle cx="8" cy="24" r="4"/><circle cx="24" cy="24" r="4"/><path d="M11 21L25 4"/><path d="M21 21L7 4"/></svg></div>
+        <div><h3>Tuinonderhoud</h3><p>Van bodemonderzoek tot snoeibeurten.</p></div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="how" id="werkwijze">
-  <div class="wrap how-grid">
-    <div class="sign">
-      <img src="img/2.jpg" alt="Bord van Kristof Pleck met opritten, terrassen, tuinen, renovatie en onderhoud" loading="lazy">
+<section id="werkwijze">
+  <div class="wrap approach-grid">
+    <div class="approach-img">
+      <img src="img/s1.jpg" alt="" loading="lazy" width="1280" height="960">
     </div>
     <div>
       <span class="eyebrow">Werkwijze</span>
-      <h2>In drie stappen naar uw <em>nieuwe tuin</em></h2>
+      <h2>Eerst praten, dan graven</h2>
+      <p class="lead">Kristof gaat voor een band op lange termijn met elke klant. Alles begint met een gesprek.</p>
       <ol class="steps">
-        <li><span class="n">1</span><div><b>U neemt contact op</b><span>Telefonisch of per e-mail, met uw idee.</span></div></li>
-        <li><span class="n">2</span><div><b>Gratis prijsbestek</b><span>U krijgt een vrijblijvende prijsofferte.</span></div></li>
-        <li><span class="n">3</span><div><b>Uitvoering</b><span>Na uw akkoord start het werk.</span></div></li>
+        <li><span class="num">1</span><div><h3>Persoonlijk gesprek</h3><p>U vertelt wat u wilt, samen bekijken we de tuin.</p></div></li>
+        <li><span class="num">2</span><div><h3>Gratis prijsbestek</h3><p>Vrijblijvend, zodat u rustig kunt beslissen.</p></div></li>
+        <li><span class="num">3</span><div><h3>Aanleg en onderhoud</h3><p>Het werk wordt uitgevoerd, nadien volgt desgewenst het onderhoud.</p></div></li>
       </ol>
     </div>
   </div>
 </section>
 
-<section aria-labelledby="lev-title">
-  <div class="wrap">
-    <div class="band">
-      <div>
-        <span class="eyebrow">Levering</span>
-        <h2 id="lev-title">Materiaal aan <em>huis</em> geleverd</h2>
-        <p>Zelf aan de slag in de tuin? Bel voor een levering van:</p>
+<section id="levering" class="delivery">
+  <div class="wrap del-grid">
+    <div>
+      <span class="eyebrow">Levering aan huis</span>
+      <h2>Materiaal tot aan uw deur</h2>
+      <p class="lead">Zelf aan de slag in de tuin? Kristof levert onder meer deze materialen bij u thuis.</p>
+      <div class="del-cta">
         <a class="btn btn-accent" href="tel:+32477610418">Bel voor een levering</a>
       </div>
-      <div class="mats">
-        <div class="mat">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 38h40"/><path d="M7 38c3-10 9-16 17-16s14 6 17 16"/><path d="M15 31l5-2"/><path d="M24 27l6 1"/><path d="M28 33l5-1"/><path d="M17 36l4-1"/></svg>
-          <b>Boomschors</b>
-        </div>
-        <div class="mat">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 38h40"/><path d="M7 38c3-10 9-16 17-16s14 6 17 16"/><circle cx="17" cy="32" r="1.6"/><circle cx="24" cy="27" r="1.6"/><circle cx="30" cy="32" r="1.6"/><circle cx="23" cy="34" r="1.6"/><circle cx="34" cy="35" r="1.6"/><circle cx="13" cy="36" r="1.6"/></svg>
-          <b>Grind</b>
-        </div>
-        <div class="mat">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 38h40"/><path d="M7 38c3-10 9-16 17-16s14 6 17 16"/><path d="M15 33h.01M20 29h.01M26 28h.01M31 31h.01M22 34h.01M28 35h.01M17 37h.01M34 36h.01" stroke-width="2.6"/></svg>
-          <b>Steengruis</b>
-        </div>
+    </div>
+    <div class="del-list">
+      <div class="del">
+        <div class="swatch sw-bark" aria-hidden="true"></div>
+        <div class="del-text"><h3>Boomschors</h3><p>Voor borders en plantvakken.</p></div>
+      </div>
+      <div class="del">
+        <div class="swatch sw-grint" aria-hidden="true"></div>
+        <div class="del-text"><h3>Grint</h3><p>Voor paden en randen.</p></div>
+      </div>
+      <div class="del">
+        <div class="swatch sw-guis" aria-hidden="true"></div>
+        <div class="del-text"><h3>Steenguis</h3><p>Als ondergrond voor klinkers.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="wrap c-grid">
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
     <div>
       <span class="eyebrow">Contact</span>
-      <h2>Vraag uw gratis <em>prijsbestek</em></h2>
-      <p class="lead">Bel of mail met uw plannen. Tuinaanleg in heel Oost-Vlaanderen.</p>
-      <div class="c-list">
-        <a class="c-item" href="tel:+32477610418">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-          <span><small>Telefoon</small><b>0477 61 04 18</b></span>
-        </a>
-        <a class="c-item" href="mailto:kristof.pleck@telenet.be">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
-          <span><small>E-mail</small><b>kristof.pleck@telenet.be</b></span>
-        </a>
-        <a class="c-item" href="https://www.google.com/maps/search/?api=1&amp;query=Kristof%20Pleck&amp;query_place_id=ChIJ_6WVV4iow0cR7v6wR9sPWGM" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <span><small>Adres · route via Google Maps</small><b>Ganzestraat 119, 9506 Geraardsbergen</b></span>
-        </a>
-        <div class="c-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <span><small>Bereikbaar</small><b>Elke dag, maandag tot zondag</b></span>
-        </div>
+      <h2>Vraag uw gratis prijsbestek aan</h2>
+      <p class="lead">Bel of mail Kristof. U krijgt een vrijblijvend voorstel, waar in Oost-Vlaanderen u ook woont.</p>
+      <div class="contact-actions">
+        <a class="btn btn-accent" href="tel:+32477610418">Bel 0477 61 04 18</a>
+        <a class="btn btn-ghost" href="mailto:kristof.pleck@telenet.be?subject=Aanvraag%20gratis%20prijsbestek">Mail uw vraag</a>
       </div>
     </div>
-    <div class="offer">
-      <h3>Plannen voor uw tuin, oprit of terras?</h3>
-      <p>Vermeld kort wat u wilt laten doen en waar u woont. U krijgt een gratis en vrijblijvend prijsbestek.</p>
-      <div class="btns">
-        <a class="btn btn-dark" href="mailto:kristof.pleck@telenet.be?subject=Aanvraag%20prijsbestek">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
-          Mail uw aanvraag
-        </a>
-        <a class="btn btn-out" href="tel:+32477610418">Of bel 0477 61 04 18</a>
-      </div>
-    </div>
+    <ul class="contact-list">
+      <li><a href="tel:+32477610418">
+        <span class="icon"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+        <span><small>Telefoon</small><strong>0477 61 04 18</strong></span></a></li>
+      <li><a href="mailto:kristof.pleck@telenet.be">
+        <span class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></span>
+        <span><small>E-mail</small><strong>kristof.pleck@telenet.be</strong></span></a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kristof%20Pleck&amp;query_place_id=ChIJ_6WVV4iow0cR7v6wR9sPWGM" target="_blank" rel="noopener">
+        <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span><small>Adres · route in Google Maps</small><strong>Ganzestraat 119, 9506 Geraardsbergen</strong></span></a></li>
+      <li><div>
+        <span class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+        <span><small>Werkgebied</small><strong>Heel Oost-Vlaanderen</strong></span></div></li>
+    </ul>
   </div>
+  <footer>
+    <div class="wrap foot">
+      <span>© 2026 Kristof Pleck</span>
+      <span>Voorbeeldwebsite door Victor De Ruyver</span>
+    </div>
+  </footer>
 </section>
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <span>© 2026 Kristof Pleck</span>
-    <span>Voorbeeldwebsite door Victor De Ruyver</span>
-  </div>
-</footer>
-
 <nav class="mbar" aria-label="Snel contact">
-  <a class="btn btn-ghost" href="tel:+32477610418">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-    Bel nu
-  </a>
-  <a class="btn btn-accent" href="#contact">Gratis prijsbestek</a>
+  <a class="btn btn-accent" href="tel:+32477610418">Bel nu</a>
+  <a class="btn btn-light" href="mailto:kristof.pleck@telenet.be?subject=Aanvraag%20gratis%20prijsbestek">Prijsbestek</a>
 </nav>
 
 <div style="font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:8px 12px 90px;color:#888;background:transparent">Sfeerfoto's: <a href="https://pixabay.com" style="color:inherit">Pixabay</a></div></body>
