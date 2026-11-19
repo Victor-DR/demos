@@ -4,156 +4,167 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Van Der Plas &amp; Zoon | Sloopwerken en grondverzet in Dendermonde</title>
-<meta name="description" content="Van Der Plas & Zoon uit Dendermonde: sloopwerken, grondverzet en rioleringswerken. Bel 0476 60 51 38 of vraag een offerte.">
+<meta name="description" content="Van Der Plas & Zoon uit Dendermonde: sloopwerken, grondverzet en rioleringswerken. 5,0 op Google. Bel +32 476 60 51 38.">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#17150f;
-  --ink-2:#26231b;
-  --paper:#f4f0e8;
-  --card:#ffffff;
-  --muted:#635d52;
-  --line:#e2dccf;
-  --accent:#e3a52b;
-  --accent-dark:#a8740c;
+  --ink:#16181b;
+  --ink-2:#212429;
+  --text:#2b2f35;
+  --muted:#5b6169;
+  --line:#e4e1db;
+  --bg:#f5f3ef;
+  --white:#ffffff;
+  --accent:#e8731f;
+  --accent-dark:#b9560f;
   --r:14px;
   --pad:64px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--bg);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:84px}
 img{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3{font-family:Archivo,sans-serif;line-height:1.08;letter-spacing:-.02em}
-.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
-section{padding:var(--pad) 0}
+h1,h2,h3{font-family:Archivo,sans-serif;color:var(--ink);line-height:1.08;letter-spacing:-.015em}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:var(--pad) 0;scroll-margin-top:70px}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-dark);margin-bottom:14px}
-.eyebrow::before{content:"";width:26px;height:2px;background:currentColor}
-.h2{font-size:clamp(1.9rem,4.4vw,2.8rem);font-weight:800;max-width:18ch}
-.lead{color:var(--muted);max-width:40ch;font-size:1.05rem}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--accent)}
+.sec-head{max-width:600px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(1.9rem,4.4vw,2.8rem);font-weight:800}
+.sec-head p{margin-top:12px;color:var(--muted);font-size:1.05rem}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;transition:transform .15s,background .15s,border-color .15s,color .15s;white-space:nowrap}
-.btn svg{width:18px;height:18px;flex:none}
-.btn-accent{background:var(--accent);color:var(--ink)}
-.btn-accent:hover{background:#f0b63e;transform:translateY(-1px)}
-.btn-ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06)}
-.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.14)}
-.btn-dark{background:var(--ink);color:#fff}
-.btn-dark:hover{background:#000}
-.btn-line{border:1.5px solid var(--ink);color:var(--ink)}
-.btn-line:hover{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:1rem;text-decoration:none;padding:15px 24px;border-radius:var(--r);transition:background .2s,border-color .2s;min-height:52px;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--accent-dark)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+.btn-ghost:hover{background:rgba(255,255,255,.2);border-color:#fff}
 
 /* header */
 .top{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px solid rgba(255,255,255,.08)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;min-width:0}
-.logo-mark{width:38px;height:38px;border-radius:10px;background:var(--accent);display:grid;place-items:center;flex:none}
-.logo-mark svg{width:22px;height:22px}
-.logo b{font-family:Archivo,sans-serif;font-size:1.05rem;font-weight:800;letter-spacing:-.01em;display:block;line-height:1.15;white-space:nowrap}
-.logo small{display:block;font-size:.7rem;color:rgba(255,255,255,.62);letter-spacing:.08em;text-transform:uppercase}
-.nav{display:none;gap:30px}
-.nav a{color:rgba(255,255,255,.8);text-decoration:none;font-size:.95rem;font-weight:500}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.logo-mark{width:40px;height:40px;border-radius:10px;background:var(--accent);display:grid;place-items:center;flex:none}
+.logo-mark svg{width:24px;height:24px}
+.logo b{font-family:Archivo,sans-serif;font-weight:800;font-size:1.08rem;display:block;line-height:1.1}
+.logo small{display:block;font-size:.7rem;color:#a9adb3;letter-spacing:.1em;text-transform:uppercase}
+.nav{display:none}
+.nav a{color:#d6d8db;text-decoration:none;font-size:.95rem;font-weight:500;padding:8px 2px}
 .nav a:hover{color:#fff}
-.top .btn{padding:10px 16px;font-size:.92rem}
-.top .num{display:none}
+.top-call{display:none}
 
 /* hero */
-.hero{position:relative;min-height:70vh;display:flex;align-items:flex-end;padding:0;background:var(--ink);color:#fff;overflow:hidden}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,15,10,.55) 0%,rgba(17,15,10,.72) 38%,rgba(17,15,10,.96) 100%)}
-.hero-in{position:relative;z-index:2;padding:88px 0 48px}
-.hero h1{font-size:clamp(2.5rem,9vw,5rem);font-weight:800;max-width:12ch;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.4)}
-.hero p.sub{margin-top:18px;font-size:clamp(1.05rem,2.4vw,1.22rem);max-width:36ch;color:#fff}
-.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.trust{display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding:9px 16px 9px 12px;border-radius:999px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.2);font-size:.92rem}
-.stars{display:flex;gap:2px;color:var(--accent)}
-.stars svg{width:16px;height:16px}
-.trust strong{font-weight:600}
-
-/* reviews */
-.rev-grid{display:grid;gap:16px;margin-top:32px}
-.quote{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column;gap:12px}
-.quote svg.q{width:24px;height:24px;color:var(--accent)}
-.quote blockquote{font-size:1.04rem;line-height:1.55}
-.quote.big blockquote{font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(1.2rem,2.4vw,1.5rem);line-height:1.38;letter-spacing:-.01em}
-.quote footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid var(--line);font-weight:600;font-size:.94rem}
-.quote footer .stars svg{width:14px;height:14px}
-.side{display:grid;gap:16px}
-.score{background:var(--ink);color:#fff;border-radius:var(--r);padding:22px;display:flex;align-items:center;gap:18px}
-.score .num{font-family:Archivo,sans-serif;font-size:3rem;font-weight:800;line-height:1;color:var(--accent)}
-.score p{color:rgba(255,255,255,.78);font-size:.9rem;margin-top:4px}
+.hero{position:relative;min-height:72vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ink);padding:0}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,18,20,.35) 0%,rgba(16,18,20,.45) 40%,rgba(16,18,20,.9) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:44px}
+.hero-tag{display:inline-block;background:rgba(16,18,20,.7);border:1px solid rgba(255,255,255,.22);padding:6px 14px;border-radius:999px;font-size:.82rem;font-weight:500;margin-bottom:18px}
+.hero h1{color:#fff;font-size:clamp(2.2rem,7.5vw,4.4rem);font-weight:800;max-width:760px;text-shadow:0 2px 24px rgba(0,0,0,.45)}
+.hero h1 span{color:var(--accent);display:block}
+.hero p.sub{font-size:clamp(1.05rem,2vw,1.22rem);max-width:520px;margin-top:16px;color:#eef0f2;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero-ctas{display:none;gap:12px;margin-top:30px}
+.trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-top:24px;font-size:.95rem;color:#eef0f2}
+.stars{display:flex;gap:3px}
+.stars svg{width:18px;height:18px;fill:#f5b324}
+.trust b{color:#fff}
 
 /* services */
-.services{background:#fff}
-.svc-head{display:flex;flex-direction:column;gap:12px}
-.svc-grid{display:grid;gap:16px;margin-top:36px}
-.svc{border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;background:var(--paper);transition:transform .2s,border-color .2s}
-.svc:hover{transform:translateY(-3px);border-color:var(--accent)}
-.svc .ic{width:56px;height:56px;border-radius:12px;background:var(--ink);display:grid;place-items:center;margin-bottom:20px}
-.svc .ic svg{width:30px;height:30px;color:var(--accent)}
-.svc h3{font-size:1.3rem;font-weight:700}
-.svc p{color:var(--muted);margin-top:8px}
+.services{background:var(--white)}
+.cards{display:grid;grid-template-columns:1fr;gap:16px}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;background:var(--bg);display:flex;flex-direction:column;transition:border-color .2s}
+.card:hover{border-color:var(--accent)}
+.icon{width:56px;height:56px;border-radius:12px;background:var(--ink);display:grid;place-items:center;margin-bottom:22px}
+.icon svg{width:30px;height:30px;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.3rem;font-weight:700;margin-bottom:8px}
+.card p{color:var(--muted);font-size:1rem}
+.card .num{font-family:Archivo,sans-serif;font-weight:700;font-size:.85rem;color:var(--accent-dark);margin-top:auto;padding-top:22px;letter-spacing:.08em}
 
-/* cta band */
-.band{background:var(--ink);color:#fff}
-.band .wrap{display:grid;gap:26px;align-items:center}
-.band h2{font-size:clamp(1.8rem,4.2vw,2.6rem);font-weight:800;max-width:18ch}
-.band p{color:rgba(255,255,255,.78);margin-top:12px;max-width:44ch}
-.band .ctas{display:flex;flex-wrap:wrap;gap:12px}
+/* work */
+.work{background:var(--bg)}
+.gallery{display:grid;grid-template-columns:1fr;gap:16px}
+.shot{position:relative;border-radius:var(--r);overflow:hidden;background:var(--ink)}
+.shot img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
+.shot.tall img{aspect-ratio:4/5;object-position:50% 35%}
+.shot figcaption{position:absolute;left:14px;bottom:14px;background:rgba(22,24,27,.88);color:#fff;font-size:.86rem;font-weight:500;padding:7px 13px;border-radius:999px}
+
+/* reviews */
+.reviews{background:var(--ink);color:#e7e9ec}
+.reviews .sec-head h2{color:#fff}
+.reviews .eyebrow{color:var(--accent)}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.score{border-radius:var(--r);background:var(--accent);color:#fff;padding:32px 28px;display:flex;flex-direction:column;gap:18px}
+.score .big{font-family:Archivo,sans-serif;font-size:4.4rem;font-weight:800;line-height:1;color:#fff}
+.score .stars svg{fill:#fff;width:22px;height:22px}
+.score p{font-size:1rem;color:#fff}
+.score a{display:inline-block;margin-top:6px;color:#fff;font-weight:600;text-underline-offset:4px}
+.quotes{display:grid;gap:16px}
+.quote{border-radius:var(--r);background:var(--ink-2);border:1px solid rgba(255,255,255,.08);padding:28px}
+.quote .q-mark{width:30px;height:30px;stroke:var(--accent);fill:none;stroke-width:1.8}
+.quote blockquote{font-size:1.2rem;line-height:1.5;color:#fff;margin-top:12px}
+.quote footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);font-size:.92rem;color:#a9adb3}
+.quote footer b{color:#fff;font-weight:600}
+.quote .stars svg{width:15px;height:15px}
 
 /* contact */
-.c-grid{display:grid;gap:16px;margin-top:32px}
-.c-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 24px}
-.c-card h3{font-size:1.15rem;font-weight:700;margin-bottom:10px}
-.c-list{list-style:none;display:grid;gap:16px}
-.c-list li{display:flex;gap:14px;align-items:flex-start}
-.c-list .ci{width:42px;height:42px;border-radius:10px;background:var(--paper);display:grid;place-items:center;flex:none}
-.c-list .ci svg{width:20px;height:20px;color:var(--accent-dark)}
-.c-list small{display:block;font-size:.76rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
-.c-list a,.c-list span.v{font-weight:600;text-decoration:none;font-size:1.04rem;word-break:break-word}
+.contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.c-main{border-radius:var(--r);background:var(--bg);border:1px solid var(--line);padding:32px 24px}
+.c-main h2{font-size:clamp(1.9rem,4.4vw,2.6rem);font-weight:800}
+.c-main > p{margin-top:12px;color:var(--muted)}
+.c-list{list-style:none;margin-top:28px;display:grid;gap:16px}
+.c-list a{display:flex;align-items:center;gap:14px;text-decoration:none;font-weight:600;color:var(--ink);word-break:break-word}
 .c-list a:hover{color:var(--accent-dark)}
-.hours{list-style:none}
-.hours li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.98rem}
-.hours li:last-child{border-bottom:0}
-.hours span:last-child{font-weight:600}
-.hours .closed{color:var(--muted);font-weight:500!important}
-.c-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.c-actions .btn{padding:12px 20px;font-size:.95rem}
+.c-ico{width:46px;height:46px;border-radius:12px;background:var(--ink);display:grid;place-items:center;flex:none}
+.c-ico svg{width:22px;height:22px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.c-list small{display:block;font-weight:400;color:var(--muted);font-size:.84rem}
+.c-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.hours{border-radius:var(--r);background:var(--ink);color:#e7e9ec;padding:32px 24px}
+.hours h3{color:#fff;font-size:1.35rem;margin-bottom:18px}
+.hours table{width:100%;border-collapse:collapse;font-size:.98rem}
+.hours td{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.hours td:last-child{text-align:right;color:#fff;font-weight:500}
+.hours tr:last-child td{border-bottom:0}
+.hours td.closed{color:#a9adb3}
 
 /* footer */
-.foot{background:var(--ink);color:rgba(255,255,255,.66);padding:26px 0;font-size:.88rem}
-.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.foot{background:var(--ink);color:#a9adb3;font-size:.88rem;padding:28px 0}
+.foot .wrap{display:flex;flex-direction:column;gap:6px}
 
-/* mobile bar */
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#17150f;border-top:1px solid #3a352a;box-shadow:0 -8px 24px rgba(0,0,0,.25);padding:10px 12px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.mbar .btn{padding:13px 10px;font-size:.98rem}
-.mbar .btn-ghost{background:#26231b;border-color:rgba(255,255,255,.4)}
+/* mobile action bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1.4fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(22,24,27,.97);border-top:1px solid rgba(255,255,255,.1)}
+.callbar .btn{padding:14px 12px}
 
-@media (max-width:380px){
-  .logo small{display:none}
-  .logo b{font-size:.98rem}
-}
 @media (min-width:640px){
-  .svc-grid{grid-template-columns:repeat(3,1fr)}
-  .c-grid{grid-template-columns:1fr 1fr}
-  .rev-grid{grid-template-columns:1.5fr 1fr}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .gallery{grid-template-columns:1fr 1fr}
+  .shot.tall{grid-row:span 2}
+  .shot.tall img{aspect-ratio:auto;height:100%}
 }
-@media (min-width:900px){
+@media (min-width:960px){
   :root{--pad:96px}
   body{padding-bottom:0}
-  .nav{display:flex}
-  .top .num{display:inline}
-  .top .lbl{display:none}
-  .hero{min-height:85vh;align-items:center}
-  .hero::after{background:linear-gradient(90deg,rgba(17,15,10,.94) 0%,rgba(17,15,10,.8) 40%,rgba(17,15,10,.25) 100%),linear-gradient(0deg,rgba(17,15,10,.55),transparent 45%)}
-  .hero-in{padding:110px 0}
-  .quote.big{padding:34px 34px 24px}
-  .svc-head{flex-direction:row;justify-content:space-between;align-items:flex-end}
-  .band .wrap{grid-template-columns:1.3fr 1fr}
-  .band .ctas{justify-content:flex-end}
-  .c-grid{grid-template-columns:1.1fr 1fr}
-  .mbar{display:none}
+  .callbar{display:none}
+  .wrap{padding:0 32px}
+  .top .wrap{height:76px}
+  .nav{display:flex;gap:32px}
+  .top-call{display:inline-flex;padding:11px 18px;min-height:0;font-size:.95rem}
+  .hero{min-height:86vh}
+  .hero::after{background:linear-gradient(90deg,rgba(16,18,20,.88) 0%,rgba(16,18,20,.6) 42%,rgba(16,18,20,.1) 75%),linear-gradient(180deg,rgba(16,18,20,0) 55%,rgba(16,18,20,.6) 100%)}
+  .hero .wrap{padding-bottom:84px}
+  .hero-ctas{display:flex}
+  .gallery{grid-template-columns:1fr 1.5fr}
+  .shot img{aspect-ratio:16/10}
+  .rev-grid{grid-template-columns:.75fr 1.6fr}
+  .score{padding:40px 36px;justify-content:space-between}
+  .quotes{grid-template-columns:1.25fr 1fr;align-items:start}
+  .quote{padding:34px}
+  .contact-grid{grid-template-columns:1.3fr 1fr}
+  .c-main,.hours{padding:44px 40px}
+  .foot .wrap{flex-direction:row;justify-content:space-between}
 }
 </style>
 </head>
@@ -163,178 +174,213 @@ section{padding:var(--pad) 0}
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Van Der Plas &amp; Zoon, naar boven">
       <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#17150f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M5 20v-5h6v5"/><path d="M8 15l4-7 6 3"/><path d="M18 11l1.5 4h-4z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h12"/><path d="M3 20v-4h8l1.5 4"/><path d="M10 16l5-9 5 3"/><path d="M20 10v4l-3 1"/></svg>
       </span>
       <span><b>Van Der Plas &amp; Zoon</b><small>Sloop &amp; grondverzet</small></span>
     </a>
     <nav class="nav" aria-label="Hoofdmenu">
-      <a href="#reviews">Reviews</a>
       <a href="#diensten">Diensten</a>
+      <a href="#werk">Ons werk</a>
+      <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-accent" href="tel:+32476605138">
+    <a class="btn btn-accent top-call" href="tel:+32476605138">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-      <span class="lbl">Bellen</span><span class="num">0476 60 51 38</span>
+      0476 60 51 38
     </a>
   </div>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <img src="img/s5.jpg" alt="Moderne woning met strakke gevel" fetchpriority="high">
-    <div class="wrap hero-in">
-      <h1>Slopen, uitgraven en bouwklaar maken.</h1>
-      <p class="sub">Sloopwerken, grondverzet en riolering vanuit Dendermonde. Eén telefoontje, en we bekijken samen wat er moet gebeuren.</p>
-      <div class="ctas">
-        <a class="btn btn-accent" href="tel:+32476605138">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-          Bel 0476 60 51 38
-        </a>
-        <a class="btn btn-ghost" href="mailto:info@vanderplasenzoon.be?subject=Offerteaanvraag">Vraag een offerte</a>
-      </div>
-      <div class="trust">
-        <span class="stars" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
-        </span>
-        <span><strong>5,0 op Google</strong> &middot; 3 reviews</span>
-      </div>
-    </div>
-  </section>
 
-  <section class="reviews" id="reviews">
-    <div class="wrap">
-      <span class="eyebrow">Wat klanten zeggen</span>
-      <h2 class="h2">Snel, correct en netjes afgewerkt.</h2>
-      <div class="rev-grid">
-        <figure class="quote big">
-          <svg class="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18v-5a6 6 0 0 1 6-6"/><path d="M4 13h5v5H4z"/><path d="M14 18v-5a6 6 0 0 1 6-6"/><path d="M14 13h5v5h-5z"/></svg>
-          <blockquote>Zeer tevreden, heel onze riolering moest vernieuwd worden, en dat hebben ze vakkundig en snel gedaan! Vriendelijk en correct.</blockquote>
-          <footer><span>Lindsay</span><span class="stars" aria-label="5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg></span></footer>
-        </figure>
-        <div class="side">
-          <div class="score">
-            <div class="num">5,0</div>
-            <div>
-              <span class="stars" aria-label="5 op 5 sterren">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
-              </span>
-              <p>Gemiddelde op Google, 3 reviews</p>
-            </div>
-          </div>
-          <figure class="quote">
-            <svg class="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18v-5a6 6 0 0 1 6-6"/><path d="M4 13h5v5H4z"/><path d="M14 18v-5a6 6 0 0 1 6-6"/><path d="M14 13h5v5h-5z"/></svg>
-            <blockquote>Snel, professioneel en efficiënt !</blockquote>
-            <footer><span>Luc</span><span class="stars" aria-label="5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg></span></footer>
-          </figure>
+<section class="hero" aria-label="Introductie">
+  <img src="img/2.jpg" alt="Twee graafmachines van Van Der Plas &amp; Zoon op een werf, met een tractor op de achtergrond">
+  <div class="wrap">
+    <span class="hero-tag">Sloopaannemer in Dendermonde</span>
+    <h1>Sloop- en graafwerk, <span>zonder omwegen</span></h1>
+    <p class="sub">Sloopwerken, grondverzet en riolering. Vertel ons wat er moet gebeuren, wij komen met de juiste machine.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-accent" href="tel:+32476605138">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Bel 0476 60 51 38
+      </a>
+      <a class="btn btn-ghost" href="mailto:info@vanderplasenzoon.be?subject=Offerteaanvraag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        Offerte vragen
+      </a>
+    </div>
+    <div class="trust">
+      <span class="stars" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+      </span>
+      <span><b>5,0 op Google</b> · 3 reviews</span>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="diensten">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Diensten</span>
+      <h2>Waarvoor u ons belt</h2>
+      <p>Van afbraak tot een nieuwe riolering: één aanspreekpunt voor het zware werk.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M4 27h24"/><path d="M7 27V15h8v12"/><path d="M15 19h6v8"/><path d="M9 15v-3h4v3"/><path d="M20 6l6 6"/><path d="M23 9l-4 4"/></svg>
         </div>
-      </div>
+        <h3>Sloopwerken</h3>
+        <p>Afbreken wat weg moet, met machines die bij de klus passen.</p>
+        <span class="num">01</span>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M3 24h15"/><path d="M5 24v-5h9l3 5"/><path d="M14 19l5-10 6 4-3 5h-4"/><path d="M22 18l4 4h-6"/><circle cx="7" cy="27" r="1.5"/><circle cx="15" cy="27" r="1.5"/></svg>
+        </div>
+        <h3>Grondverzet</h3>
+        <p>Graafwerk en afvoer van grond, met kraan en kipwagen.</p>
+        <span class="num">02</span>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M3 10h10a4 4 0 0 1 4 4v4a4 4 0 0 0 4 4h8"/><path d="M3 15h8a2 2 0 0 1 2 2v2a8 8 0 0 0 8 8h8"/><path d="M6 8v9"/><path d="M26 20v9"/></svg>
+        </div>
+        <h3>Rioleringswerken</h3>
+        <p>Oude leidingen eruit, nieuwe erin. Klanten noemen het snel en correct.</p>
+        <span class="num">03</span>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="services" id="diensten">
-    <div class="wrap">
-      <div class="svc-head">
+<section class="work" id="werk">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Ons werk</span>
+      <h2>Machines aan het werk</h2>
+      <p>Onze eigen machines, op de werf en onderweg.</p>
+    </div>
+    <div class="gallery">
+      <figure class="shot tall">
+        <img src="img/3.jpg" alt="Graafmachine die een boom verwijdert naast een bedrijfsgebouw" loading="lazy">
+        <figcaption>Graafmachine op de werf</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/1.jpg" alt="Graafmachine geladen op een dieplader, met tractor ernaast" loading="lazy">
+        <figcaption>Kraan op de dieplader</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/4.jpg" alt="Tractor met rode kipwagen vol grond op een weide" loading="lazy">
+        <figcaption>Grond afvoeren</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>Wat klanten zeggen</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="score">
         <div>
-          <span class="eyebrow">Diensten</span>
-          <h2 class="h2">Wat we voor u doen</h2>
+          <div class="big">5,0</div>
+          <div class="stars" role="img" aria-label="5 op 5 sterren" style="margin-top:14px">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+          </div>
         </div>
-        <p class="lead">Van afbreken tot de grond klaarleggen voor wat komt.</p>
+        <p>Gemiddelde score op Google, op basis van 3 reviews.<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Der%20Plas%20%26%20Zoon&amp;query_place_id=ChIJRyNJvTmUw0cRzJXXFpugaNM" target="_blank" rel="noopener">Bekijk op Google</a></p>
       </div>
-      <div class="svc-grid">
-        <article class="svc">
-          <div class="ic" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 28h24"/><path d="M7 28V14h10v14"/><path d="M7 19h10"/><path d="M12 14v14"/><path d="M21 7l6 4-3 5"/><path d="M21 7l-3 5 6 4"/><path d="M19 20l2 2M23 19l1 3"/></svg>
-          </div>
-          <h3>Sloopwerken</h3>
-          <p>Afbreken wat weg moet, zodat er ruimte komt voor iets nieuws.</p>
-        </article>
-        <article class="svc">
-          <div class="ic" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 26c4-3 8-3 12 0s8 3 14 0"/><path d="M6 21h11l2-5h-9z"/><path d="M14 16l5-9 7 4"/><path d="M26 11v5l-4 1"/></svg>
-          </div>
-          <h3>Grondverzet</h3>
-          <p>Graven, egaliseren en grond verplaatsen waar uw project het vraagt.</p>
-        </article>
-        <article class="svc">
-          <div class="ic" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h10v6h14"/><path d="M4 16h4v6h20"/><path d="M4 7v12"/><path d="M28 13v12"/><path d="M14 22v3M20 22v3"/></svg>
-          </div>
-          <h3>Riolering vernieuwen</h3>
-          <p>Oude leidingen eruit, nieuwe erin, en alles weer netjes dichtgelegd.</p>
-        </article>
+      <div class="quotes">
+        <figure class="quote">
+          <svg class="q-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22c0-6 2-10 7-12"/><path d="M6 22a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/><path d="M18 22c0-6 2-10 7-12"/><path d="M18 22a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/></svg>
+          <blockquote>"Zeer tevreden, heel onze riolering moest vernieuwd worden, en dat hebben ze vakkundig en snel gedaan! Vriendelijk en correct."</blockquote>
+          <footer><b>Lindsay</b>
+            <span class="stars" role="img" aria-label="5 sterren">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+            </span>
+          </footer>
+        </figure>
+        <figure class="quote">
+          <svg class="q-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22c0-6 2-10 7-12"/><path d="M6 22a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/><path d="M18 22c0-6 2-10 7-12"/><path d="M18 22a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/></svg>
+          <blockquote>"Snel, professioneel en efficiënt !"</blockquote>
+          <footer><b>Luc</b>
+            <span class="stars" role="img" aria-label="5 sterren">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .7-5.3 4.8 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+            </span>
+          </footer>
+        </figure>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="band">
-    <div class="wrap">
-      <div>
-        <h2>Plannen om te slopen of te graven?</h2>
-        <p>Vertel kort wat er moet gebeuren. We denken mee en bezorgen u een duidelijke offerte.</p>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="c-main">
+        <span class="eyebrow">Contact</span>
+        <h2>Iets af te breken of uit te graven?</h2>
+        <p>Bel of mail met uw vraag. We bekijken samen wat er moet gebeuren.</p>
+        <ul class="c-list">
+          <li><a href="tel:+32476605138"><span class="c-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Telefoon</small>+32 476 60 51 38</span></a></li>
+          <li><a href="mailto:info@vanderplasenzoon.be"><span class="c-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small>E-mail</small>info@vanderplasenzoon.be</span></a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Der%20Plas%20%26%20Zoon&amp;query_place_id=ChIJRyNJvTmUw0cRzJXXFpugaNM" target="_blank" rel="noopener"><span class="c-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><small>Adres</small>Bookmolenstraat 124, 9200 Dendermonde</span></a></li>
+        </ul>
+        <div class="c-btns">
+          <a class="btn btn-accent" href="tel:+32476605138">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Bel ons
+          </a>
+          <a class="btn btn-dark" href="mailto:info@vanderplasenzoon.be?subject=Offerteaanvraag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Offerte per mail
+          </a>
+        </div>
       </div>
-      <div class="ctas">
-        <a class="btn btn-accent" href="tel:+32476605138">Bel 0476 60 51 38</a>
-        <a class="btn btn-ghost" href="mailto:info@vanderplasenzoon.be?subject=Offerteaanvraag">Mail uw vraag</a>
-      </div>
+      <aside class="hours" aria-label="Openingsuren">
+        <h3>Openingsuren</h3>
+        <table>
+          <tr><td>Maandag</td><td>07:00 – 19:00</td></tr>
+          <tr><td>Dinsdag</td><td>07:00 – 19:00</td></tr>
+          <tr><td>Woensdag</td><td>07:00 – 19:00</td></tr>
+          <tr><td>Donderdag</td><td>07:00 – 19:00</td></tr>
+          <tr><td>Vrijdag</td><td>07:00 – 19:00</td></tr>
+          <tr><td>Zaterdag</td><td>07:00 – 12:00</td></tr>
+          <tr><td>Zondag</td><td class="closed">Gesloten</td></tr>
+        </table>
+      </aside>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <span class="eyebrow">Contact</span>
-      <h2 class="h2">Bel, mail of kom langs</h2>
-      <div class="c-grid">
-        <div class="c-card">
-          <ul class="c-list">
-            <li>
-              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
-              <div><small>Telefoon</small><a href="tel:+32476605138">0476 60 51 38</a></div>
-            </li>
-            <li>
-              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-              <div><small>E-mail</small><a href="mailto:info@vanderplasenzoon.be">info@vanderplasenzoon.be</a></div>
-            </li>
-            <li>
-              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-              <div><small>Adres</small><span class="v">Bookmolenstraat 124<br>9200 Dendermonde</span></div>
-            </li>
-          </ul>
-          <div class="c-actions">
-            <a class="btn btn-dark" href="tel:+32476605138">Bel nu</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Der%20Plas%20%26%20Zoon&amp;query_place_id=ChIJRyNJvTmUw0cRzJXXFpugaNM" target="_blank" rel="noopener">Route in Google Maps</a>
-          </div>
-        </div>
-        <div class="c-card">
-          <h3>Openingsuren</h3>
-          <ul class="hours">
-            <li><span>Maandag</span><span>07:00 – 19:00</span></li>
-            <li><span>Dinsdag</span><span>07:00 – 19:00</span></li>
-            <li><span>Woensdag</span><span>07:00 – 19:00</span></li>
-            <li><span>Donderdag</span><span>07:00 – 19:00</span></li>
-            <li><span>Vrijdag</span><span>07:00 – 19:00</span></li>
-            <li><span>Zaterdag</span><span>07:00 – 12:00</span></li>
-            <li><span>Zondag</span><span class="closed">Gesloten</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <span>© 2026 Van Der Plas &amp; Zoon</span>
+    <span>© 2026 Van Der Plas &amp; Zoon · Bookmolenstraat 124, 9200 Dendermonde</span>
     <span>Voorbeeldwebsite door Victor De Ruyver</span>
   </div>
 </footer>
 
-<nav class="mbar" aria-label="Snel contact">
+<div class="callbar">
   <a class="btn btn-accent" href="tel:+32476605138">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
     Bel nu
   </a>
   <a class="btn btn-ghost" href="mailto:info@vanderplasenzoon.be?subject=Offerteaanvraag">Offerte</a>
-</nav>
+</div>
 
 <div style="font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:8px 12px 90px;color:#888;background:transparent">Sfeerfoto's: <a href="https://pixabay.com" style="color:inherit">Pixabay</a></div></body>
 </html>
