@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="nl-BE">
+<head><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramendokter | Herstelling en onderhoud van ramen in Ninove</title>
+<meta name="description" content="Ramendokter in Ninove herstelt en onderhoudt ramen en deuren. Eerst herstellen, pas vervangen als het echt niet anders kan. 5,0 op Google.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#11141c;
+  --ink-2:#1b1f2a;
+  --paper:#f3f2ef;
+  --white:#ffffff;
+  --line:#dcdad4;
+  --muted:#5d6170;
+  --muted-light:#a9adb8;
+  --red:#b32b2e;
+  --red-dark:#94211f;
+  --radius:3px;
+  --pad:64px;
+  --head:'Archivo',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:72px}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.eyebrow::before{content:"";width:8px;height:8px;background:var(--red);transform:rotate(45deg)}
+.dark .eyebrow{color:var(--muted-light)}
+h1,h2,h3{font-family:var(--head);text-transform:uppercase;letter-spacing:-.01em;line-height:1.04}
+h2{font-size:clamp(30px,4.6vw,48px);font-weight:700;margin:16px 0 16px}
+.lead{font-size:17px;color:var(--muted);max-width:520px}
+.dark .lead{color:var(--muted-light)}
+section{padding:var(--pad) 0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;font-family:var(--head);font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:var(--radius);border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(17,20,28,.3)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.logo svg{width:26px;height:26px}
+.logo span{font-family:var(--head);font-weight:700;font-size:17px;letter-spacing:.08em}
+.nav{display:none;gap:32px;font-size:14px}
+.nav a{text-decoration:none;color:#d4d6dd}
+.nav a:hover{color:#fff}
+.head-tel{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--head);font-weight:600;font-size:14px;letter-spacing:.04em;text-decoration:none;border:1px solid rgba(255,255,255,.3);width:44px;height:44px;border-radius:var(--radius);white-space:nowrap;flex:none}
+.head-tel svg{width:18px;height:18px}
+.head-tel .t{display:none}
+.head-tel:hover{background:#fff;color:var(--ink)}
+
+/* hero */
+.hero{position:relative;min-height:70vh;display:flex;align-items:flex-end;color:#fff;padding:0;overflow:hidden;background:var(--ink)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,20,28,.3) 0%,rgba(17,20,28,.5) 45%,rgba(17,20,28,.93) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:72px;padding-bottom:40px}
+.hero h1{font-size:clamp(36px,6.4vw,78px);font-weight:800;max-width:960px;letter-spacing:-.02em;margin-top:16px}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 80%,var(--red) 80%)}
+.hero p.sub{margin:20px 0 28px;font-size:17px;max-width:520px;color:#e3e4e8}
+.hero-actions{display:grid;gap:10px}
+.trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,.2);font-size:14px;color:#d8dae0;max-width:560px}
+.stars{display:flex;gap:3px}
+.stars svg{width:16px;height:16px;fill:#f2b740}
+.trust strong{color:#fff;font-weight:600}
+
+/* reviews */
+.reviews{background:var(--ink);color:#fff}
+.reviews-head{display:grid;gap:24px;margin-bottom:40px}
+.score{display:flex;align-items:center;gap:18px}
+.score-big{font-family:var(--head);font-weight:800;font-size:60px;line-height:1}
+.score-meta{font-size:14px;color:var(--muted-light)}
+.score-meta .stars{margin-bottom:6px}
+.score-meta a{color:#fff;text-underline-offset:4px;display:inline-block;margin-top:4px}
+.quotes{display:grid;gap:16px}
+.quote{background:var(--ink-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:28px 24px;display:flex;flex-direction:column}
+.quote .mark{font-family:var(--head);font-size:52px;line-height:.6;color:var(--red);height:24px}
+.quote blockquote{font-size:15px;line-height:1.7;color:#dfe0e6;flex:1}
+.quote figcaption{display:flex;align-items:center;justify-content:space-between;margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-family:var(--head);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
+.quote figcaption .s{color:#f2b740}
+
+/* services */
+.services-head{display:grid;gap:4px;margin-bottom:40px}
+.cards{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.card{background:var(--white);padding:30px 24px;position:relative}
+.card .num{position:absolute;top:28px;right:24px;font-family:var(--head);font-size:13px;color:#b0b2ba;letter-spacing:.08em}
+.card svg{width:40px;height:40px;stroke:var(--red);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:22px}
+.card h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+
+/* werkwijze */
+.how{background:var(--white)}
+.how-head{max-width:640px;margin-bottom:40px}
+.steps{list-style:none;display:grid;gap:16px}
+.steps li{border-top:3px solid var(--ink);padding-top:22px}
+.steps .n{display:block;font-family:var(--head);font-weight:800;font-size:44px;line-height:1;color:var(--red);margin-bottom:18px}
+.steps h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.steps p{color:var(--muted);font-size:15px;max-width:340px}
+
+/* contact */
+.contact{background:var(--ink);color:#fff}
+.contact-grid{display:grid;gap:40px}
+.contact h2{max-width:560px}
+.contact-list{list-style:none;margin:28px 0 32px}
+.contact-list li{display:grid;grid-template-columns:28px 1fr;gap:14px;padding:16px 0;border-top:1px solid rgba(255,255,255,.12)}
+.contact-list li:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+.contact-list svg{width:22px;height:22px;stroke:var(--red);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.contact-list .k{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-light);font-family:var(--head);font-weight:600}
+.contact-list a{text-decoration:none;font-size:17px;font-weight:500}
+.contact-list a:hover{text-decoration:underline;text-underline-offset:4px}
+.hours{width:100%;border-collapse:collapse;font-size:15px;margin-top:6px}
+.hours td{padding:4px 0;color:#d4d6dd}
+.hours td:last-child{text-align:right;color:#fff}
+.contact-photo{display:grid;gap:0}
+.contact-photo .ph{aspect-ratio:4/3;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
+.contact-photo img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.contact-photo figcaption{background:var(--ink-2);padding:16px 18px;font-size:14px;color:#d4d6dd;border-left:3px solid var(--red);border-radius:0 0 var(--radius) var(--radius)}
+.contact-photo figcaption strong{display:block;font-family:var(--head);text-transform:uppercase;letter-spacing:.06em;font-size:13px;color:#fff;margin-bottom:2px}
+.site-footer{background:var(--ink);color:var(--muted-light);font-size:13px;border-top:1px solid rgba(255,255,255,.08)}
+.site-footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:22px;padding-bottom:22px}
+
+/* mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:10px 12px;background:var(--ink);border-top:1px solid rgba(255,255,255,.12)}
+.mbar .btn{min-height:48px;padding:0 10px;font-size:14px}
+.mbar .btn-ghost{background:transparent}
+
+@media (min-width:540px){
+  .head-tel{width:auto;height:auto;padding:9px 14px}
+  .head-tel .t{display:inline}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+}
+@media (min-width:640px){
+  .quotes{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .contact-photo .ph{aspect-ratio:16/10}
+}
+@media (min-width:960px){
+  :root{--pad:96px}
+  body{padding-bottom:0}
+  .wrap{padding:0 40px}
+  .site-header .wrap{height:68px}
+  .logo svg{width:30px;height:30px}
+  .logo span{font-size:19px}
+  .mbar{display:none}
+  .nav{display:flex}
+  .hero{min-height:85vh}
+  .hero .wrap{padding-bottom:64px}
+  .hero p.sub{font-size:18px}
+  .reviews-head{grid-template-columns:1fr auto;align-items:end}
+  .quotes{grid-template-columns:repeat(3,1fr)}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .card{padding:40px 34px}
+  .card .num{right:34px;top:36px}
+  .services-head{grid-template-columns:1fr 1fr;align-items:end;gap:40px}
+  .services-head .lead{justify-self:end}
+  .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .contact-grid{grid-template-columns:1.1fr .9fr;gap:80px;align-items:start}
+  .contact-photo .ph{aspect-ratio:4/5}
+}
+</style>
+</head>
+<body><div style="background:#fffbe6;color:#5c4400;font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:7px 12px;border-bottom:1px solid #f0e2a0;position:relative;z-index:9999">Voorbeeld van een nieuwe website voor Ramendokter, gemaakt door Victor De Ruyver. Dit is nog niet hun officiële website.</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Ramendokter, naar boven">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="9.4" height="20" fill="#b32b2e"/><rect x="12.6" y="2" width="9.4" height="7.2" fill="#b32b2e"/><rect x="12.6" y="10.4" width="9.4" height="11.6" fill="#b32b2e"/></svg>
+      <span>RAMENDOKTER</span>
+    </a>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="#reviews">Reviews</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="head-tel" href="tel:+3254258080" aria-label="Bel 054 25 80 80">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+      <span class="t">054 25 80 80</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Introductie">
+    <img src="img/s5.jpg" alt="Moderne woning met grote verlichte ramen bij valavond">
+    <div class="wrap">
+      <span class="eyebrow" style="color:#d8dae0">Ramen en deuren &middot; Ninove</span>
+      <h1>Uw raam <em>hersteld</em>, niet zomaar vervangen</h1>
+      <p class="sub">We komen langs, zoeken wat er mis is en herstellen het. Vervangen doen we pas als het echt niet anders kan.</p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="tel:+3254258080">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+          Bel 054 25 80 80
+        </a>
+        <a class="btn btn-ghost" href="mailto:info@deramendokter.be?subject=Aanvraag%20bezoek%20aan%20huis">Vraag een bezoek aan</a>
+      </div>
+      <div class="trust">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg>
+        </div>
+        <span><strong>5,0 op Google</strong> &middot; 17 reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews dark" id="reviews">
+    <div class="wrap">
+      <div class="reviews-head">
+        <div>
+          <span class="eyebrow">Wat klanten zeggen</span>
+          <h2>Uitleg, offerte, en dan netjes gedaan</h2>
+        </div>
+        <div class="score">
+          <div class="score-big">5,0</div>
+          <div class="score-meta">
+            <div class="stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg>
+            </div>
+            17 Google-reviews<br>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Ramendokter&amp;query_place_id=ChIJCdZKBwC9w0cRcHrody81x88" target="_blank" rel="noopener">Alle reviews op Google</a>
+          </div>
+        </div>
+      </div>
+      <div class="quotes">
+        <figure class="quote">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>Ik ben heel tevreden van Ramendokter. Bij het eerste bezoek kreeg ik meteen een duidelijke uitleg van wat er moest gebeuren. Daarna een correcte offerte gekregen en vlot een afspraak kunnen maken. De herstellingen/onderhoud zijn proper uitgevoerd en alles werd netjes achtergelaten. Heel goeie service! Een tevreden klant</blockquote>
+          <figcaption><span>Geert</span><span class="s">5/5</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>Perfecte vervanging van een gebarsten raam. Snelle levering en afspraken die perfect werden nageleefd. Na de werken alles netjes opgekuist en meegenomen. Correcte prijs die zonder tegenexpert werd aanvaard door onze verzekeraar. Top bedrijf en fijne mensen.</blockquote>
+          <figcaption><span>Spapens</span><span class="s">5/5</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>Hebben stipt en vlot twee kipramen/deuren naar terras kunnen herstellen. Hebben ook eerlijk en vrijblijvend advies gegeven over duurzaamheid van de oplossingen. Factuurbedrag lag, dankzij de brochure die ik op het voorhand kreeg, in de lijn van mijn verwachtingen. Aanrader!</blockquote>
+          <figcaption><span>Willem-jan</span><span class="s">5/5</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="diensten">
+    <div class="wrap">
+      <div class="services-head">
+        <div>
+          <span class="eyebrow">Wat we doen</span>
+          <h2>Herstelling en onderhoud van ramen</h2>
+        </div>
+        <p class="lead">Een raam dat niet meer sluit of gebarsten glas: u hoeft niet meteen alles te vernieuwen. Wij kijken eerst wat te redden valt.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="num">01</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M26 6a7 7 0 0 0-6.6 9.3L7 27.7a3 3 0 0 0 4.3 4.3l12.4-12.4A7 7 0 0 0 33 13l-4.2 4.2-4.6-1.4-1.4-4.6L27 7"/></svg>
+          <h3>Ramen herstellen</h3>
+          <p>We zoeken de oorzaak en herstellen wat stuk is, zodat een nieuw raam niet nodig is.</p>
+        </article>
+        <article class="card">
+          <span class="num">02</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="7" y="5" width="26" height="30" rx="1"/><path d="M20 5v30M7 20h26"/><path d="M12 12l2 2 4-4"/></svg>
+          <h3>Onderhoud van ramen</h3>
+          <p>Een onderhoudsbeurt, zodat uw ramen en deuren langer goed blijven werken.</p>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="7" y="5" width="26" height="30" rx="1"/><path d="M15 5l4 8-5 5 6 6-3 11"/></svg>
+          <h3>Gebarsten raam vervangen</h3>
+          <p>Barst in het glas? We vervangen het en nemen alles netjes mee.</p>
+        </article>
+        <article class="card">
+          <span class="num">04</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="5" width="22" height="30" rx="1"/><path d="M9 35l11-24 11 24" stroke-dasharray="3 3"/><path d="M27 20h2"/></svg>
+          <h3>Kipramen en terrasdeuren</h3>
+          <p>Kipramen en deuren naar het terras die haperen, zetten we weer goed.</p>
+        </article>
+        <article class="card">
+          <span class="num">05</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 9a3 3 0 0 1 3-3h22a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3H17l-7 6v-6H9a3 3 0 0 1-3-3z"/><path d="M13 14h14M13 19h9"/></svg>
+          <h3>Eerlijk advies</h3>
+          <p>Is herstellen niet meer zinvol? Dan zeggen we dat, en krijgt u een duidelijke offerte.</p>
+        </article>
+        <article class="card">
+          <span class="num">06</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 19L20 6l15 13"/><path d="M9 16v18h22V16"/><rect x="16" y="22" width="8" height="12"/></svg>
+          <h3>Bij u aan huis</h3>
+          <p>We komen bij u langs en leggen ter plaatse uit wat er moet gebeuren.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="werkwijze">
+    <div class="wrap">
+      <div class="how-head">
+        <span class="eyebrow">Werkwijze</span>
+        <h2>Zo pakken we het aan</h2>
+        <p class="lead">Geen verrassingen achteraf. U weet vooraf wat er gebeurt en wat het kost.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="n">01</span><h3>Bezoek aan huis</h3><p>We bekijken het probleem en leggen meteen uit wat er nodig is.</p></li>
+        <li><span class="n">02</span><h3>Duidelijke prijs</h3><p>U krijgt een offerte ter goedkeuring. Pas na uw akkoord plannen we in.</p></li>
+        <li><span class="n">03</span><h3>Uitgevoerd zoals afgesproken</h3><p>Stipt op de afgesproken dag. Daarna ruimen we alles netjes op.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact dark" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Hapert een raam? Bel ons even.</h2>
+        <p class="lead">Vertel kort wat er aan de hand is. We plannen een bezoek en zeggen u eerlijk wat de beste oplossing is.</p>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            <div><span class="k">Telefoon</span><a href="tel:+3254258080">054 25 80 80</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>
+            <div><span class="k">E-mail</span><a href="mailto:info@deramendokter.be">info@deramendokter.be</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <div><span class="k">Adres</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Ramendokter&amp;query_place_id=ChIJCdZKBwC9w0cRcHrody81x88" target="_blank" rel="noopener">Leopoldstraat 114, unit A<br>9400 Ninove</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><span class="k">Openingsuren</span>
+              <table class="hours">
+                <tr><td>Maandag tot zaterdag</td><td>09:00 – 17:30</td></tr>
+                <tr><td>Zondag</td><td>Gesloten</td></tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="tel:+3254258080">Bel nu</a>
+          <a class="btn btn-ghost" href="mailto:info@deramendokter.be?subject=Aanvraag%20bezoek%20aan%20huis">Mail uw vraag</a>
+        </div>
+      </div>
+      <figure class="contact-photo">
+        <div class="ph"><img src="img/2.jpg" alt="Ingang van Ramendokter aan de Leopoldstraat in Ninove, met de Ramendokter-vlag" loading="lazy"></div>
+        <figcaption><strong>Hier vindt u ons</strong>Leopoldstraat 114, unit A in Ninove</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Ramendokter</span>
+    <span>Voorbeeldwebsite door Victor De Ruyver</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Snel contact">
+  <a class="btn btn-ghost" href="tel:+3254258080">Bel nu</a>
+  <a class="btn btn-red" href="mailto:info@deramendokter.be?subject=Aanvraag%20bezoek%20aan%20huis">Vraag bezoek aan</a>
+</nav>
+
+<div style="font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:8px 12px 90px;color:#888;background:transparent">Sfeerfoto's: <a href="https://pixabay.com" style="color:inherit">Pixabay</a></div></body>
+</html>
