@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="nl-BE">
+<head><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TuinenProdo | Tuinman in Deinze</title>
+<meta name="description" content="TuinenProdo uit Deinze: tuinontwerp, tuinaanleg, nieuw gazon, snoeiwerk, boomverzorging en jaarlijks onderhoud. 5,0 op Google.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#17301f;--forest-2:#21402b;--moss:#7fa848;--moss-dark:#557d26;--leaf:#cfe3ad;
+  --cream:#f6f5ec;--sand:#ebeadb;--ink:#1b2a20;--muted:#526056;--line:#dcdcc8;
+  --r:22px;--r-sm:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);background:var(--cream);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:78px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+section{padding:64px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:"Fraunces",serif;font-style:italic;font-weight:400;font-size:1.12rem;color:var(--moss-dark);margin-bottom:12px}
+.eyebrow::before{content:"";width:28px;height:1.5px;background:currentColor}
+h2{font-size:clamp(2rem,5vw,3rem);color:var(--forest)}
+h2 em{font-style:italic;font-weight:500;color:var(--moss-dark)}
+.lead{color:var(--muted);font-size:1.05rem;max-width:34rem;margin-top:16px}
+.sec-head{display:grid;gap:8px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:700;font-size:.98rem;text-decoration:none;transition:transform .2s,background .2s,color .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-moss{background:var(--moss);color:#0f2015}
+.btn-moss:hover{background:#93bb5a;transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--forest)}
+.btn-dark{background:var(--forest);color:#fff}
+.btn-dark:hover{background:var(--forest-2);transform:translateY(-2px)}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:50;background:rgba(246,245,236,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Fraunces",serif;font-weight:600;font-size:1.3rem;color:var(--forest)}
+.logo-mark{width:34px;height:34px;border-radius:50%;background:var(--forest);display:grid;place-items:center}
+.logo-mark svg{width:19px;height:19px}
+.nav{display:none;gap:30px}
+.nav a{text-decoration:none;font-weight:600;font-size:.95rem}
+.nav a:hover{color:var(--moss-dark)}
+.head-cta{display:none;padding:11px 18px;font-size:.92rem}
+
+/* hero */
+.hero-shell{padding:10px}
+.hero{position:relative;min-height:70vh;border-radius:24px;overflow:hidden;display:flex;align-items:flex-end;color:#fff}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,25,15,.2) 0%,rgba(10,25,15,.45) 40%,rgba(10,25,15,.9) 100%)}
+.hero-in{position:relative;z-index:2;padding:44px 22px 30px;width:100%}
+.hero .eyebrow{color:var(--leaf)}
+.hero h1{font-size:clamp(2.5rem,8vw,4.8rem);max-width:12ch;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--leaf)}
+.hero-sub{margin-top:16px;font-size:1.08rem;max-width:30rem;color:rgba(255,255,255,.92)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hero-btns .btn{flex:1 1 100%}
+.trust{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:24px;font-size:.95rem;color:rgba(255,255,255,.92)}
+.stars{color:#f2c94c;letter-spacing:2px;font-size:1.05rem;line-height:1}
+.trust strong{color:#fff}
+
+/* reviews */
+.reviews-grid{display:grid;gap:16px;margin-top:36px}
+.score{background:var(--forest);color:#fff;border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.score-num{font-family:"Fraunces",serif;font-size:4.2rem;line-height:1;font-weight:600}
+.score p{color:rgba(255,255,255,.82)}
+.score a{color:var(--leaf);font-weight:700;text-decoration:none;white-space:nowrap;margin-top:auto}
+.score a:hover{text-decoration:underline}
+.quote{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;display:flex;flex-direction:column;gap:14px}
+.quote-mark{font-family:"Fraunces",serif;font-size:3.4rem;line-height:.6;color:var(--moss);height:22px}
+.quote blockquote{font-size:1rem;flex:1}
+.quote figcaption{display:flex;align-items:center;justify-content:space-between;font-weight:700;color:var(--forest);padding-top:14px;border-top:1px solid var(--line)}
+.quote figcaption .stars{font-size:.9rem}
+
+/* services */
+.services{background:var(--sand)}
+.svc-grid{display:grid;gap:14px;margin-top:36px}
+.svc{background:var(--cream);border-radius:var(--r);padding:24px 22px;display:flex;gap:18px;align-items:flex-start;border:1px solid var(--line);transition:border-color .2s,transform .2s}
+.svc:hover{border-color:var(--moss);transform:translateY(-3px)}
+.svc-ic{width:54px;height:54px;flex:none;border-radius:16px;background:var(--forest);color:var(--leaf);display:grid;place-items:center}
+.svc-ic svg{width:28px;height:28px}
+.svc h3{font-size:1.3rem;color:var(--forest);margin-bottom:6px}
+.svc p{color:var(--muted);font-size:.97rem}
+
+/* work */
+.work-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:12px;margin-top:36px}
+.work-grid figure{position:relative;border-radius:var(--r-sm);overflow:hidden;background:var(--sand)}
+.work-grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.work-grid figure:hover img{transform:scale(1.04)}
+.work-grid figcaption{position:absolute;left:10px;bottom:10px;background:rgba(246,245,236,.95);color:var(--forest);font-size:.8rem;font-weight:700;padding:6px 12px;border-radius:999px}
+.w-big{grid-column:span 2;grid-row:span 2}
+.w-tall{grid-row:span 2}
+.w-wide-m{grid-column:span 2}
+
+/* about */
+.about-grid{display:grid;gap:32px;align-items:center}
+.about-img{border-radius:var(--r);overflow:hidden;aspect-ratio:16/10}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.points{list-style:none;display:grid;gap:10px;margin-top:26px}
+.points li{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);padding:14px 18px;font-weight:600;color:var(--forest)}
+.points svg{width:22px;height:22px;color:var(--moss-dark);flex:none}
+
+/* contact */
+.contact{background:var(--forest);color:#fff;border-radius:24px;margin:0 10px 10px}
+.contact h2{color:#fff}
+.contact h2 em{color:var(--leaf)}
+.contact .eyebrow{color:var(--leaf)}
+.contact .lead{color:rgba(255,255,255,.82)}
+.contact-grid{display:grid;gap:36px}
+.c-list{list-style:none;display:grid;gap:12px}
+.c-item{display:flex;gap:16px;align-items:center;padding:18px 20px;border-radius:var(--r-sm);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-decoration:none;transition:background .2s}
+a.c-item:hover{background:rgba(255,255,255,.12)}
+.c-ic{width:44px;height:44px;border-radius:12px;background:var(--moss);color:#0f2015;display:grid;place-items:center;flex:none}
+.c-ic svg{width:21px;height:21px}
+.c-label{display:block;font-size:.78rem;color:rgba(255,255,255,.68);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.c-val{font-weight:700;font-size:1.04rem;word-break:break-word}
+
+footer{padding:26px 0 30px;font-size:.9rem;color:var(--muted)}
+.foot-in{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(23,48,31,.97);backdrop-filter:blur(8px)}
+.mbar .btn{padding:13px 10px;font-size:.95rem}
+
+@media (min-width:560px){
+  .hero-btns .btn{flex:0 0 auto}
+}
+@media (min-width:700px){
+  .reviews-grid{grid-template-columns:1fr 1fr}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .points{grid-template-columns:1fr 1fr}
+}
+@media (min-width:1000px){
+  body{padding-bottom:0}
+  .mbar{display:none}
+  section{padding:96px 0}
+  .head-in{height:70px}
+  .nav{display:flex}
+  .head-cta{display:inline-flex}
+  .hero-shell{padding:14px}
+  .hero{min-height:85vh;align-items:center}
+  .hero::after{background:linear-gradient(90deg,rgba(10,25,15,.85) 0%,rgba(10,25,15,.55) 42%,rgba(10,25,15,.1) 75%),linear-gradient(180deg,rgba(10,25,15,0) 60%,rgba(10,25,15,.45) 100%)}
+  .hero-in{padding:80px 64px}
+  .hero-sub{font-size:1.15rem}
+  .trust{margin-top:30px}
+  .sec-head.split{grid-template-columns:1.2fr 1fr;align-items:end;gap:48px}
+  .sec-head.split .lead{margin-top:0}
+  .reviews-grid{grid-template-columns:1fr 1.25fr 1.25fr 1.25fr}
+  .svc-grid{grid-template-columns:repeat(3,1fr);gap:18px}
+  .svc{flex-direction:column;padding:32px 28px;gap:22px}
+  .work-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:250px;gap:16px}
+  .w-wide-m{grid-column:span 1}
+  .about-grid{grid-template-columns:.9fr 1.1fr;gap:64px}
+  .about-img{aspect-ratio:4/5;max-height:520px}
+  .contact{margin:0 14px 14px}
+  .contact-grid{grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+}
+</style>
+</head>
+<body><div style="background:#fffbe6;color:#5c4400;font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:7px 12px;border-bottom:1px solid #f0e2a0;position:relative;z-index:9999">Voorbeeld van een nieuwe website voor TuinenProdo, gemaakt door Victor De Ruyver. Dit is nog niet hun officiële website.</div>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a href="#top" class="logo" aria-label="TuinenProdo, naar boven">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#cfe3ad" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19l8-8"/></svg></span>
+      TuinenProdo
+    </a>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="#reviews">Reviews</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#realisaties">Realisaties</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+32495262446" class="btn btn-dark head-cta">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      0495 26 24 46
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero-shell">
+    <section class="hero" aria-label="Welkom">
+      <img src="img/6.jpg" alt="Een ruim, pas gemaaid gazon omringd door bomen en siergrassen" fetchpriority="high">
+      <div class="hero-in wrap">
+        <span class="eyebrow">Tuinman in Deinze</span>
+        <h1>Tuinwerk met <em>handen aan het lijf</em></h1>
+        <p class="hero-sub">Ontwerp, aanleg, gazon, snoeiwerk en onderhoud. Hard werk aan een eerlijke prijs.</p>
+        <div class="hero-btns">
+          <a href="tel:+32495262446" class="btn btn-moss">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            Bel 0495 26 24 46
+          </a>
+          <a href="mailto:tuinenprodo@gmail.com?subject=Offerte%20tuinwerk" class="btn btn-ghost">Vraag een offerte</a>
+        </div>
+        <p class="trust">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span><strong>5,0 op Google</strong> &middot; 12 reviews</span>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <section id="reviews" aria-labelledby="rev-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Wat klanten zeggen</span>
+        <h2 id="rev-title">Twaalf reviews, <em>allemaal vijf sterren</em></h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="score">
+          <div class="score-num">5,0</div>
+          <span class="stars" aria-label="5 op 5 sterren">★★★★★</span>
+          <p>Gemiddelde score op basis van 12 Google-reviews.</p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=TuinenProdo&amp;query_place_id=ChIJ41Zapqhtw0cRK805vXJaaz8" target="_blank" rel="noopener">Alle reviews op Google&nbsp;&rarr;</a>
+        </div>
+        <figure class="quote">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Tuinen prode zijn 2 jonge kerels, harde werkers die onze tuin helemaal hebben afgegraven en opnieuw ingezaaid met een mooi resultaat. Ze leverden uitstekend werk voor een eerlijke prijs. Als je tuinwerk hebt raad ik deze jongens zeker aan!</blockquote>
+          <figcaption>Tony <span class="stars" aria-label="5 sterren">★★★★★</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Hard werkende jongeman met ‘handen aan het lijf’, die weet van aanpakken. Zeer correct en klantvriendelijk. En een zeer goede prijs voor de geleverde werken. Zeker een aanrader!</blockquote>
+          <figcaption>Rico <span class="stars" aria-label="5 sterren">★★★★★</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Doet elk jaar de tuin sinds dat hij hem helemaal heeft aangelegd en kwa prijs de goedkoopste die ik gevonden heb. Echt top kwaliteit.</blockquote>
+          <figcaption>Sam <span class="stars" aria-label="5 sterren">★★★★★</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="diensten" class="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="sec-head split">
+        <div>
+          <span class="eyebrow">Diensten</span>
+          <h2 id="svc-title">Van eerste schets <em>tot jaarlijkse zorg</em></h2>
+        </div>
+        <p class="lead">Eén aanspreekpunt voor de hele tuin, van een nieuw plan tot het onderhoud erna.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc">
+          <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h7v12"/><circle cx="16" cy="15" r="2.5"/><path d="M14 3v4"/></svg></div>
+          <div><h3>Tuinontwerp op maat</h3><p>Een plan dat past bij uw woning en hoe u buiten leeft.</p></div>
+        </article>
+        <article class="svc">
+          <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M8 15h8l-1 6H9z"/><path d="M12 9c-3 0-5-2-5-5 3 0 5 2 5 5z"/><path d="M12 7c0-2.5 1.8-4 4.5-4 0 2.5-1.8 4-4.5 4z"/></svg></div>
+          <div><h3>Complete tuinaanleg</h3><p>Van afgraven tot de laatste plant op zijn plaats.</p></div>
+        </article>
+        <article class="svc">
+          <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20c0-4-1-7-2-9"/><path d="M8 20c0-5 1-9 3-12"/><path d="M12 20c0-4 0-7-1-10"/><path d="M16 20c0-5-1-8-3-11"/><path d="M19 20c0-3 1-6 3-8"/></svg></div>
+          <div><h3>Nieuw gazon</h3><p>Afgraven, bodem voorbereiden en opnieuw inzaaien.</p></div>
+        </article>
+        <article class="svc">
+          <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.1 8.1L20 20"/><path d="M8.1 15.9L20 4"/></svg></div>
+          <div><h3>Hagen en vormsnoei</h3><p>Hagen, heesters en bollen die strak in vorm blijven.</p></div>
+        </article>
+        <article class="svc">
+          <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-8"/><path d="M12 14l-3-3"/><path d="M12 16l3-3"/><path d="M7 15a5 5 0 0 1-1-9.5A6 6 0 0 1 17.5 6 4.5 4.5 0 0 1 17 15H7z"/></svg></div>
+          <div><h3>Boomverzorging</h3><p>Bomen tijdig snoeien zodat ze gezond blijven.</p></div>
+        </article>
+        <article class="svc">
+          <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M9 15.5l2 2 4-4"/></svg></div>
+          <div><h3>Jaarlijks onderhoud</h3><p>Elk jaar terug, zodat uw tuin verzorgd blijft.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="realisaties" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="work-head">
+        <div>
+          <span class="eyebrow">Realisaties</span>
+          <h2 id="work-title">Ons werk, <em>in eigen beeld</em></h2>
+        </div>
+        <a href="mailto:tuinenprodo@gmail.com?subject=Offerte%20tuinwerk" class="btn btn-dark">Vraag een offerte</a>
+      </div>
+      <div class="work-grid">
+        <figure class="w-big"><img src="img/3.jpg" alt="Aangelegde tuin met nieuw gazon, stapstenen en een houten poortje" loading="lazy"><figcaption>Gazon met stapstenen</figcaption></figure>
+        <figure class="w-tall"><img src="img/4.jpg" alt="Nieuwe beplanting in houtsnippers langs een gebogen grindpad" loading="lazy"><figcaption>Nieuwe beplanting</figcaption></figure>
+        <figure><img src="img/5.jpg" alt="Grote tegels als stapstenen in een fris gazon" loading="lazy"><figcaption>Stapstenen</figcaption></figure>
+        <figure><img src="img/2.jpg" alt="Leibomen en gesnoeide heesters langs een grindstrook" loading="lazy"><figcaption>Leibomen en heesters</figcaption></figure>
+        <figure class="w-wide-m"><img src="img/8.jpg" alt="Strak gesnoeide buxusbol in een gazon" loading="lazy"><figcaption>Vormsnoei</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="about-img"><img src="img/s1.jpg" alt="Bijen op een roze zonnehoed" loading="lazy"></div>
+      <div>
+        <span class="eyebrow">Waarom TuinenProdo</span>
+        <h2 id="about-title">Jong, gedreven <em>en recht door zee</em></h2>
+        <p class="lead">Een jong tuinbedrijf uit Deinze dat graag de handen uit de mouwen steekt. Dit zeggen klanten het vaakst:</p>
+        <ul class="points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Harde werkers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Correct en klantvriendelijk</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Een eerlijke prijs</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Elk jaar terug voor onderhoud</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-title">Plannen voor <em>uw tuin?</em></h2>
+        <p class="lead">Bel of mail gerust. We bekijken samen wat u wilt en u krijgt een duidelijke offerte.</p>
+        <div class="hero-btns">
+          <a href="tel:+32495262446" class="btn btn-moss">Bel 0495 26 24 46</a>
+          <a href="mailto:tuinenprodo@gmail.com?subject=Offerte%20tuinwerk" class="btn btn-ghost">Mail ons</a>
+        </div>
+      </div>
+      <ul class="c-list">
+        <li><a class="c-item" href="tel:+32495262446">
+          <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <span><span class="c-label">Telefoon</span><span class="c-val">0495 26 24 46</span></span></a></li>
+        <li><a class="c-item" href="mailto:tuinenprodo@gmail.com">
+          <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+          <span><span class="c-label">E-mail</span><span class="c-val">tuinenprodo@gmail.com</span></span></a></li>
+        <li><a class="c-item" href="https://www.google.com/maps/search/?api=1&amp;query=TuinenProdo&amp;query_place_id=ChIJ41Zapqhtw0cRK805vXJaaz8" target="_blank" rel="noopener">
+          <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span><span class="c-label">Adres</span><span class="c-val">Karmstraat 28, 9800 Deinze</span></span></a></li>
+        <li><div class="c-item">
+          <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <span><span class="c-label">Bereikbaar</span><span class="c-val">Elke dag, 24 uur op 24</span></span></div></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>&copy; 2026 TuinenProdo</span>
+    <span>Voorbeeldwebsite door Victor De Ruyver</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Snel contact">
+  <a href="tel:+32495262446" class="btn btn-moss">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    Bel nu
+  </a>
+  <a href="mailto:tuinenprodo@gmail.com?subject=Offerte%20tuinwerk" class="btn btn-ghost">Offerte</a>
+</nav>
+
+<div style="font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:8px 12px 90px;color:#888;background:transparent">Sfeerfoto's: <a href="https://pixabay.com" style="color:inherit">Pixabay</a></div></body>
+</html>
