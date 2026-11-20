@@ -3,347 +3,381 @@
 <head><meta name="robots" content="noindex,nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seymoens Geert | Aluminium ramen, deuren, veranda's en glaswerken in Ninove</title>
-<meta name="description" content="Aluminium ramen, deuren, pergola's en veranda's, algemene glaswerken en inox borstweringen. Meer dan 20 jaar ervaring. Pollare-Dorp 26, Ninove.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>ALU-Seymoens | Aluminium, glas en inox in Pollare (Ninove)</title>
+<meta name="description" content="ALU-Seymoens, de zaak van Geert Seymoens in Pollare (Ninove): aluminium ramen, deuren, pergola's en veranda's, algemene glaswerken en inox borstweringen. Vrijblijvend advies en prijsberekening.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
 <style>
 :root{
-  --ink:#121729;--ink-2:#1a2140;--line:#2b3354;
-  --paper:#f4f3ef;--white:#fff;--text:#2a2f3f;--muted:#565c70;
-  --accent:#e2ad2f;--accent-dark:#a87812;
-  --r:10px;--pad:64px;
-  --head:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;
+  --navy:#121829;
+  --navy-2:#1b2338;
+  --ink:#1a1f2c;
+  --muted:#596074;
+  --line:#e2e5ec;
+  --bg:#f4f5f8;
+  --accent:#e2b33a;
+  --r:6px;
+  --pad:64px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--body);color:var(--text);background:var(--paper);line-height:1.6;font-size:16px;padding-bottom:76px;-webkit-font-smoothing:antialiased}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:16px;padding-bottom:76px;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit}
-.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 22px}
-h1,h2,h3{font-family:var(--head);line-height:1.08;letter-spacing:-.015em;font-weight:600}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-dark)}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.1;letter-spacing:-.01em}
+section[id]{scroll-margin-top:72px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .eyebrow::before{content:"";width:8px;height:8px;background:var(--accent);transform:rotate(45deg)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:var(--r);font-family:var(--head);font-weight:600;font-size:1rem;text-decoration:none;transition:background .2s,border-color .2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:var(--r);font-weight:600;font-size:.96rem;text-decoration:none;transition:background .2s,border-color .2s,color .2s}
 .btn svg{width:18px;height:18px;flex:none}
-.btn-accent{background:var(--accent);color:var(--ink)}
-.btn-accent:hover{background:#f0bf45}
-.btn-ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff;background:rgba(18,23,41,.3)}
-.btn-ghost:hover{border-color:#fff;background:rgba(18,23,41,.55)}
+.btn-accent{background:var(--accent);color:var(--navy)}
+.btn-accent:hover{background:#f0c552}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff;background:rgba(18,24,41,.25)}
+.btn-ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
 
 /* header */
-.site-head{position:sticky;top:0;z-index:50;background:rgba(18,23,41,.97);border-bottom:1px solid var(--line)}
-.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
-.logo{text-decoration:none;color:#fff;display:flex;flex-direction:column;line-height:1.15}
-.logo strong{font-family:var(--head);font-size:1.25rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase}
-.logo strong span{color:var(--accent)}
-.logo small{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:#a9afc4}
-.nav{display:none;gap:34px}
-.nav a{color:#cfd3e2;text-decoration:none;font-size:.95rem}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(18,24,41,.97);border-bottom:1px solid rgba(255,255,255,.08)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.logo-mark{width:34px;height:34px;border:1.5px solid var(--accent);border-radius:var(--r);display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;color:var(--accent);font-size:.92rem}
+.logo strong{font-family:"Space Grotesk";font-size:1.05rem;letter-spacing:.02em;display:block;line-height:1.1}
+.logo small{display:block;font-size:.72rem;color:#aab1c3;letter-spacing:.05em}
+.nav{display:none;gap:30px}
+.nav a{color:#d3d8e4;text-decoration:none;font-size:.92rem}
 .nav a:hover{color:#fff}
-.head-cta{min-height:42px;padding:0 14px;font-size:.9rem}
-.head-cta .lbl{display:none}
+.head-cta{display:none}
 
 /* hero */
-.hero{position:relative;min-height:70vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ink)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 55%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,16,30,.15) 0%,rgba(12,16,30,.55) 45%,rgba(12,16,30,.94) 100%)}
-.hero .wrap{position:relative;z-index:2;padding-top:56px;padding-bottom:44px}
-.hero .eyebrow{color:var(--accent)}
-.hero h1{font-size:clamp(2.3rem,8vw,4.4rem);max-width:13ch;margin:16px 0}
-.hero p.sub{font-size:1.08rem;color:#e3e6ef;max-width:32rem}
-.hero-actions{display:grid;gap:12px;margin-top:28px}
-.trust{display:flex;align-items:center;gap:12px;margin-top:26px;font-size:.95rem;color:#e3e6ef}
-.trust a{text-decoration:none}
-.stars{display:flex;gap:3px}
-.stars svg{width:17px;height:17px}
+.hero{position:relative;min-height:70vh;min-height:70svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#2a3248}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,16,30,0) 0%,rgba(12,16,30,0) 30%,rgba(12,16,30,.55) 62%,rgba(12,16,30,.86) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:120px;padding-bottom:28px}
+.hero .eyebrow{color:#eef0f5;font-size:.7rem}
+.hero h1{font-size:clamp(2.1rem,8vw,4.5rem);font-weight:600;margin:12px 0 10px;max-width:13ch;text-shadow:0 2px 20px rgba(0,0,0,.3)}
+.hero h1 span{color:var(--accent)}
+.hero p.sub{font-size:1rem;max-width:34rem;color:#f1f3f7}
+.trust{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:14px;font-size:.84rem;color:#e4e8f0}
+.trust span{display:inline-flex;align-items:center;gap:6px}
+.trust svg{width:15px;height:15px;color:var(--accent);flex:none}
+.trust .g{color:#b9c0cf}
+.hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.hero-actions .btn{padding:13px 12px;font-size:.92rem}
 
-/* fact strip */
-.strip{background:var(--ink);color:#fff;border-top:1px solid var(--line)}
-.strip ul{list-style:none;display:grid;gap:0}
-.strip li{display:flex;align-items:center;gap:14px;padding:20px 0;border-bottom:1px solid var(--line)}
-.strip li:last-child{border-bottom:0}
-.strip svg{width:26px;height:26px;flex:none;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.strip b{font-family:var(--head);font-weight:600;font-size:1.05rem;display:block;line-height:1.2}
-.strip span{font-size:.88rem;color:#a9afc4}
+/* about */
+.about{background:var(--navy);color:#fff;padding:var(--pad) 0}
+.about .eyebrow{color:#aab1c3}
+.about blockquote{font-family:"Space Grotesk";font-size:clamp(1.5rem,4.6vw,2.5rem);line-height:1.25;font-weight:500;margin:18px 0 22px;max-width:22ch}
+.about blockquote em{font-style:normal;color:var(--accent)}
+.sig{display:flex;align-items:center;gap:12px;color:#c3c9d6;font-size:.92rem}
+.sig b{color:#fff;font-weight:600}
+.sig .line{width:36px;height:1.5px;background:var(--accent)}
+.facts{display:grid;gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);margin-top:44px;overflow:hidden}
+.fact{background:var(--navy-2);padding:22px}
+.fact b{display:block;font-family:"Space Grotesk";font-size:1.4rem;color:var(--accent);margin-bottom:2px;font-weight:600}
+.fact p{color:#c9cfdb;font-size:.95rem}
 
 /* services */
-.services{padding:var(--pad) 0}
-.sec-head{display:flex;flex-direction:column;gap:14px;margin-bottom:40px}
-.sec-head .left{display:flex;flex-direction:column;gap:14px}
-.sec-head h2{font-size:clamp(2rem,4.6vw,3rem);color:var(--ink);max-width:16ch}
-.sec-head p{color:var(--muted);max-width:30rem}
-.cards{display:grid;grid-template-columns:1fr;gap:16px}
-.card{background:var(--white);border:1px solid #e4e2db;border-radius:var(--r);padding:30px 28px;transition:transform .25s,box-shadow .25s,border-color .25s}
-.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(18,23,41,.35);border-color:var(--accent)}
-.icon{width:64px;height:64px;border-radius:var(--r);background:var(--ink);display:grid;place-items:center;margin-bottom:24px}
-.icon svg{width:36px;height:36px;stroke:var(--accent);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.card h3{font-size:1.28rem;color:var(--ink);margin-bottom:8px}
-.card p{color:var(--muted);font-size:.98rem}
+.services{padding:var(--pad) 0;background:var(--bg)}
+.sec-head{margin-bottom:36px}
+.sec-head h2{font-size:clamp(1.9rem,5vw,2.8rem);font-weight:600;margin-top:12px}
+.sec-head p{color:var(--muted);max-width:34rem;margin-top:14px}
+.groups{display:grid;gap:20px}
+.group{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.group-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:22px 24px;border-bottom:1px solid var(--line)}
+.group-head h3{font-size:1.35rem;font-weight:600}
+.group-head span{font-size:.8rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.items{list-style:none}
+.items li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;padding:20px 24px;border-bottom:1px solid var(--line)}
+.items li:last-child{border-bottom:0}
+.icon{width:48px;height:48px;border-radius:var(--r);background:var(--navy);display:grid;place-items:center}
+.icon svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.items h4{font-family:"Space Grotesk";font-size:1.1rem;font-weight:600;line-height:1.25}
+.items p{color:var(--muted);font-size:.94rem}
+.group.dark{background:var(--navy);border-color:var(--navy);color:#fff}
+.group.dark .group-head{border-color:rgba(255,255,255,.1)}
+.group.dark .group-head span{color:#aab1c3}
+.group.dark .items li{border-color:rgba(255,255,255,.1)}
+.group.dark .icon{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.group.dark .items p{color:#c3c9d6}
+.badge{margin:4px 24px 24px;padding:18px 20px;border:1px solid rgba(226,179,58,.45);border-radius:var(--r);display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start;font-size:.94rem;color:#e7eaf2}
+.badge svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.badge b{color:#fff;display:block;font-family:"Space Grotesk";font-size:1.05rem}
+.one{margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border-radius:var(--r);background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent)}
+.one p{font-family:"Space Grotesk";font-size:1.15rem;font-weight:600}
+.one p small{display:block;font-family:Inter,sans-serif;font-weight:400;font-size:.92rem;color:var(--muted)}
+.one .btn{background:var(--navy);color:#fff}
+.one .btn:hover{background:#26304a}
 
-/* why */
-.why{background:var(--white);padding:var(--pad) 0}
-.why-grid{display:grid;gap:40px;align-items:center}
-.why-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3}
-.why-img img{width:100%;height:100%;object-fit:cover;object-position:50% 88%}
-.why h2{font-size:clamp(2rem,4.6vw,2.9rem);color:var(--ink);margin:14px 0 16px;max-width:15ch}
-.why p.lead{color:var(--muted);max-width:30rem}
-.checks{list-style:none;margin-top:26px;display:grid;gap:14px}
-.checks li{display:flex;gap:12px;align-items:flex-start;font-weight:500;color:var(--ink)}
-.checks svg{width:22px;height:22px;flex:none;stroke:var(--accent-dark);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
-.score{display:flex;align-items:center;gap:18px;margin-top:32px;padding:20px 22px;border-radius:var(--r);background:var(--paper);border:1px solid #e4e2db;max-width:30rem}
-.score .num{font-family:var(--head);font-size:2.6rem;font-weight:700;color:var(--ink);line-height:1}
-.score .num small{font-size:1rem;color:var(--muted);font-weight:500}
-.score p{font-size:.92rem;color:var(--muted);margin-top:4px}
-.score a{color:var(--ink);font-weight:600}
+/* approach */
+.approach{padding:var(--pad) 0;background:#fff}
+.approach .sec-head{margin-bottom:28px}
+.steps{display:grid;border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:56px 1fr;gap:14px;padding:24px 0;border-bottom:1px solid var(--line)}
+.step .n{font-family:"Space Grotesk";font-size:1.05rem;font-weight:600;color:var(--navy);width:44px;height:44px;border:1.5px solid var(--accent);border-radius:50%;display:grid;place-items:center}
+.step h3{font-size:1.18rem;font-weight:600;margin-bottom:4px}
+.step p{color:var(--muted);font-size:.96rem}
 
 /* contact */
-.contact{padding:var(--pad) 0}
-.contact-box{background:var(--ink);color:#fff;border-radius:var(--r);overflow:hidden;display:grid}
-.contact-main{padding:44px 26px}
-.contact-main .eyebrow{color:var(--accent)}
-.contact-main h2{font-size:clamp(2.1rem,5vw,3.3rem);margin:16px 0;max-width:13ch}
-.contact-main p{color:#c9cedd;max-width:28rem}
-.contact-main .hero-actions{margin-top:28px}
-.contact-list{list-style:none;padding:34px 26px 40px;border-top:1px solid var(--line);display:grid;gap:24px;background:var(--ink-2)}
-.contact-list li{display:flex;gap:16px;align-items:flex-start}
-.ci{width:46px;height:46px;border-radius:var(--r);border:1px solid var(--line);display:grid;place-items:center;flex:none}
-.ci svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.contact-list small{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#9aa1ba;margin-bottom:2px}
-.contact-list a,.contact-list span{color:#fff;text-decoration:none;font-weight:500;word-break:break-word}
-.contact-list a:hover{color:var(--accent)}
+.contact{padding:var(--pad) 0;background:var(--bg)}
+.contact-box{display:grid;border-radius:var(--r);overflow:hidden;background:var(--navy);color:#fff}
+.contact-body{padding:40px 24px}
+.contact-body .eyebrow{color:#aab1c3}
+.contact-body h2{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:600;margin:14px 0 12px}
+.contact-body > p{color:#c9cfdb;max-width:30rem}
+.clist{list-style:none;margin:26px 0;display:grid}
+.clist li{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.clist svg{width:22px;height:22px;stroke:var(--accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.clist .ic{width:42px;height:42px;border:1px solid rgba(255,255,255,.15);border-radius:var(--r);display:grid;place-items:center}
+.clist small{display:block;color:#98a0b3;font-size:.76rem;text-transform:uppercase;letter-spacing:.1em}
+.clist a{color:#fff;text-decoration:none;font-weight:500;word-break:break-word}
+.clist a:hover{color:var(--accent)}
+.contact-actions{display:flex;flex-direction:column;gap:12px}
+.visit{background:var(--accent);color:var(--navy);padding:36px 24px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.visit .eyebrow{color:var(--navy)}
+.visit .eyebrow::before{background:var(--navy)}
+.visit address{font-style:normal;font-family:"Space Grotesk";font-size:clamp(1.9rem,6vw,2.9rem);font-weight:600;line-height:1.08;margin-top:14px}
+.visit p{font-size:.98rem;max-width:26rem;margin-top:12px}
+.visit .btn{background:var(--navy);color:#fff;align-self:flex-start}
+.visit .btn:hover{background:#26304a}
+.pin{width:56px;height:56px;stroke:var(--navy);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 
-footer{background:var(--ink);color:#9aa1ba;font-size:.88rem;padding:28px 0}
+/* footer */
+footer{background:#0c1120;color:#8f97aa;font-size:.88rem;padding:28px 0}
 footer .wrap{display:flex;flex-direction:column;gap:6px}
 
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1.5fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(18,23,41,.97);border-top:1px solid var(--line)}
-.mbar .btn{min-height:50px;font-size:.95rem;padding:0 12px}
-.mbar .btn-ghost{background:transparent;border-color:#4a5276}
+/* mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(12,17,32,.97);border-top:1px solid rgba(255,255,255,.1)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:8px;height:46px;border-radius:var(--r);font-weight:600;font-size:.95rem;text-decoration:none}
+.mbar svg{width:18px;height:18px}
+.mbar .m1{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.mbar .m2{background:var(--accent);color:var(--navy)}
 
-@media (min-width:600px){
+@media (min-width:640px){
   .hero-actions{display:flex;flex-wrap:wrap}
-  .head-cta .lbl{display:inline}
-  .head-cta{padding:0 18px}
-}
-@media (min-width:700px){
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .strip ul{grid-template-columns:repeat(3,1fr)}
-  .strip li{border-bottom:0;padding:26px 20px}
-  .strip li+li{border-left:1px solid var(--line)}
-  .strip li:first-child{padding-left:0}
-  .contact-main{padding:56px 48px}
-  .contact-list{padding:48px}
+  .hero-actions .btn{padding:15px 22px;font-size:.98rem}
+  .facts{grid-template-columns:repeat(3,1fr)}
+  .contact-actions{flex-direction:row}
 }
 @media (min-width:960px){
   :root{--pad:96px}
   body{padding-bottom:0}
   .mbar{display:none}
+  .wrap{padding:0 32px}
+  section[id]{scroll-margin-top:80px}
   .nav{display:flex}
-  .wrap{padding:0 40px}
-  .site-head .wrap{height:70px}
+  .head-cta{display:inline-flex;padding:10px 18px;font-size:.9rem}
+  .site-header .wrap{height:72px}
   .hero{min-height:85vh;align-items:center}
-  .hero::after{background:linear-gradient(90deg,rgba(12,16,30,.9) 0%,rgba(12,16,30,.65) 42%,rgba(12,16,30,.12) 75%),linear-gradient(180deg,rgba(12,16,30,0) 60%,rgba(12,16,30,.5) 100%)}
+  .hero img{object-position:center 45%}
+  .hero::after{background:linear-gradient(90deg,rgba(12,16,30,.8) 0%,rgba(12,16,30,.5) 40%,rgba(12,16,30,.05) 72%),linear-gradient(0deg,rgba(12,16,30,.3),rgba(12,16,30,0) 40%)}
   .hero .wrap{padding-top:80px;padding-bottom:80px}
-  .hero p.sub{font-size:1.15rem}
-  .sec-head{flex-direction:row;justify-content:space-between;align-items:flex-end}
-  .cards{grid-template-columns:repeat(3,1fr);gap:20px}
-  .why-grid{grid-template-columns:1fr 1fr;gap:80px}
-  .why-img{aspect-ratio:4/5}
-  .contact-box{grid-template-columns:1.3fr 1fr}
-  .contact-main{padding:72px 64px}
-  .contact-list{border-top:0;border-left:1px solid var(--line);padding:72px 48px;align-content:center}
+  .hero .eyebrow{font-size:.78rem}
+  .hero h1{margin:16px 0 14px}
+  .hero p.sub{font-size:1.1rem}
+  .trust{margin-top:20px;font-size:.9rem}
+  .hero-actions{margin-top:28px}
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:center}
+  .about-grid .facts{margin-top:0;grid-template-columns:1fr}
+  .sec-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:48px}
+  .sec-head p{margin-top:0}
+  .groups{grid-template-columns:1.25fr 1fr}
+  .group-head{padding:26px 32px}
+  .items li{padding:22px 32px}
+  .badge{margin:8px 32px 32px}
+  .one{padding:26px 32px}
+  .approach-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:72px}
+  .approach .sec-head{display:block}
+  .approach .sec-head p{margin-top:14px}
+  .contact-box{grid-template-columns:1.2fr 1fr}
+  .contact-body{padding:56px}
+  .visit{padding:56px 48px}
   footer .wrap{flex-direction:row;justify-content:space-between}
 }
 </style>
 </head>
 <body><div style="background:#fffbe6;color:#5c4400;font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:7px 12px;border-bottom:1px solid #f0e2a0;position:relative;z-index:9999">Voorbeeld van een nieuwe website voor Seymoens Geert, gemaakt door Victor De Ruyver. Dit is nog niet hun officiële website.</div>
 
-<header class="site-head">
+<header class="site-header">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="Seymoens Geert, naar boven">
-      <strong>Alu-<span>Seymoens</span></strong>
-      <small>Aluminium · Glas · Inox</small>
+    <a class="logo" href="#top" aria-label="ALU-Seymoens, naar boven">
+      <span class="logo-mark">AS</span>
+      <span><strong>ALU-Seymoens</strong><small>Geert Seymoens · Pollare</small></span>
     </a>
     <nav class="nav" aria-label="Hoofdmenu">
+      <a href="#over">Over Geert</a>
       <a href="#aanbod">Aanbod</a>
-      <a href="#waarom">Waarom wij</a>
+      <a href="#werkwijze">Werkwijze</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-accent head-cta" href="mailto:info@alu-seymoens.be?subject=Vrijblijvend%20advies" aria-label="Vraag advies per mail">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-      <span class="lbl">Vraag advies</span>
-    </a>
+    <a class="btn btn-accent head-cta" href="mailto:info@alu-seymoens.be?subject=Vraag%20om%20prijsberekening">Prijsberekening vragen</a>
   </div>
 </header>
 
 <main id="top">
-
-<section class="hero">
-  <img src="img/s5.jpg" alt="Modern huis met grote glaspartijen in avondlicht" fetchpriority="high">
-  <div class="wrap">
-    <span class="eyebrow">Pollare · Ninove</span>
-    <h1>Aluminium en glas, strak op maat</h1>
-    <p class="sub">Ramen, deuren, pergola's, veranda's, glaswerken en inox borstweringen. Al meer dan 20 jaar.</p>
-    <div class="hero-actions">
-      <a class="btn btn-accent" href="mailto:info@alu-seymoens.be?subject=Vrijblijvend%20advies%20of%20prijsberekening">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-        Vraag een prijsberekening
-      </a>
-      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Seymoens%20Geert&query_place_id=ChIJN0b3_yilw0cRLSD0Iuy7VP0" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-        Routebeschrijving
-      </a>
-    </div>
-    <div class="trust">
-      <div class="stars" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="#e2ad2f"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
-        <svg viewBox="0 0 24 24" fill="#e2ad2f"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
-        <svg viewBox="0 0 24 24" fill="#e2ad2f"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
-        <svg viewBox="0 0 24 24" fill="#e2ad2f"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
-        <svg viewBox="0 0 24 24" fill="none" stroke="#e2ad2f" stroke-width="1.5"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
+  <section class="hero" aria-label="Introductie">
+    <img src="img/s3.jpg" alt="Woning met grote glaspartijen en een glazen balustrade" width="1280" height="853">
+    <div class="wrap">
+      <span class="eyebrow">ALU-Seymoens · Pollare, Ninove</span>
+      <h1>Aluminium, glas en inox <span>uit Pollare</span></h1>
+      <p class="sub">Ramen, deuren, pergola's, veranda's, glaswerken en borstweringen. Met garantie op vakmanschap.</p>
+      <div class="trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Meer dan 20 jaar in het vak</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Geregistreerd aannemer glaswerken</span>
+        <span class="g">Google 4/5 · 1 review</span>
       </div>
-      <span><strong>4/5</strong> op Google · 1 review</span>
-    </div>
-  </div>
-</section>
-
-<section class="strip" aria-label="In het kort">
-  <div class="wrap">
-    <ul>
-      <li>
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-        <div><b>Meer dan 20 jaar</b><span>ervaring in het vak</span></div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="m8 12 3 3 5-6"/></svg>
-        <div><b>Geregistreerd aannemer</b><span>van algemene glaswerken</span></div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24"><path d="M3 10 12 4l9 6"/><path d="M5 9v11h14V9"/><path d="M10 20v-6h4v6"/></svg>
-        <div><b>Alu, glas en inox</b><span>bij één aanspreekpunt</span></div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="services" id="aanbod" aria-labelledby="aanbod-titel">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="left">
-        <span class="eyebrow">Ons aanbod</span>
-        <h2 id="aanbod-titel">Van raam tot veranda</h2>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="mailto:info@alu-seymoens.be?subject=Vraag%20om%20prijsberekening">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Prijsberekening
+        </a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Seymoens%20Geert&amp;query_place_id=ChIJN0b3_yilw0cRLSD0Iuy7VP0" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          Kom langs
+        </a>
       </div>
-      <p>Aluminium constructies, algemene glaswerken en inox borstweringen. Alles op maat van uw woning.</p>
     </div>
-    <div class="cards">
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32"><rect x="6" y="4" width="20" height="24" rx="1"/><path d="M16 4v24M6 16h20"/></svg></div>
-        <h3>Aluminium ramen</h3>
-        <p>Ramen in aluminium, op maat gemaakt.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32"><rect x="8" y="3" width="16" height="26" rx="1"/><rect x="12" y="7" width="8" height="9"/><path d="M20 19v3"/></svg></div>
-        <h3>Aluminium deuren</h3>
-        <p>Deuren in aluminium voor uw woning.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32"><path d="M3 12 29 7"/><path d="M6 11.5V28M26 7.6V28M3 28h26M16 9.6V28"/></svg></div>
-        <h3>Veranda's</h3>
-        <p>Een extra leefruimte aan uw huis.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32"><path d="M3 8h26M3 12h26"/><path d="M7 8v20M25 8v20M4 28h6M22 28h6"/><path d="M11 8v4M15 8v4M19 8v4"/></svg></div>
-        <h3>Pergola's</h3>
-        <p>Schaduw en beschutting op uw terras.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32"><rect x="5" y="4" width="22" height="24" rx="1"/><path d="m10 14 6-6M10 20l11-11M17 22l4-4"/></svg></div>
-        <h3>Algemene glaswerken</h3>
-        <p>Glaswerken door een geregistreerd aannemer.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 32 32"><path d="M3 9h26M5 9v18M27 9v18M3 27h26M10 9v18M15 9v18M20 9v18"/></svg></div>
-        <h3>Inox borstweringen</h3>
-        <p>Borstweringen in inox, strak afgewerkt.</p>
-      </article>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="why" id="waarom" aria-labelledby="waarom-titel">
-  <div class="wrap why-grid">
-    <div class="why-img">
-      <img src="img/s3.jpg" alt="Ruime kamer met een grote glaswand en uitzicht op zee" loading="lazy">
+  <section class="about" id="over">
+    <div class="wrap about-grid">
+      <div>
+        <span class="eyebrow">Over Geert Seymoens</span>
+        <blockquote>‘<em>Garantie op vakmanschap</em>’ dragen we hoog in het vaandel. Kwaliteit gaat bij ons boven kwantiteit.</blockquote>
+        <div class="sig"><span class="line"></span><span><b>Geert Seymoens</b>, zaakvoerder</span></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>20+ jaar</b><p>ervaring in aluminium constructies</p></div>
+        <div class="fact"><b>Geregistreerd</b><p>aannemer van algemene glaswerken</p></div>
+        <div class="fact"><b>Vrijblijvend</b><p>advies en prijsberekening vooraf</p></div>
+      </div>
     </div>
-    <div>
-      <span class="eyebrow">Waarom Seymoens</span>
-      <h2 id="waarom-titel">Eén vakman voor alu, glas en inox</h2>
-      <p class="lead">Al meer dan twintig jaar in het vak. U spreekt rechtstreeks met Geert Seymoens, van uw eerste vraag tot de prijsberekening.</p>
-      <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Vrijblijvend advies</li>
-        <li><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Een prijsberekening op maat</li>
-        <li><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Geregistreerd aannemer van algemene glaswerken</li>
-      </ul>
-      <div class="score">
-        <div class="num">4<small>/5</small></div>
+  </section>
+
+  <section class="services" id="aanbod">
+    <div class="wrap">
+      <div class="sec-head">
         <div>
-          <div class="stars" role="img" aria-label="4 op 5 sterren">
-            <svg viewBox="0 0 24 24" fill="#e2ad2f"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
-            <svg viewBox="0 0 24 24" fill="#e2ad2f"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
-            <svg viewBox="0 0 24 24" fill="#e2ad2f"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
-            <svg viewBox="0 0 24 24" fill="#e2ad2f"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
-            <svg viewBox="0 0 24 24" fill="none" stroke="#e2ad2f" stroke-width="1.5"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3-4.6-4.4 6.3-.8z"/></svg>
+          <span class="eyebrow">Aanbod</span>
+          <h2>Drie materialen, één aanspreekpunt</h2>
+        </div>
+        <p>Of het nu om een raam, een veranda of een borstwering gaat: u bespreekt alles met Geert zelf.</p>
+      </div>
+      <div class="groups">
+        <div class="group">
+          <div class="group-head"><h3>Aluminium</h3><span>4 toepassingen</span></div>
+          <ul class="items">
+            <li>
+              <div class="icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="4" width="20" height="24" rx="1"/><path d="M16 4v24M6 16h20"/></svg></div>
+              <div><h4>Ramen</h4><p>Nieuwe aluminium ramen, met advies over wat bij uw woning past.</p></div>
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="3" width="16" height="26" rx="1"/><rect x="12" y="7" width="8" height="10"/><path d="M20 20v3"/></svg></div>
+              <div><h4>Deuren</h4><p>Aluminium deuren, met dezelfde zorg als de ramen.</p></div>
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 9h26"/><path d="M5 9v20M27 9v20"/><path d="M8 5v4M13 5v4M18 5v4M23 5v4"/></svg></div>
+              <div><h4>Pergola's</h4><p>Meer beschutting op uw terras of in de tuin.</p></div>
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 13 16 7l13 6"/><path d="M5 12v16h22V12"/><path d="M12 28V15M20 28V15"/></svg></div>
+              <div><h4>Veranda's</h4><p>Extra leefruimte in aluminium en glas.</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="group dark">
+          <div class="group-head"><h3>Glas en inox</h3><span>2 toepassingen</span></div>
+          <ul class="items">
+            <li>
+              <div class="icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="4" width="22" height="24" rx="1"/><path d="m10 14 5-5M10 20l11-11M16 22l5-5"/></svg></div>
+              <div><h4>Algemene glaswerken</h4><p>Glaswerken voor uw woning, uitgevoerd door een geregistreerd aannemer.</p></div>
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 10h26"/><path d="M5 10v18M27 10v18"/><path d="M11 10v18M16 10v18M21 10v18"/></svg></div>
+              <div><h4>Inox borstweringen</h4><p>Een veilige afscherming in inox.</p></div>
+            </li>
+          </ul>
+          <div class="badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.4 3 8.3 7 9.5 4-1.2 7-5.1 7-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div><b>Geregistreerd aannemer</b>van algemene glaswerken</div>
           </div>
-          <p>Score op Google, 1 review. <a href="https://www.google.com/maps/search/?api=1&query=Seymoens%20Geert&query_place_id=ChIJN0b3_yilw0cRLSD0Iuy7VP0" target="_blank" rel="noopener">Bekijk op Google</a></p>
+        </div>
+      </div>
+      <div class="one">
+        <p>Twijfelt u welke oplossing past?<small>Vraag vrijblijvend advies, u zit nergens aan vast.</small></p>
+        <a class="btn" href="mailto:info@alu-seymoens.be?subject=Vraag%20om%20advies">Vraag advies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="approach" id="werkwijze">
+    <div class="wrap approach-grid">
+      <div class="sec-head">
+        <span class="eyebrow">Werkwijze</span>
+        <h2>Eerst luisteren, dan rekenen</h2>
+        <p>Geen druk, geen verplichtingen. U weet wat het kost voor u beslist.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="n">1</span>
+          <div><h3>U stelt uw vraag</h3><p>Per mail, of kom langs in Pollare-Dorp 26.</p></div>
+        </div>
+        <div class="step">
+          <span class="n">2</span>
+          <div><h3>Vrijblijvend advies</h3><p>Samen bekijken we wat het best bij uw plannen past.</p></div>
+        </div>
+        <div class="step">
+          <span class="n">3</span>
+          <div><h3>Duidelijke prijsberekening</h3><p>U krijgt een prijs en beslist daarna in alle rust.</p></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="contact" id="contact" aria-labelledby="contact-titel">
-  <div class="wrap">
-    <div class="contact-box">
-      <div class="contact-main">
-        <span class="eyebrow">Contact</span>
-        <h2 id="contact-titel">Plannen met glas of alu?</h2>
-        <p>Vertel kort wat u voor ogen hebt. U krijgt vrijblijvend advies en, als u dat wilt, een prijsberekening.</p>
-        <div class="hero-actions">
-          <a class="btn btn-accent" href="mailto:info@alu-seymoens.be?subject=Vrijblijvend%20advies%20of%20prijsberekening">Mail uw vraag</a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Seymoens%20Geert&query_place_id=ChIJN0b3_yilw0cRLSD0Iuy7VP0" target="_blank" rel="noopener">Routebeschrijving</a>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <div class="contact-body">
+          <span class="eyebrow">Contact</span>
+          <h2>Plannen met aluminium of glas?</h2>
+          <p>Stuur Geert een mail met uw vraag. U krijgt vrijblijvend advies en een prijsberekening.</p>
+          <ul class="clist">
+            <li>
+              <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <div><small>E-mail</small><a href="mailto:info@alu-seymoens.be">info@alu-seymoens.be</a></div>
+            </li>
+          </ul>
+          <div class="contact-actions">
+            <a class="btn btn-accent" href="mailto:info@alu-seymoens.be?subject=Vraag%20om%20prijsberekening">Vraag een prijsberekening</a>
+          </div>
+        </div>
+        <div class="visit">
+          <svg class="pin" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 43s-13-11.5-13-21.5a13 13 0 0 1 26 0C37 31.5 24 43 24 43z"/><circle cx="24" cy="21" r="5"/></svg>
+          <div>
+            <span class="eyebrow">Kom langs</span>
+            <address>Pollare-Dorp 26<br>9401 Ninove</address>
+            <p>Bespreek uw plannen ter plaatse in Pollare.</p>
+          </div>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Seymoens%20Geert&amp;query_place_id=ChIJN0b3_yilw0cRLSD0Iuy7VP0" target="_blank" rel="noopener">Route in Google Maps</a>
         </div>
       </div>
-      <ul class="contact-list">
-        <li>
-          <span class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-          <div><small>E-mail</small><a href="mailto:info@alu-seymoens.be">info@alu-seymoens.be</a></div>
-        </li>
-        <li>
-          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-          <div><small>Adres</small><a href="https://www.google.com/maps/search/?api=1&query=Seymoens%20Geert&query_place_id=ChIJN0b3_yilw0cRLSD0Iuy7VP0" target="_blank" rel="noopener">Pollare-Dorp 26<br>9401 Ninove</a></div>
-        </li>
-        <li>
-          <span class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
-          <div><small>Uw aanspreekpunt</small><span>Geert Seymoens</span></div>
-        </li>
-      </ul>
     </div>
-  </div>
-</section>
-
+  </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Seymoens Geert</span>
+    <span>© 2026 Seymoens Geert · ALU-Seymoens, Pollare-Dorp 26, 9401 Ninove</span>
     <span>Voorbeeldwebsite door Victor De Ruyver</span>
   </div>
 </footer>
 
 <nav class="mbar" aria-label="Snel contact">
-  <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Seymoens%20Geert&query_place_id=ChIJN0b3_yilw0cRLSD0Iuy7VP0" target="_blank" rel="noopener">Route</a>
-  <a class="btn btn-accent" href="mailto:info@alu-seymoens.be?subject=Vrijblijvend%20advies%20of%20prijsberekening">Vraag advies</a>
+  <a class="m1" href="https://www.google.com/maps/search/?api=1&amp;query=Seymoens%20Geert&amp;query_place_id=ChIJN0b3_yilw0cRLSD0Iuy7VP0" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Route
+  </a>
+  <a class="m2" href="mailto:info@alu-seymoens.be?subject=Vraag%20om%20prijsberekening">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Prijsberekening
+  </a>
 </nav>
 
 <div style="font:12.5px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:8px 12px 90px;color:#888;background:transparent">Sfeerfoto's: <a href="https://pixabay.com" style="color:inherit">Pixabay</a></div></body>
